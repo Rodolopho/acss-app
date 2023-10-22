@@ -1,5 +1,5 @@
-import acss from 'aliascss-ts';
+import {styleJSX} from 'alias-css';
 import fs from "fs"
 
 
-console.log(acss.styleJs("bgc-red df"));
+console.log(styleJSX("bgc-red df m12"));

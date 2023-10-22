@@ -17,10 +17,14 @@
   },
   "color_ref": {
     "title":"Color_Reference",
-    "type":"page"
+    "type":"page",
+    "theme":{
+      "layout":"full"
+     }
   },
   "playground": {
     "title":"Playground",
     "type":"page"
+    
   }
 }

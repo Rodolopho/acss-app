@@ -1,5 +1,5 @@
 import InputBox from './inputClassName.jsx'
-import {main}  from '../alias-css/lib/index.js'
+import {main}  from '../node_modules/alias-css/lib/index.js'
 import './quickCompiler.jsx.css'
 import { HelpCircle } from 'react-feather';
 import SearchStaticClassNames from '../components/staticClassNames';
