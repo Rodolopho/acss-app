@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import {customColors} from '../aliascss-ts/lib/static/customColors';
+import {customColors} from '../ref/customColors'
 import Aside from '../components/partials/aside'
 import Color from '../components/color'
-import {styleJSX as st} from 'alias-css'
+
 
 
 import './color_ref.mdx.css';
@@ -39,7 +39,7 @@ const [selected, setSelected]=useState("All");
   return (
     <div class="p0px32px mt32px">
         <div class="bgc-2552552550d8 w150px  pf df md-dn zi1234 btm0px r32px shadow-xl mb32px br16px p8px16px b1px-s-blue400">
-          <select class="  text-xl -fo-bn -fo-oln c-gray600  " onChange={(e)=>handleClick(e.target.value)}>
+          <select class="  text-xl -fo-bn -fo-oln c-gray600 bgc-inherit  " onChange={(e)=>handleClick(e.target.value)}>
           {[...colorsCato].map((key)=>{
             return <option selected={key===selected} value={key}>{key}</option>
           })}

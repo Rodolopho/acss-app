@@ -21,12 +21,12 @@ Here we have defined the color, font size, display properties of h1 element firs
 
 ### NPM
 ```
-npm install aliascss
+npm install --save-dev alias-css
 ```
 
 ### CDN
 ```html
-<script defer src="https://cdn.jsdelivr.net/npm/aliascss/build/aliascss.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/alias-css/dist/aliascss.js"></script>
 
 ```
 
