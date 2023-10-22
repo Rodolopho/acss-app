@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import './staticClassNames.jsx.css'
 import { Search } from 'react-feather';
-import { staticClassNames } from '../alias-css/lib/index'
+import { staticClassNames } from '../node_modules/alias-css/lib/index'
 
 
 export default function SearchStaticClassName(){
