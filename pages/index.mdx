@@ -1,0 +1,56 @@
+# Quick Compiler
+
+import QuickCompiler from '../components/quickCompiler';
+
+import './index.mdx.css'
+
+import { Bleed } from 'nextra-theme-docs'
+ 
+
+
+ 
+export function Page({ children }) {
+    return (
+        <div className="d-f g32px fdc lg-fdr-i pt32px">
+            <div className="fb100p lg-fb50p flex-shrink0">
+                <QuickCompiler/>
+            </div>
+            <div className="lg-asc  ">
+                {children}
+            </div>
+        </div>
+    )
+
+}
+
+<Page>
+
+
+import Image from 'next/image'
+ 
+<Image src="/acss-logo.svg"  className=" dn lg-db lg-mla lg-mra " alt="Hello" width={200} height={100} />
+### What is AliasCSS?
+AliasCSS is a css post-processor/compiler which alllows to apply css property and value directly in html element using class attribute, without CSS declaration.
+With aliascss we can style  webpages using class attribute with post-define classname, for example
+
+```html
+ <h1 class="color-red font-size12px display-inline-block"> Hello world</h1>
+ ```
+
+OR Using shorthand
+
+```html
+ <h1 class="c-red fs12px dib"> Hello world</h1>
+ ```
+
+Here we have defined the color, font size, display properties for h1 element using post defined class names, which
+ Aliascss will compiles to corresponding CSS declaration in the stylesheet. Normally, every aliascss classname hold single propery and value for it.
+ Goto [Documentation](/docs/getting_started) to know more.
+</Page>
+
+
+***
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/64hSb5SbFus" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+

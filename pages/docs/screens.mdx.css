@@ -1,0 +1,6 @@
+@media (max-width : 576px){.xs-dn{display: none}}
+@media (max-width : 576px){.xs-display-none{display:none}}
+@media (max-width : 576px){.xs-flex-direction-column{flex-direction:column}}
+@media (max-width : 576px){.xs-fdc{flex-direction: column}}
+@media (max-width : 576px){.xs_p-flex-direction-column p{flex-direction:column}}
+@media (max-width : 576px){.xs_p-fdc p{flex-direction: column}}

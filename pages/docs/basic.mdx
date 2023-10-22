@@ -1,0 +1,86 @@
+import { Callout } from 'nextra/components'
+
+## Basic : How to Use AliasCSS
+If you know CSS , then you already know AliasCSS. AliasCSS uses class attribute of  element for styling.
+Its allow you to style you webpage without leaving the page your are working on. It allows you to apply css property 
+and value in the form of class name. And you can use aliascss along with your custom css or css frameworks like bootstrap.
+
+
+
+**Lets take an Example**\
+Lets say , you want ` h1 ` element to have color  blue and font-size 3rem. we simply write class names to tell aliascss what property and value we want to
+apply using the class attribute of `h1` tag as given below. 
+```html
+    <h1 class="color-blue font-size3rem">Hello, World</h1>
+```    
+
+<Callout type="info" emoji="💡">
+ ***Tips***: To make classname out of the basic  CSS property and value , simply replace `:` with `-`, for example `color:blue` => `color-blue`, `display:inline-block`=> `display-inline-block`. Incase
+ of property which have length or numeric value just remove `:` i.e `width:100px` => `width100px`, `left:-100px` =>`left-100px`.
+</Callout>
+Here, we are applying style with class name, these class name also hold the property and value we want to apply. In short we are making class name out of css property and value.
+i.e 
+```
+    color:blue  => color-blue is a valid aliascss class name
+```
+Similarly we can also use short hand , we can replace `color` by `c` and `fs` for `font-size`, to make it short hand.
+```html
+    <h1 class="c-blue fs3rem">Hello, World</h1>
+```  
+Both classnames(full-semantic classname and shorthand className) in the above example are doing exactly same thing and have same style applied.
+<Callout type="info" emoji="💡">
+ ***Tips***: To make shorthand , if css property  and value both are string ( such as :` display:flex, font-weight:bold, justify-content:space-between`), we simply make class name 
+ using first letter of property followed by first letter after every `-` in property then followed by first letter of value, followed by first letter after every `-` in value if there is any.
+ for example `display:inline-grid`=>`dig`, `font-weight:bold`=>`fwb`,`justify-content:space-between`=>`jcsb`.
+ - If CSS value is numberic, length , color or more complex , normally we only use shorthand for property and leave value as it is.
+ for example:`margin:100px`=>`m100px`,`color:red`=>`c-red`, `border:1px solid #cccccc`=>`b1px-solid-cccccc`.
+`.
+</Callout>
+
+<Callout type="warning">
+ Note, using `-` before length or numeric based value with make value negative after compile if it accept negative value. for example
+ ```
+ margin100px or m100px => margin:100px
+ margin-100px or m-100px=>margin:-100px
+ margin-100px100px-100px-100px or m-100px100px-100px-100px => margin: -100px 100px -100px -100px
+ box-shadow1px-1px2px3px-red or bxs1px-1px2px3px-red  => box-shadow:1px -1px 2px 3px red
+ box-shadow-1px0px2px-ebebeb or bxs-1px0px2px-ebebeb => box-shadow:-1px 0px 2px #ebebeb
+ font-size16px or fs16px => font-size:16px
+ font-size-24px or fs-24px => font-size:24px //still postive because font-size don't accepts - signed value
+ ```
+</Callout>
+
+
+**Here are other example  class name definition.**
+| CSS           | Classname | shorthand |
+| :------------ | :---------: | ----------: |
+| `display:flex`  |`display-flex  `| `df`         |
+| `list-style:none`     |   `list-style-none `  |    `lsn `|
+| `margin-left:32px` | `margin-left32px`            |   `ml32px`|
+| `margin-left:-32px` | `margin-left-32px`            |  ` ml3-2px`|
+| `color:red`| `color-red`| `c-red`|
+| `border-color:#ccc`| `border-color-ccc`| `bc-ccc`|
+| `color:#e3e3e3`| `color-e3e3e3`| `c-e3e3e3`|
+| `background-color:skyBlue`| `background-color-skyBlue`|` bgc-skyBlue`|
+| `background:linear-gradient(red,blue)`| `background-linear-gradient-red-blue`| `bg-lg-red-blue` |
+
+
+<Callout type="info" emoji="ℹ️">
+  You can also target state like hover, focus etc , use css variable , target children and classname. There is more you can do with aliasccs , 
+   first you need to understand how to write basic aliascss valid class names.
+</Callout>
+
+#### Basic Rules to create class name out of CSS property and value
+
+
+- Every AliasCSS class name have single property but can have one or  more values. `margin1px20px =>margin:10px 20px`.
+- Every Valid Aliascss class name has its corresponding shorthand or alias. `display-flex` and `df` are exactly same. You can use both at same time.
+- If property and value both are string then simply replace `:` with '-'. In some value of CSS properties , for example `background-position: right bottom`, 
+there are value that are string and has by space between, those space also should be replaced by `-`.
+```
+display:flex=> display-flex or df
+background-position: right bottom => background-position-right-bottom or bgprb 
+animation-timing-function: ease-in-out => animation-timing-function-ease-in-out or atfeio 
+```
+  
+

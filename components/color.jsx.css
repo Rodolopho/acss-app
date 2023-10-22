@@ -1,0 +1,17 @@
+.fs10px{font-size:10px}
+.df{display: flex}
+.cc{cursor: copy}
+.aic{align-items: center}
+.fdc{flex-direction: column}
+.jcc{justify-content: center}
+.br8px{border-radius:8px}
+.p10px{padding:10px}
+@media (min-width : 768px){.md-m10px{margin:10px}}
+@media (min-width : 768px){.md-g8px{gap:8px}}
+.w72px{width:72px}
+.h72px{height:72px}
+.br9px{border-radius:9px}
+@media (min-width : 768px){.md-w100px{width:100px}}
+@media (min-width : 768px){.md-h100px{height:100px}}
+.text-xs{font-size:12px;line-height:18px}
+.fw5{font-weight: 500}

@@ -1,0 +1,41 @@
+import { Sandpack } from "@codesandbox/sandpack-react"
+
+import React from 'react'
+
+import './index.mdx.css'
+
+export default function Index() {
+  return (
+    <div className="p16px32px mh100vh bgc-0000000000d7">
+        <Sandpack
+        template="static"
+
+        options={{
+             showLineNumbers: true, // default - true
+            showInlineErrors: true, // default - false
+            wrapContent: true, // default - false
+            editorHeight: 700, // default - 300
+             editorWidthPercentage: 60, // default - 50
+             showNavigator: true,
+         }}
+        
+
+        files={{
+            "index.html":`<!DOCTYPE html>
+ <html>
+ <head>
+   <title>AliasCSS Playground</title>
+   <meta charset="UTF-8" />
+   <link rel="stylesheet" href="/styles.css" />
+   <script defer src="https://cdn.jsdelivr.net/npm/alias-css/dist/aliascss.js"></script>
+ </head>
+ <body>
+   <h1 class=" ">Hello world</h1>
+ </body>
+
+ </html>`
+        }}
+        />
+    </div>
+  )
+}

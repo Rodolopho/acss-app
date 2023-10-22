@@ -1,0 +1,13 @@
+.dif{display: inline-flex}
+.fdc{flex-direction: column}
+.g8px{gap:8px}
+._span-c-blue600 span{color:#1570EF}
+._span-bgc-blue50 span{background-color:#EFF8FF}
+.df{display: flex}
+.ccc{color:currentColor}
+.br6px{border-radius:6px}
+.p4px8px{padding:4px 8px}
+.tdn{text-decoration: none}
+.-h-bgc-blue50:hover{background-color:#EFF8FF}
+.text-xs{font-size:12px;line-height:18px}
+.fw5{font-weight: 500}

@@ -1,0 +1,3 @@
+.width--blockquote-width{width: var(--blockquote-width)}
+.color--grey-default{color: var(--grey-default)}
+.--hover-color--grey-alt:hover{color: var(--grey-alt)}

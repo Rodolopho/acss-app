@@ -1,0 +1,15 @@
+## CSS Variable 
+CSS variables can be in place of value. using `--var--` or `--` identifier after the property.
+|classname|shorthand|css|Remarks|
+|---------|---------|---|-------|
+|`color--var--name`|`c--var--name`|`color: var(--name)`|
+|`color--name`|`c--name`|`color: var(--name)`|
+|`width--var--side-bar-width`|`w--var--side-bar-width`| `width: var(--side-bar-width)`||
+|`width--side-bar-width`|`w--side-bar-width`| `width: var(--side-bar-width)`||
+
+**Example**
+```html
+<div class="width--blockquote-width" style="--grey-default:rgba(210, 213, 217, 1);--grey-alt:rgba(186, 189, 194, 1)">
+    <h3 class="color--grey-default --hover-color--grey-alt">Hello World</h3>
+</div>
+```

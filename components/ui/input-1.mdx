@@ -1,0 +1,37 @@
+
+# Important 
+import './input.jsx.css'
+{const export  }
+export  function Input({children}){
+    
+    return (
+            <div class="w100p tal mt32px df fdc g32px _input-fv-box-shadow-none ">
+                
+                <div dangerouslySetInnerHTML={{__html: input}} />
+                {children} {input}
+
+                <div class="df g8px fdc">
+            <label class=" text-md fw5">Email</label>
+            <div class="df aic  g8px p8px12px bgc-fff br8px g8px b1px-s-primary300 bxs0px0px0px5px-primary100 xw400px">
+                <div class="df jcsb aic w100p g8px text-lg ">
+                    <input class="oln bn w100p " placeholder="hell@somemail.com" />
+                    <span class="df">
+                        <svg
+                            class="w18px h18px stroke-gray400 stroke-width2px stroke-linecap-round stroke-linejoin-round fill-none">
+                            <use href="{{asset('icons/feather-sprite.svg')}}#help-circle" />
+                        </svg>
+                    </span>
+                </div>
+            </div>
+            <small class="text-sm c-gray500">This is the user hint</small>
+        </div>
+
+        </div>
+        )
+
+       
+    
+}
+ <Input>
+        hello
+</Input>

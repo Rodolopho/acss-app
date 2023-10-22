@@ -1,0 +1,81 @@
+import { useState } from 'react';
+import {customColors} from '../aliascss-ts/lib/static/customColors';
+import Aside from '../components/partials/aside'
+import Color from '../components/color'
+import {styleJSX as st} from 'alias-css'
+
+
+import './color_ref.mdx.css';
+
+
+ 
+export function Index({ children }) {
+const [colors, setColors]=useState(customColors);
+const [selected, setSelected]=useState("All");
+
+  const colorsCato=['All','Primary','Success','Error','Warning','Gray','Indigo','Violet','Orange','Green','Blue','Moss','Teal','Cyan','purple',
+                    'fuchsia','Pink','Rose','Yellow','Info','Danger',];
+
+     function handleClick(color){
+      if(color==='All') {
+        setSelected('All')
+        setColors(customColors)
+        return
+      }
+        let newColor={};
+        Object.keys(customColors).map((key,index)=>{
+          if(key.toLowerCase().includes(color.toLowerCase())){
+            newColor[key]=customColors[key];
+          }
+      })
+      setSelected(color)
+      setColors(newColor)
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
+     }                
+  
+  return (
+    <div class="p0px32px mt32px">
+        <div class="bgc-2552552550d8 w150px  pf df md-dn zi1234 btm0px r32px shadow-xl mb32px br16px p8px16px b1px-s-blue400">
+          <select class="  text-xl -fo-bn -fo-oln c-gray600  " onChange={(e)=>handleClick(e.target.value)}>
+          {[...colorsCato].map((key)=>{
+            return <option selected={key===selected} value={key}>{key}</option>
+          })}
+          </select>
+        </div>
+      
+    <div   className=" df g32px  xw1280px  mla mra  _all-bsbb pr " style={{"--aside-width":"150px"}}>
+     
+      
+     <div className='dn   md-df  fb--var--aside-width flex-shrink0 t--var--aside-top   -sb-w5px -st-bgc-blue50 -stm-bgc-blue100 g8px   pst pr16px h--var--height  oxh oya ' 
+      style={{ "--aside-top":"calc(32px + var(--nextra-navbar-height))","--height":'calc(100vh - var(--nextra-navbar-height) - var(--nextra-menu-height))'}}>
+          <Aside colorsCato={colorsCato} selected={selected} handleClick={handleClick} />
+      </div>
+      <div className="dif fdc"> 
+        <h1 className="display-sm w100p fwn pl10px ">{selected + ' Colors'}</h1>
+        <ul className=" df fww p0px ">
+          {Object.keys(colors).map((key,index)=>{
+        
+            return (
+              <li key={key} >
+              <Color name={key} color={colors[key]} />
+              </li>
+            )
+          }
+        )}
+                      
+        </ul>
+      </div>
+      
+      
+    </div>
+    </div>
+  )
+}
+ 
+<Index> 
+  # Custom Colors Reference
+  AliasCSS provide some collection of custom color , which can be used in place of color value  out of the box.
+</Index>

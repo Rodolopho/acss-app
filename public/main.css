@@ -1,0 +1,308 @@
+
+/* AliasCSS : These are classnames compiled  from color_ref.mdx*/
+
+.p0px32px{padding:0px 32px}
+.mt32px{margin-top:32px}
+.bgc-2552552550d8{background-color:rgba(255,255,255,0.8)}
+.w150px{width:150px}
+.pf{position: fixed}
+.df{display: flex}
+@media (min-width : 768px){.md-dn{display: none}}
+.zi1234{z-index:1234}
+.btm0px{bottom:0px}
+.r32px{right:32px}
+.shadow-xl{box-shadow: 0px 20px 24px -4px rgba(16, 24, 40, 0.08), 0px 8px 8px -4px rgba(16, 24, 40, 0.03)}
+.mb32px{margin-bottom:32px}
+.br16px{border-radius:16px}
+.p8px16px{padding:8px 16px}
+.b1px-s-blue400{border:1px solid #53B1FD}
+.text-xl{font-size:20px;line-height:30px}
+.-fo-bn:focus{border:none}
+.-fo-oln:focus{outline:none}
+.c-gray600{color:#475467}
+.g32px{gap:32px}
+.xw1280px{max-width:1280px}
+.mla{margin-left: auto}
+.mra{margin-right: auto}
+._all-bsbb *{box-sizing: border-box}
+.pr{position: relative}
+.dn{display: none}
+@media (min-width : 768px){.md-df{display: flex}}
+.fb--var--aside-width{flex-basis: var(--aside-width)}
+.flex-shrink0{flex-shrink:0}
+.t--var--aside-top{top: var(--aside-top)}
+.-sb-w5px::-webkit-scrollbar{width:5px}
+.-st-bgc-blue50::-webkit-scrollbar-track{background-color:#EFF8FF}
+.-stm-bgc-blue100::-webkit-scrollbar-thumb{background-color:#D1E9FF}
+.g8px{gap:8px}
+.pst{position: sticky}
+.pr16px{padding-right:16px}
+.h--var--height{height: var(--height)}
+.oxh{overflow-x: hidden}
+.oya{overflow-y: auto}
+.dif{display: inline-flex}
+.fdc{flex-direction: column}
+.display-sm{font-size: 30px; line-height: 38px}
+.w100p{width:100%}
+.fwn{flex-wrap: nowrap}
+.pl10px{padding-left:10px}
+.fww{flex-wrap: wrap}
+.p0px{padding:0px}
+
+/* AliasCSS : These are classnames compiled  from index.mdx*/
+
+.d-f{display:flex}
+@media (min-width : 992px){.lg-fdr-i{flex-direction: row !important}}
+.pt32px{padding-top:32px}
+.fb100p{flex-basis:100%}
+@media (min-width : 992px){.lg-fb50p{flex-basis:50%}}
+@media (min-width : 992px){.lg-asc{align-self: center}}
+@media (min-width : 992px){.lg-db{display: block}}
+@media (min-width : 992px){.lg-mla{margin-left: auto}}
+@media (min-width : 992px){.lg-mra{margin-right: auto}}
+.color-red{color:red}
+.font-size12px{font-size:12px}
+.display-inline-block{display:inline-block}
+.c-red{color:red}
+.fs12px{font-size:12px}
+.dib{display: inline-block}
+
+/* AliasCSS : These are classnames compiled  from basic.mdx*/
+
+.color-blue{color:blue}
+.font-size3rem{font-size:3rem}
+.c-blue{color:blue}
+.fs3rem{font-size:3rem}
+
+/* AliasCSS : These are classnames compiled  from getting_started.mdx*/
+
+.color-gray500{color:#667085}
+
+/* AliasCSS : These are classnames compiled  from keyframes-guide.mdx*/
+
+.bgc--main-color{background-color: var(--main-color)}
+.oh{overflow: hidden}
+.h100p{height:100%}
+.pa{position: absolute}
+.t0{top:0}
+.l0{left:0}
+.aic{align-items: center}
+.acc{align-content: center}
+.jcc{justify-content: center}
+.zi-100000{z-index:-100000}
+.br100p{border-radius:100%}
+.b--border{border: var(--border)}
+.m--margin{margin: var(--margin)}
+.an-loading{animation-name:loading}
+.adu0d6s{animation-duration:0.6s}
+.atf-eio{animation-timing-function:ease-in-out}
+.ada{animation-direction: alternate}
+.aici{animation-iteration-count: infinite}
+.adl0d2s{animation-delay:0.2s}
+.adl0d4s{animation-delay:0.4s}
+.p32px{padding:32px}
+@keyframes loading{
+ 100% {transform:scale(2) } 100% {border-color:#475467} 100% {transform:scale(2) } 100% {border-color:#475467}
+}
+
+/* AliasCSS : These are classnames compiled  from screens.mdx*/
+
+@media (max-width : 576px){.xs-dn{display: none}}
+@media (max-width : 576px){.xs-display-none{display:none}}
+@media (max-width : 576px){.xs-flex-direction-column{flex-direction:column}}
+@media (max-width : 576px){.xs-fdc{flex-direction: column}}
+@media (max-width : 576px){.xs_p-flex-direction-column p{flex-direction:column}}
+@media (max-width : 576px){.xs_p-fdc p{flex-direction: column}}
+
+/* AliasCSS : These are classnames compiled  from stateAndSelector.mdx*/
+
+.bgc-cccccc{background-color:#cccccc}
+.--hover-bgc-yellow:hover{background-color:yellow}
+.-h-bgc-yellow:hover{background-color:yellow}
+._h3-c-white h3{color:white}
+._p-fs14px p{font-size:14px}
+
+/* AliasCSS : These are classnames compiled  from variables.mdx*/
+
+.width--blockquote-width{width: var(--blockquote-width)}
+.color--grey-default{color: var(--grey-default)}
+.--hover-color--grey-alt:hover{color: var(--grey-alt)}
+
+/* AliasCSS : These are classnames compiled  from index.mdx*/
+
+.p16px32px{padding:16px 32px}
+.mh100vh{min-height:100vh}
+.bgc-0000000000d7{background-color:rgba(000,000,000,0.7)}
+
+/* AliasCSS : These are classnames compiled  from codify.jsx*/
+
+.jcsb{justify-content: space-between}
+.cp{cursor: pointer}
+.w18px{width:18px}
+.h18px{height:18px}
+.stroke-gray700{stroke:#344054}
+.stroke-width1px{stroke-width:1px}
+.stroke-linecap-round{stroke-linecap:round}
+.stroke-linejoin-round{stroke-linejoin:round}
+
+/* AliasCSS : These are classnames compiled  from color.jsx*/
+
+.fs10px{font-size:10px}
+.cc{cursor: copy}
+.br8px{border-radius:8px}
+.p10px{padding:10px}
+@media (min-width : 768px){.md-m10px{margin:10px}}
+@media (min-width : 768px){.md-g8px{gap:8px}}
+.w72px{width:72px}
+.h72px{height:72px}
+.br9px{border-radius:9px}
+@media (min-width : 768px){.md-w100px{width:100px}}
+@media (min-width : 768px){.md-h100px{height:100px}}
+.text-xs{font-size:12px;line-height:18px}
+.fw5{font-weight: 500}
+
+/* AliasCSS : These are classnames compiled  from inputClassName.jsx*/
+
+.jc-sb{justify-content:space-between}
+.p8px12px{padding:8px 12px}
+.bgc-fff{background-color:#fff}
+.b1px-s-gray300{border:1px solid #D0D5DD}
+.shadow-xs{box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05)}
+.ol-n{outline:none}
+.b-n{border:none}
+.-fv-bxsn:focus-visible{box-shadow: none}
+.-fv-bn:focus-visible{border:none}
+.text-sm{font-size:14px;line-height:20px}
+.fw-4{font-weight:400}
+.c-gray500{color:#667085}
+.button-sm{display:inline-flex;justify-content:center;align-items:center;gap:8px;padding:8px 14px;border-radius:8px;box-sizing:border-box}
+.b1px-s-blue200{border:1px solid #B2DDFF}
+.bgc-blue100{background-color:#D1E9FF}
+.c-gray700{color:#344054}
+.-h-bgc-blue300:hover{background-color:#84CAFF}
+.fill-none{fill:none}
+
+/* AliasCSS : These are classnames compiled  from modalSearch.jsx*/
+
+.cursor-pointer{cursor:pointer}
+.stroke-blue500{stroke:#2E90FA}
+.stroke-width2px{stroke-width:2px}
+.bgc-red{background-color:red}
+.bgc-0000000000d6{background-color:rgba(000,000,000,0.6)}
+.w100vw{width:100vw}
+.h100vh{height:100vh}
+.zi99{z-index:99}
+.t0px{top:0px}
+.l0px{left:0px}
+.m32px{margin:32px}
+.bgc-gray100{background-color:#F2F4F7}
+.hxc{height:max-content}
+.pr62px{padding-right:62px}
+.w80p{width:80%}
+.t16px{top:16px}
+.r16px{right:16px}
+.stroke-error500{stroke:#F04438}
+
+/* AliasCSS : These are classnames compiled  from quickCompiler.jsx*/
+
+.g16px{gap:16px}
+.fd-c{flex-direction:column}
+.p4px10px4px4px{padding:4px 10px 4px 4px}
+.bgc-blue50{background-color:#EFF8FF}
+.wxc{width:max-content}
+.g12px{gap:12px}
+.p2px10px{padding:2px 10px}
+.g4px{gap:4px}
+.gap4px{gap:4px}
+.h-30rem{height: 30rem}
+.b-1px-s-ccc{border:1px solid #ccc}
+.oa{overflow: auto}
+.br-5px{border-radius: 5px}
+.p24px{padding:24px}
+.bl15px-s-blueLight600{border-left:15px solid #0086C9}
+.ff-courier{font-family:courier}
+.o-a{opacity: a}
+.c-green700{color:#087443}
+.fw6{font-weight: 600}
+.c-blue700{color:#175CD3}
+.-fln-c-primary700::first-line{color:#6941C6}
+.c-error400{color:#F97066}
+.fwb{font-weight: bold}
+.c-error500{color:#F04438}
+
+/* AliasCSS : These are classnames compiled  from staticClassNames.jsx*/
+
+.w100fr{width:100fr}
+.text-lg{font-size:18px;line-height:28px}
+.stroke-gray400{stroke:#98A2B3}
+.oln{outline:none}
+.bn{border:none}
+.c-gray{color:gray}
+.bgc-transparent{background-color:transparent}
+.text-md{font-size:16px;line-height:24px}
+.zi12345{z-index:12345}
+.t100p{top:100%}
+.xh60vh{max-height:60vh}
+.mw320px{min-width:320px}
+.shadow-md{box-shadow: 0px 4px 8px -2px rgba(16, 24, 40, 0.1), 0px 2px 4px -2px rgba(16, 24, 40, 0.06)}
+.mt2px{margin-top:2px}
+.m0px{margin:0px}
+.lsn{list-style: none}
+._li-nc-2n-bgc-gray50 li:nth-child(2n){background-color:#F9FAFB}
+.asfe{align-self: flex-end}
+
+/* AliasCSS : These are classnames compiled  from input-1.mdx*/
+
+.tal{text-align: left}
+._input-fv-box-shadow-none input:focus-visible{box-shadow:none}
+.b1px-s-primary300{border:1px solid #D6BBFB}
+.bxs0px0px0px5px-primary100{box-shadow:0px 0px 0px 5px #F4EBFF}
+.xw400px{max-width:400px}
+
+/* AliasCSS : These are classnames compiled  from input.mdx*/
+
+.-fv-box-shadow-none:focus-visible{box-shadow:none}
+.c-gray400{color:#98A2B3}
+.m-8px-12px{margin:-8px -12px}
+.br8px0px0px8px{border-radius:8px 0px 0px 8px}
+.brt1px-s-gray300{border-right:1px solid #D0D5DD}
+
+/* AliasCSS : These are classnames compiled  from aside.jsx*/
+
+._span-c-blue600 span{color:#1570EF}
+._span-bgc-blue50 span{background-color:#EFF8FF}
+.ccc{color:currentColor}
+.br6px{border-radius:6px}
+.p4px8px{padding:4px 8px}
+.tdn{text-decoration: none}
+.-h-bgc-blue50:hover{background-color:#EFF8FF}
+
+/* AliasCSS : These are classnames compiled  from class-group.mdx*/
+
+.container{display: flex} 
+.container{background-color: var(--main-color)} 
+.container{overflow: hidden} 
+.container{width:100%} 
+.container{height:100%} 
+.container{position: absolute} 
+.container{top:0} 
+.container{left:0} 
+.container{display: flex} 
+.container{align-items: center} 
+.container{align-content: center} 
+.container{justify-content: center} 
+.container{z-index:-100000} 
+
+
+/* AliasCSS : These are classnames compiled  from keyframes-guide.mdx*/
+
+.bgc-ecf0f1{background-color:#ecf0f1}
+.dot{border-radius:100%} 
+.dot{border:5px solid #555} 
+.dot{margin:10px} 
+.dot{animation-name:loading} 
+.dot{animation-duration:0.6s} 
+.dot{animation-timing-function:ease-in-out} 
+.dot{animation-direction: alternate} 
+.dot{animation-iteration-count: infinite} 
+

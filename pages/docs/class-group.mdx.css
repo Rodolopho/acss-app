@@ -1,0 +1,18 @@
+.mt32px{margin-top:32px}
+.df{display: flex}
+.p32px{padding:32px}
+.pr{position: relative}
+.container{display: flex} 
+.container{background-color: var(--main-color)} 
+.container{overflow: hidden} 
+.container{width:100%} 
+.container{height:100%} 
+.container{position: absolute} 
+.container{top:0} 
+.container{left:0} 
+.container{display: flex} 
+.container{align-items: center} 
+.container{align-content: center} 
+.container{justify-content: center} 
+.container{z-index:-100000} 
+

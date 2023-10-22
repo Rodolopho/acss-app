@@ -1,0 +1,19 @@
+.d-f{display:flex}
+.g32px{gap:32px}
+.fdc{flex-direction: column}
+@media (min-width : 992px){.lg-fdr-i{flex-direction: row !important}}
+.pt32px{padding-top:32px}
+.fb100p{flex-basis:100%}
+@media (min-width : 992px){.lg-fb50p{flex-basis:50%}}
+.flex-shrink0{flex-shrink:0}
+@media (min-width : 992px){.lg-asc{align-self: center}}
+.dn{display: none}
+@media (min-width : 992px){.lg-db{display: block}}
+@media (min-width : 992px){.lg-mla{margin-left: auto}}
+@media (min-width : 992px){.lg-mra{margin-right: auto}}
+.color-red{color:red}
+.font-size12px{font-size:12px}
+.display-inline-block{display:inline-block}
+.c-red{color:red}
+.fs12px{font-size:12px}
+.dib{display: inline-block}

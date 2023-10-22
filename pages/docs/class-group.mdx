@@ -1,0 +1,23 @@
+## Make reusable classname by grouping valid AliasCSS Classnames
+AliasCSS provide to custom attribute  'class-[name]' to group valid aliasCSS classnames.
+
+```html 
+<div  class="container" class-container="df bgc--main-color oh w100p h100p pa t0 l0 df aic acc jcc zi-100000" >
+  ...      
+</div>
+```
+ In the example, we grouped Classnames with attribute 'class-container', where conatiner is a new class we are creating by group 
+ other valid aliascss classNames. Only the valid aliasCSS classnames will be grouped.
+ Once we have define classname by grouping valid AliasCSS classnames , we can use it anywhere throught the webpage.
+
+import './class-group.mdx.css'
+ 
+export function Animation() {
+ 
+  return (
+    <div className="mt32px df p32px pr">
+    </div>
+  )
+}
+
+<Animation></Animation>

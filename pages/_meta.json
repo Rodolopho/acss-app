@@ -1,0 +1,26 @@
+{
+  "index": {
+    "type":"page",
+    "title":"Home",
+     "theme":{
+      "layout":"full"
+     }
+  },
+  "ui":{
+    "title":"Components",
+    "type":"page",
+    "display":"hidden"
+  },
+  "docs": {
+    "title":"Docs",
+    "type":"page"
+  },
+  "color_ref": {
+    "title":"Color_Reference",
+    "type":"page"
+  },
+  "playground": {
+    "title":"Playground",
+    "type":"page"
+  }
+}
