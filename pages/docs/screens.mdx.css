@@ -4,3 +4,5 @@
 @media (max-width : 576px){.xs-fdc{flex-direction: column}}
 @media (max-width : 576px){.xs_p-flex-direction-column p{flex-direction:column}}
 @media (max-width : 576px){.xs_p-fdc p{flex-direction: column}}
+@media (min-width : 768px){.md-width500px{width:500px}}
+@media (min-width : 768px){.md-w500p{width:500%}}

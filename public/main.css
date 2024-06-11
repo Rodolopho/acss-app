@@ -50,6 +50,35 @@
 .fww{flex-wrap: wrap}
 .p0px{padding:0px}
 
+/* AliasCSS : These are classnames compiled  from index.mdx*/
+
+.d-f{display:flex}
+@media (min-width : 992px){.lg-fdr-i{flex-direction: row !important}}
+.pt32px{padding-top:32px}
+.fb100p{flex-basis:100%}
+@media (min-width : 992px){.lg-fb50p{flex-basis:50%}}
+@media (min-width : 992px){.lg-asc{align-self: center}}
+@media (min-width : 992px){.lg-db{display: block}}
+@media (min-width : 992px){.lg-mla{margin-left: auto}}
+@media (min-width : 992px){.lg-mra{margin-right: auto}}
+.color-red{color:red}
+.font-size12px{font-size:12px}
+.display-inline-block{display:inline-block}
+.c-red{color:red}
+.fs12px{font-size:12px}
+.dib{display: inline-block}
+
+/* AliasCSS : These are classnames compiled  from basic.mdx*/
+
+.color-blue{color:blue}
+.font-size3rem{font-size:3rem}
+.c-blue{color:blue}
+.fs3rem{font-size:3rem}
+
+/* AliasCSS : These are classnames compiled  from getting_started.mdx*/
+
+.color-gray500{color:#667085}
+
 /* AliasCSS : These are classnames compiled  from class-group.mdx*/
 
 .p32px{padding:32px}
@@ -67,18 +96,6 @@
 .container{justify-content: center} 
 .container{z-index:-100000} 
 
-
-/* AliasCSS : These are classnames compiled  from basic.mdx*/
-
-.color-blue{color:blue}
-.font-size3rem{font-size:3rem}
-.c-blue{color:blue}
-.fs3rem{font-size:3rem}
-
-/* AliasCSS : These are classnames compiled  from getting_started.mdx*/
-
-.fs12px{font-size:12px}
-.color-gray500{color:#667085}
 
 /* AliasCSS : These are classnames compiled  from keyframes-guide.mdx*/
 
@@ -151,18 +168,31 @@
 .w18px{width:18px}
 .h18px{height:18px}
 .stroke-gray700{stroke:#344054}
-.color-red{color:red}
 .stroke-width1px{stroke-width:1px}
 .stroke-linecap-round{stroke-linecap:round}
 .stroke-linejoin-round{stroke-linejoin:round}
 
+/* AliasCSS : These are classnames compiled  from color.jsx*/
+
+.fs10px{font-size:10px}
+.cc{cursor: copy}
+.br8px{border-radius:8px}
+.p10px{padding:10px}
+@media (min-width : 768px){.md-m10px{margin:10px}}
+@media (min-width : 768px){.md-g8px{gap:8px}}
+.w72px{width:72px}
+.h72px{height:72px}
+.br9px{border-radius:9px}
+@media (min-width : 768px){.md-w100px{width:100px}}
+@media (min-width : 768px){.md-h100px{height:100px}}
+.text-xs{font-size:12px;line-height:18px}
+.fw5{font-weight: 500}
+
 /* AliasCSS : These are classnames compiled  from inputClassName.jsx*/
 
-.d-f{display:flex}
 .jc-sb{justify-content:space-between}
 .p8px12px{padding:8px 12px}
 .bgc-fff{background-color:#fff}
-.br8px{border-radius:8px}
 .b1px-s-gray300{border:1px solid #D0D5DD}
 .shadow-xs{box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05)}
 .ol-n{outline:none}
@@ -178,21 +208,6 @@
 .c-gray700{color:#344054}
 .-h-bgc-blue300:hover{background-color:#84CAFF}
 .fill-none{fill:none}
-
-/* AliasCSS : These are classnames compiled  from color.jsx*/
-
-.fs10px{font-size:10px}
-.cc{cursor: copy}
-.p10px{padding:10px}
-@media (min-width : 768px){.md-m10px{margin:10px}}
-@media (min-width : 768px){.md-g8px{gap:8px}}
-.w72px{width:72px}
-.h72px{height:72px}
-.br9px{border-radius:9px}
-@media (min-width : 768px){.md-w100px{width:100px}}
-@media (min-width : 768px){.md-h100px{height:100px}}
-.text-xs{font-size:12px;line-height:18px}
-.fw5{font-weight: 500}
 
 /* AliasCSS : These are classnames compiled  from modalSearch.jsx*/
 
@@ -289,17 +304,7 @@
 .br8px0px0px8px{border-radius:8px 0px 0px 8px}
 .brt1px-s-gray300{border-right:1px solid #D0D5DD}
 
-/* AliasCSS : These are classnames compiled  from index.mdx*/
+/* AliasCSS : These are classnames compiled  from screens.mdx*/
 
-@media (min-width : 992px){.lg-fdr-i{flex-direction: row !important}}
-.pt32px{padding-top:32px}
-.fb100p{flex-basis:100%}
-@media (min-width : 992px){.lg-fb50p{flex-basis:50%}}
-@media (min-width : 992px){.lg-asc{align-self: center}}
-@media (min-width : 992px){.lg-db{display: block}}
-@media (min-width : 992px){.lg-mla{margin-left: auto}}
-@media (min-width : 992px){.lg-mra{margin-right: auto}}
-.font-size12px{font-size:12px}
-.display-inline-block{display:inline-block}
-.c-red{color:red}
-.dib{display: inline-block}
+@media (min-width : 768px){.md-width500px{width:500px}}
+@media (min-width : 768px){.md-w500p{width:500%}}
