@@ -1,5 +1,5 @@
 
-import { Card, Cards, FileTree } from 'nextra/components'
+import { Card, Cards, FileTree, Callout } from 'nextra/components'
 
 # Getting Started
 
@@ -12,7 +12,7 @@ npm install --save-dev alias-css
 
 ### CDN 
 ```html
-<script defer src="https://cdn.jsdelivr.net/npm/alias-css/dist/aliascss.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/alias-css@latest/dist/aliascss.js"></script>
 ```
 
 ## Recommended way of using AlisaCSS
@@ -29,18 +29,21 @@ Then, create a `aliascss.config.js` file in your project root directory.
  The config file must have at least input and out property.
 
  Basic structure of config file
-```js
+```js copy  showLineNumbers filename="aliascss.config.js"
 export let config= {
-    input:'public/*.html',
+    input:['app/**/*.(jsx|tsx)', 'components/**/*.(jsx|tsx)'],
     output:{
-      location:'public/main.css',
+      location:'public/css/master.css',
       '--file':true,
     },
+    ...
 }
 ```
-Here, the file must export config object, input property accept glob pattern or array of glob pattern .
-Please note  it is recommended to create output file manually in order to avoid compile error.`--file`, will also generate css file by file.
-
+Here, the `aliascss.config.js` file must export config object with atleast input and output properties, input property accept glob pattern or array of glob pattern .
+`--file` set to true  will generate [filename].css for each and every file in their same file location.
+<Callout type="warning">
+You must create master.css file manually
+</Callout>
 Now, you can use easily create and compile the aliascss.
 
 ```shell
@@ -60,15 +63,15 @@ Now, you can use easily create and compile the aliascss.
     npx alias-css --config --watch --file
     ```
     Above command will create a master css file in the  output file mention in ` aliascss.config.js` and also creates 
-    css file for each file having valid aliascss class names at the same location of file with the same filename add with .css extension.
+    css file for each file having valid aliascss class names at the same location of file with the same filename added with .css extension.
     ###### For example if you have the following structure:
 
         <FileTree>
         <FileTree.Folder name="app" defaultOpen>
-            <FileTree.File name="page.js" />
-            <FileTree.File name="article.js" />
+            <FileTree.File name="page.jxs" />
+            <FileTree.File name="article.jxs" />
             <FileTree.Folder name="about" defaultOpen>
-            <FileTree.File name="page.js" />
+            <FileTree.File name="page.jxs" />
             </FileTree.Folder>
         </FileTree.Folder>
         </FileTree>
@@ -76,7 +79,7 @@ Now, you can use easily create and compile the aliascss.
         And aliascss.config.js 
         ```js
             export const config={
-                input:'app/**/*.js',
+                input:'app/**/*.jxs',
                 output:{
                   location:'public/css/app.css',
                   '--file':true
@@ -104,9 +107,9 @@ Now, you can use easily create and compile the aliascss.
   Now you can simply import the corresponding css file in your application which support components based css import like next.js / sveltekit 
 ###### Example , in Next.js app we can simply import the compile file
 
-  ` @ app/page.js`
+  ` @ app/page.jsx`
   ```jsx
-  import 'page.js.css'
+  import './page.jsx.css'
 
     export default function Home() {
         return (

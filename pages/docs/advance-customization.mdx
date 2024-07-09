@@ -1,0 +1,213 @@
+# Advanced Customization
+Using `aliascss.config.js` we can fully customize how aliascss work, infact you can create whole diffrent version of aliascss.
+
+### Compiler
+You can create your own compiler for each and every css properties or add new peoperties by extending the current 
+configuration file.
+```js file="aliasccs.config.js"
+export config={
+    
+    extend:{
+        background:{
+            alias:'bg',
+            values:['transparent:t:no-color']
+            compiler:(value)->value,
+        },
+        shadow:{
+            property:'box-shadow',
+            compiler:(value)=>{
+                value=value.slice(1);
+                const values={
+                    '3xl': ' 0px 32px 64px -12px var(--shadow-color,rgba(16, 24, 40, 0.14))',
+                    'xxxl': ' 0px 32px 64px -12px var(--shadow-color,rgba(16, 24, 40, 0.14))',
+                    '2xl': ' 0px 24px 48px -12px var(--shadow-color,rgba(16, 24, 40, 0.14))',
+                    'xxl': ' 0px 24px 48px -12px var(--shadow-color,rgba(16, 24, 40, 0.14))',
+                    'xl': ' 0px 20px 24px -4px var(--shadow-color,rgba(16, 24, 40, 0.14))',
+                    'lg': ' 0px 12px 16px -4px var(--shadow-color,rgba(16, 24, 40, 0.14))',
+                    'md': ' 0px 4px 8px -2px var(--shadow-color,rgba(16, 24, 40, 0.14))',
+                    'sm': ' 0px 1px 3px var(--shadow-color,rgba(16, 24, 40, 0.14))',
+                    'xs': ' 0px 1px 2px var(--shadow-color,rgba(16, 24, 40, 0.14))',
+                };
+                if(values.hasOwnProperty(value)) return values[value];
+            }
+         
+        }
+    },
+}
+
+
+```
+In above we create two compiler , `background` and `shadow`, `background` will overwrite default compiler
+ as it is valid css property. In the case of `shadow` , It will be  added as new compiler, since `shadow` is custom property i.e 
+not a valid css property, we need to provide property  to tell which css property this compiler is for.
+##### Compiler properties
+| Property|Type|Description|
+| -------|----|------|
+|`values`|`[Array]`|default or predefine values|
+|`alias`|`string`|create a alias for given property|
+|`compiler`|`function`|function that accept value portion and returns value replacement|
+|`property`|`string`|css-property  to be used incase compiler name is not cssproperty |
+
+
+### Customize media selector
+
+```js file="aliascss.config.js"
+export config={
+    ...
+    media:{
+        prefix:{
+            'xs':'@media (max-width : 600px)',
+        }
+    }
+    ...
+}
+
+```
+
+You can ovideide default media prefix selector to your own selector declaration. To Customise simply add media property
+on your `aliascss.config.js` file and add prefix object with prefix and media selector as per your need.
+
+### extractorFunction
+
+Aliascss compiler will look for classNames either in  `class` or `className` attribute. But sometimes you need want to use
+classnames in other places as well, for example for conditional uses of classNames. For that we can use extractorFunction, to tell aliasccs compiler 
+to compile the given classNames.
+
+```js file="aliascss.config.js"
+export config={
+    ...
+   extractorFunction:'x',// you can use x('aliascss-classNames')
+    ...
+}
+
+```
+
+Now in your project you can create a extractorFunction and use it.
+```jsx filr="Button.tsx" showLineNumbers
+import { useState } from "react";
+
+// just  create a simple extractorFunction which return the input
+const x=(y:string)=>y;
+export default function Button() {
+    let [isActive,SetActive]=useState(false)
+    return (
+        <div>
+            <button 
+            onClick={()=>SetActive(!isActive)}
+             className={
+                isActive?
+                x('bgc-primary100 border1-s-primary700 c-primary700')
+                :
+                x('bgc-gray200 c-gray700 b1px-s-gray700')}>Button</button>
+        </div>
+    );
+}
+```
+
+### Custom Color
+To add custom colors you can add custom property in `aliascss.config.js` file
+
+```js file="aliascss.config.js"
+export config={
+    ...
+   custom:{
+        colors:{
+            "themeTextColor":'var(--theme-text-color,#c3c3c3),
+            "themeBgcolor":'var(--theme-bg-color,#0e0e0e),
+            "primary":'rgba(124,143,234,1)'
+        }
+   
+   }
+    ...
+}
+
+```
+It is recommended to use camelCase for the name of custom color. Using '-' or '_' in the custom color name might cause error.
+
+### Predefine classnames
+
+It is very easy to export predefine className in the application using `prebuild` property in `aliascss.config.js`
+
+```js file="aliascss.config.js"
+export config={
+    ...
+   prebuild:{
+ 
+        'text-xl': 'font-size:20px;line-height:30px',
+        'text-lg': 'font-size:18px;line-height:28px',
+        'text-md': 'font-size:16px;line-height:24px',
+        'text-sm': 'font-size:14px;line-height:20px',
+        'text-xs': 'font-size:12px;line-height:18px',
+ 
+        'radius-xs':'border-radius:4px',
+ 
+        'flex-center':'display:flex;align-items:center;justify-content:center',
+    },
+    ...
+}
+
+```
+
+`prebuild className` can be easily used along with `selector`
+```html
+<h1 class="text-sm lg-text-xl --hover-text-md" >Hello World</h1>
+
+
+```
+
+### group
+ You can group valid aliascss classNames in a group which will be available globally in your project.
+  Note group cannot
+ be used with selector.
+
+ ```js file="aliascss.config.js"
+export config={
+    ...
+   group:{
+		'container':' df fdc bsbb aic flex-shrink-1 flex-grow-1 ',
+		'section':'flex-shrink0 bsbb',
+        'button-base':'bgc-gray300 oln --hover-bgc-gray400 bn --focus-ontline-none'
+	},
+    ...
+}
+
+```
+
+### ignore
+Some classNames can collide with other classNames if you are working with other css frameworks or 
+you own custom css. you can tell aliascss to ignore those classNames which can  collide with other.
+
+ ```js file="aliascss.config.js"
+export config={
+    ...
+   ignore:['color-primary fs-xl']
+    ...
+}
+
+```
+
+### statement
+`statement` property will allow you to inject css statement in every css file compile by aliascss. 
+It has global scope and available in every css file compile by aliascss.
+ ```js file="aliascss.config.js"
+export config={
+    ...
+   statement:`
+        :root{
+            --bg-dark-color:rgba(111,111,111,1) ;
+            --bg-light-color:rgba(21,21,21,1) ;
+            --outline-color:blue;
+    
+        }
+ 
+        body{
+            font-family:BlinkMacSystemFont , -apple-system ;
+        }
+ 
+	`,
+    ...
+}
+
+```
+Note:- Try to avoid using statement `property` when you are compile file by file i.e using '--file'.Instead inject 
+seperate css file in your root layout or master css file.

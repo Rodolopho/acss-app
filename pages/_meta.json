@@ -6,14 +6,18 @@
       "layout":"full"
      }
   },
-  "ui":{
+  "beta-ui":{
     "title":"Components",
     "type":"page",
     "display":"hidden"
+    
   },
   "docs": {
     "title":"Docs",
-    "type":"page"
+    "type":"page",
+    "theme":{
+      "layout":"full"
+     }
   },
   "color_ref": {
     "title":"Color_Reference",
@@ -27,4 +31,5 @@
     "type":"page"
     
   }
+ 
 }

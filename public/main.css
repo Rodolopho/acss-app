@@ -75,28 +75,6 @@
 .c-blue{color:blue}
 .fs3rem{font-size:3rem}
 
-/* AliasCSS : These are classnames compiled  from getting_started.mdx*/
-
-.color-gray500{color:#667085}
-
-/* AliasCSS : These are classnames compiled  from class-group.mdx*/
-
-.p32px{padding:32px}
-.container{display: flex} 
-.container{background-color: var(--main-color)} 
-.container{overflow: hidden} 
-.container{width:100%} 
-.container{height:100%} 
-.container{position: absolute} 
-.container{top:0} 
-.container{left:0} 
-.container{display: flex} 
-.container{align-items: center} 
-.container{align-content: center} 
-.container{justify-content: center} 
-.container{z-index:-100000} 
-
-
 /* AliasCSS : These are classnames compiled  from keyframes-guide.mdx*/
 
 .bgc-ecf0f1{background-color:#ecf0f1}
@@ -111,6 +89,7 @@
 .zi-100000{z-index:-100000}
 .adl0d2s{animation-delay:0.2s}
 .adl0d4s{animation-delay:0.4s}
+.p32px{padding:32px}
 .dot{border-radius:100%} 
 .dot{border:5px solid #555} 
 .dot{margin:10px} 
@@ -132,6 +111,27 @@
  100% {transform:scale(2) } 100% {border-color:#475467} 100% {transform:scale(2) } 100% {border-color:#475467}
 }
 
+/* AliasCSS : These are classnames compiled  from class-group.mdx*/
+
+.container{display: flex} 
+.container{background-color: var(--main-color)} 
+.container{overflow: hidden} 
+.container{width:100%} 
+.container{height:100%} 
+.container{position: absolute} 
+.container{top:0} 
+.container{left:0} 
+.container{display: flex} 
+.container{align-items: center} 
+.container{align-content: center} 
+.container{justify-content: center} 
+.container{z-index:-100000} 
+
+
+/* AliasCSS : These are classnames compiled  from getting_started.mdx*/
+
+.color-gray500{color:#667085}
+
 /* AliasCSS : These are classnames compiled  from screens.mdx*/
 
 @media (max-width : 576px){.xs-dn{display: none}}
@@ -140,6 +140,8 @@
 @media (max-width : 576px){.xs-fdc{flex-direction: column}}
 @media (max-width : 576px){.xs_p-flex-direction-column p{flex-direction:column}}
 @media (max-width : 576px){.xs_p-fdc p{flex-direction: column}}
+@media (min-width : 768px){.md-width500px{width:500px}}
+@media (min-width : 768px){.md-w500p{width:500%}}
 
 /* AliasCSS : These are classnames compiled  from stateAndSelector.mdx*/
 
@@ -155,12 +157,6 @@
 .color--grey-default{color: var(--grey-default)}
 .--hover-color--grey-alt:hover{color: var(--grey-alt)}
 
-/* AliasCSS : These are classnames compiled  from index.mdx*/
-
-.p16px32px{padding:16px 32px}
-.mh100vh{min-height:100vh}
-.bgc-0000000000d7{background-color:rgba(000,000,000,0.7)}
-
 /* AliasCSS : These are classnames compiled  from codify.jsx*/
 
 .jcsb{justify-content: space-between}
@@ -171,6 +167,12 @@
 .stroke-width1px{stroke-width:1px}
 .stroke-linecap-round{stroke-linecap:round}
 .stroke-linejoin-round{stroke-linejoin:round}
+
+/* AliasCSS : These are classnames compiled  from index.mdx*/
+
+.p16px32px{padding:16px 32px}
+.mh100vh{min-height:100vh}
+.bgc-0000000000d7{background-color:rgba(000,000,000,0.7)}
 
 /* AliasCSS : These are classnames compiled  from color.jsx*/
 
@@ -304,7 +306,10 @@
 .br8px0px0px8px{border-radius:8px 0px 0px 8px}
 .brt1px-s-gray300{border-right:1px solid #D0D5DD}
 
-/* AliasCSS : These are classnames compiled  from screens.mdx*/
+/* AliasCSS : These are classnames compiled  from accordion.mdx*/
 
-@media (min-width : 768px){.md-width500px{width:500px}}
-@media (min-width : 768px){.md-w500p{width:500%}}
+._all-bgc-red *{background-color:red}
+
+/* AliasCSS : These are classnames compiled  from accordion.mdx*/
+
+.fs200px{font-size:200px}

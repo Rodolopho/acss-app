@@ -3,6 +3,10 @@
   "basic": "Basic",
   "stateAndSelector":"CSS State and Selector",
   "screens":"Targeting Devices and Screens",
-  "variables":"CSS Variables"
+  "variables":"CSS Variables",
+  "class-group":"Class Group",
+  "keyframes-guide":"keyframes Guide /Animation",
+  "npm-guide":"Npm Guide",
+  "advance-customization":"Advanced Customization"
   
 }

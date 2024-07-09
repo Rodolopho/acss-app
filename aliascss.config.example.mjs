@@ -1,48 +1,3 @@
-# NPM Guide
- 
-With `npm` version  there are lots of exrta front-end / workflow feature we can use out of the box.
-
-```sh 
-npm install alias-css
-```
-
-
-Given command will compile all aliascss classNames of `public/*.html` files  to `public/css/acss.css` file
-
-```sh
-npx alias-css 'public/*.html' 'public/css/acss.css' 
-```
-
-> output css file must be there if not it should be created manually. 
-
->Guide-`npx alias-css 'input-glob-pattern' 'path/to/output/style.css'`
-
-### Watch for files
-
-```sh
-npx alias-css 'public/*.html' 'public/css/acss.css' --watch
-```
-
-@package.json
-```json copy filename="package.json"
-....
- "scripts": {
-    ...
-    "aliascss-build": "alias-css 'public/*.html' 'public/css/aliascss.css'",
-    "aliascss-watch": "aliascss-build --watch"
-  }
-  ...
-  
-  ```
-
-## aliascss.config.js
-`aliascss.config.js`  gives you more feature and power to the workflow.
-
-
-
-Basic structure of config file 
- 
-```javascript copy  showLineNumbers filename="aliascss.config.js"
 export let config= {
     // input glob pattern or array of glob pattern
     input:'public/*.html',
@@ -54,8 +9,6 @@ export let config= {
         "--file":true// output css file for each file
     },
 
-    //---------------Below this are all optional -------------------------
-    // Customize media prefix selector
     media:{
         prefix:{
             xs:'@media (max-width : 600px)'
@@ -131,7 +84,7 @@ export let config= {
         }
 
         body{
-            font-family:BlinkMacSystemFont , -apple-system , "Segoe UI"  ;
+            font-family:BlinkMacSystemFont , -apple-system , "Segoe UI" , Roboto , Oxygen , Ubuntu , Cantarell , "Fira Sans" , "Droid Sans" , "Helvetica Neue" , Helvetica , Arial , sans-serif , "Apple Color Emoji" , "Segoe UI Emoji" , "Segoe UI Symbol" , "Noto Color Emoji";
         }
 
 	`,
@@ -145,24 +98,3 @@ export let config= {
     // You wanna  tell aliascss to ignore it...
 	ignore:['fs12px', 'c-red'],// these classnames will be ignored
 }
-```
-
-Now you can do,
-
-`npx alias-css --config `
-
- **Watch**
-
-`npx alias-css --config --watch`
-
-@package.json
-```json copy filename="package.json"
-....
- "scripts": {
-    ...
-    "aliascss-build": "alias-css --config",
-    "aliascss-watch": "alias-css --config --watch"
-  }
-  ...
-  
-  ```
