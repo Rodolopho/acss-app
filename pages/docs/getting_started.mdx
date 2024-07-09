@@ -58,12 +58,9 @@ Now, you can use easily create and compile the aliascss.
   npx alias-css --config --watch
   ```
 
-  ###### To create css file per page you can use ` --file ` flag.
-  ```shell
-    npx alias-css --config --watch --file
-    ```
-    Above command will create a master css file in the  output file mention in ` aliascss.config.js` and also creates 
-    css file for each file having valid aliascss class names at the same location of file with the same filename added with .css extension.
+### when `--file` is set to `true`  
+    It will also creates css file for each file having valid aliascss class names at the same location of 
+    file with the same filename added with .css extension.
     ###### For example if you have the following structure:
 
         <FileTree>
@@ -93,13 +90,13 @@ Now, you can use easily create and compile the aliascss.
         ###### Folder structure becomes
              <FileTree>
             <FileTree.Folder name="app" defaultOpen>
-                <FileTree.File name="page.js" />
-                <FileTree.File name="page.js.css" />
-                <FileTree.File name="article.js" />
-                <FileTree.File name="article.js.css" />
+                <FileTree.File name="page.jxs" />
+                <FileTree.File name="page.jxs.css" />
+                <FileTree.File name="article.jxs" />
+                <FileTree.File name="article.jxs.css" />
                 <FileTree.Folder name="about" defaultOpen>
-                <FileTree.File name="page.js" />
-                <FileTree.File name="page.js.css" />
+                <FileTree.File name="page.jxs" />
+                <FileTree.File name="page.jxs.css" />
                 </FileTree.Folder>
                 </FileTree.Folder>
             </FileTree>

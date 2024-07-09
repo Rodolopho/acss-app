@@ -1,7 +1,8 @@
 {
   "getting_started": "Getting Started",
   "basic": "Basic",
-  "stateAndSelector":"CSS State and Selector",
+  "stateAndSelector":"CSS State & Element Selector",
+  "AttributeSelector":"Attribute Selector",
   "screens":"Targeting Devices and Screens",
   "variables":"CSS Variables",
   "class-group":"Class Group",

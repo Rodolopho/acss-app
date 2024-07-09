@@ -25,6 +25,13 @@
        <a href="mailto:var.bikram@gmail.com.com">var.bikram@gmail.com</a>
       </span>
     )
+  },
+  useNextSeoProps() {
+    return {
+      titleTemplate: '%s – Aliascss'
+    }
   }
 }
+
+
 export default theme;

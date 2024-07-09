@@ -10,6 +10,14 @@ AliasCSS provide to custom attribute  'class-[name]' to group valid aliasCSS cla
  other valid aliascss classNames. Only the valid aliasCSS classnames will be grouped.
  Once we have define classname by grouping valid AliasCSS classnames , we can use it anywhere throught the webpage.
 
+### group with selector
+we can also group classname for cssselector only by inserting aliascss selector followed by className inside `[]`;
+
+```html 
+<div  class="error" class-error="color-error500" class-error[--after]="bgc-error100 c-error700 b1px-s-error700" >
+  ...      
+</div>
+```
 import './class-group.mdx.css'
  
 export function Animation() {
