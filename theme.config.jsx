@@ -3,9 +3,9 @@
  const theme={
     logo:<Logo/>,
     project:{
-        link:'https://github.com/Rodolopho/alias-css'
+        link:'https://github.com/Rodolopho/aliascss'
     },
-    docsRepositoryBase: 'https://github.com/Rodolopho/alias-css',
+    docsRepositoryBase: 'https://github.com/Rodolopho/aliascss',
   head: (
     <>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
