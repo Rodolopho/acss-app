@@ -7,12 +7,12 @@ import { Card, Cards, FileTree, Callout } from 'nextra/components'
 
 ### NPM 
 ```
-npm install --save-dev alias-css
+npm install --save-dev aliascss
 ```
 
 ### CDN 
 ```html
-<script defer src="https://cdn.jsdelivr.net/npm/alias-css@latest/dist/aliascss.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/aliascss@latest/dist/aliascss.js"></script>
 ```
 
 ## Recommended way of using AlisaCSS
@@ -20,7 +20,7 @@ npm install --save-dev alias-css
 First install aliascss via npm,
 
 ```
-npm install --save-dev alias-css
+npm install --save-dev aliascss
 ```
 
 Then, create a `aliascss.config.js` file in your project root directory.
@@ -47,7 +47,7 @@ You must create master.css file manually
 Now, you can use easily create and compile the aliascss.
 
 ```shell
- npx alias-css --config
+ npx aliascss --config
   ```
 
   #### Watch for changes
@@ -55,7 +55,7 @@ Now, you can use easily create and compile the aliascss.
   ###### To watch and automatically compile , you can use  ` --watch ` flag.
 
   ```shell
-  npx alias-css --config --watch
+  npx aliascss --config --watch
   ```
 
 ### when `--file` is set to `true`  
@@ -85,7 +85,7 @@ Now, you can use easily create and compile the aliascss.
         Then, after running following command with `--file` set to true
 
         ```shell
-            npx aliascss-ts --config --watch
+            npx aliascss --config --watch
         ```
         ###### Folder structure becomes
              <FileTree>
@@ -121,7 +121,7 @@ Now, you can use easily create and compile the aliascss.
     ....
  "scripts": {
     ...
-    "aliascss-build": "alias-css --config",
+    "aliascss-build": "aliascss --config",
     "aliascss-watch": "aliascss-build --watch",
   }
   ...

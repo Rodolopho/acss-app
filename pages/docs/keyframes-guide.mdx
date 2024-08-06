@@ -2,11 +2,11 @@
 AliasCSS provide to custom attribute  'keyframes-[name]' which can be used to define CSS keyframes declaration.
 
 ```html 
-      <div  class="bgc-ecf0f1 oh w100p h100px pa t0 l0 df aic acc jcc zi-100000" 
+      <div  class="bgc-ecf0f1 oh w-100p h-100px pa t-0 l-0 df aic acc jcc zi-100000" 
         keyframes-loading="@100-transform-scale2 @100-border-color-gray600">
-            <span class="dot" class-dot="br100p b5px-solid-555 m10px an-loading adu0d6s atf-eio ada aici "></span>
-            <span class="dot adl0d2s"></span>
-            <span class="dot adl0d4s  "></span>
+            <span class="dot" class-dot="br-100p b-5px-solid-555 m-10px an-loading adu-0d6s atf-eio ada aici "></span>
+            <span class="dot adl-0d2s"></span>
+            <span class="dot adl-0d4s  "></span>
         </div>
 ```
 import './keyframes-guide.mdx.css'
@@ -32,10 +32,10 @@ export function Animation() {
 With using`keyframes-[name]`  we can define simple animation very easily
 ```html
 <!-- Flash -->
- <h1 keyframes-flash='@[0,50,100]-o1 @[25,75]-o0'  class="an-flash adu2s">Flash!</h1>
+ <h1 keyframes-flash='@[0,50,100]-o-1 @[25,75]-o-0'  class="an-flash adu2s">Flash!</h1>
 
  <!-- Flash using full sementaic className -->
- <h1 keyframes-flash='@[0,50,100]-opacity1 @[25,75]-opacity0'  class="animation-name-flash animation-duration2s">Flash!</h1>
+ <h1 keyframes-flash='@[0,50,100]-opacity-1 @[25,75]-opacity-0'  class="animation-name-flash animation-duration-2s">Flash!</h1>
 
 ```
 ``
@@ -44,6 +44,6 @@ E.g
 ``
 
 ```html
-<div keyframes-fadeOut="@0-opacity-1 @100-opacity-0" class="an-fadeOut adu1s">Fade Out</div>
+<div keyframes-fadeOut="@0-opacity-1 @100-opacity-0" class="an-fadeOut adu-1s">Fade Out</div>
 ```
 

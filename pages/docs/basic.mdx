@@ -11,12 +11,11 @@ and value in the form of class name. And you can use aliascss along with your cu
 Lets say , you want ` h1 ` element to have color  blue and font-size 3rem. we simply write class names to tell aliascss what property and value we want to
 apply using the class attribute of `h1` tag as given below. 
 ```html
-    <h1 class="color-blue font-size3rem">Hello, World</h1>
+    <h1 class="color-blue font-size-3rem">Hello, World</h1>
 ```    
 
 <Callout type="info" emoji="💡">
- ***Tips***: To make classname out of the basic  CSS property and value , simply replace `:` with `-`, for example `color:blue` => `color-blue`, `display:inline-block`=> `display-inline-block`. Incase
- of property which have length or numeric value just remove `:` i.e `width:100px` => `width100px`, `left:-100px` =>`left-100px`.
+ ***Tips***: To make classname out of the basic  CSS property and value , simply replace `:` with `-`, for example `color:blue` => `color-blue`, `display:inline-block`=> `display-inline-block`, `width:100px` => `width-100px`, `left:-100px` =>`left--100px`.
 </Callout>
 Here, we are applying style with class name, these class name also hold the property and value we want to apply. In short we are making class name out of css property and value we want to apply.
 i.e 
@@ -25,7 +24,7 @@ i.e
 ```
 Similarly we can also use short hand , we can replace `color` by `c` and `fs` for `font-size`, to make it short hand.
 ```html
-    <h1 class="c-blue fs3rem">Hello, World</h1>
+    <h1 class="c-blue fs-3rem">Hello, World</h1>
 ```  
 Both classnames(full-semantic classname and shorthand className) in the above example are doing exactly same thing and have same style applied.
 <Callout type="info" emoji="💡">
@@ -33,20 +32,21 @@ Both classnames(full-semantic classname and shorthand className) in the above ex
  using first letter of property followed by first letter after every `-` in property then followed by first letter of value, followed by first letter after every `-` in value if there is any.
  for example `display:inline-grid`=>`dig`, `font-weight:bold`=>`fwb`,`justify-content:space-between`=>`jcsb`.
  - If CSS value is numberic, length , color or more complex , normally we only use shorthand for property and leave value as it is.
- for example:`margin:100px`=>`m100px`,`color:red`=>`c-red`, `border:1px solid #cccccc`=>`b1px-solid-cccccc`.
+ for example:`margin:100px`=>`m100px||m-100px`,`color:red`=>`c-red`, `border:1px solid #cccccc`=>`b1px-solid-cccccc`.
 `.
 </Callout>
 
-<Callout type="warning">
- Note, using `-` before length or numeric based value with make value negative after compile if it accept negative value. for example
+<Callout type="info" emoji="💡">
+ Note, using `--` before length or numeric based value with make value negative.
  ```
- margin100px or m100px => margin:100px
- margin-100px or m-100px=>margin:-100px
- margin-100px100px-100px-100px or m-100px100px-100px-100px => margin: -100px 100px -100px -100px
- box-shadow1px-1px2px3px-red or bxs1px-1px2px3px-red  => box-shadow:1px -1px 2px 3px red
- box-shadow-1px0px2px-ebebeb or bxs-1px0px2px-ebebeb => box-shadow:-1px 0px 2px #ebebeb
- font-size16px or fs16px => font-size:16px
- font-size-24px or fs-24px => font-size:24px //still postive because font-size don't accepts - signed value
+ margin-100px or m-100px => margin:100px
+ margin--100px or m--100px=>margin:-100px
+ margin-100px-100px-100px-100px or m-100px-100px-100px-100px => margin: 100px 100px 100px 100px
+ margin-100px--100px-100px--100px or m-100px--100px-100px--100px => margin: 100px -100px 100px -100px
+ box-shadow-1px--1px-2px-3px-red or bxs-1px--1px-2px-3px-red  => box-shadow:1px -1px 2px 3px red
+ box-shadow--1px-0px-2px-ebebeb or bxs--1px-0px-2px-ebebeb => box-shadow:-1px 0px 2px #ebebeb
+ font-size-16px or fs-16px => font-size:16px
+ font-size--24px or fs--24px => font-size:-24px // Be carefull
  ```
 </Callout>
 
@@ -56,8 +56,8 @@ Both classnames(full-semantic classname and shorthand className) in the above ex
 | :------------ | :---------: | ----------: |
 | `display:flex`  |`display-flex  `| `df` or `d-f`         |
 | `list-style:none`     |   `list-style-none `  |    `lsn ` or `ls-n`|
-| `margin-left:32px` | `margin-left32px`            |   `ml32px`|
-| `margin-left:-32px` | `margin-left-32px`            |  ` ml-32px`|
+| `margin-left:32px` | `margin-left-32px`            |   `ml-32px`|
+| `margin-left:-32px` | `margin-left--32px`            |  ` ml--32px`|
 | `color:red`| `color-red`| `c-red`|
 | `border-color:#ccc`| `border-color-ccc`| `bc-ccc`|
 | `color:#e3e3e3`| `color-e3e3e3`| `c-e3e3e3`|
@@ -78,8 +78,8 @@ Both classnames(full-semantic classname and shorthand className) in the above ex
 - If property and value both are string then simply replace `:` with '-'. In some value of CSS properties , for example `background-position: right bottom`, 
 there are value that are string and has by space between, those space also should be replaced by `-`.
 ```
-display:flex=> display-flex or or d-f or df
-background-position: right bottom => background-position-right-bottom or bgprb 
+display:flex=> display-flex or d-f or df or display-f or d-flex
+background-position: right bottom => background-position-right-bottom or background-position-rb or bgp-right-bottom or bgprb or bgp-rb
 animation-timing-function: ease-in-out => animation-timing-function-ease-in-out or atf-eio or atfeio 
 ```
   

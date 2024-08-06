@@ -1,8 +1,8 @@
 import InputBox from './inputClassName.jsx'
-import {main}  from '../node_modules/alias-css/lib/index.js'
+import {main}  from '../node_modules/aliascss/lib/index.js'
 import './quickCompiler.jsx.css'
-import { HelpCircle } from 'react-feather';
-import SearchStaticClassNames from '../components/staticClassNames';
+// import { HelpCircle } from 'react-feather';
+// import SearchStaticClassNames from '../components/staticClassNames';
 import ModalSearch from './modalSearch.jsx';
 import { useState } from 'react'
 

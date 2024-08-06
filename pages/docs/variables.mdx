@@ -1,11 +1,15 @@
 ## CSS Variable 
-CSS variables can be in place of value. using `--var--` or `--` identifier after the property.
+CSS variables can be used in every className to every css-property. using `--var--` or `--` identifier after the property. The main diffrent 
+between them are with `--var--` you can use varaible name that startswith numeric character e.g `--1x:4px` but not 
+with '--'.
 |classname|shorthand|css|Remarks|
 |---------|---------|---|-------|
 |`color--var--name`|`c--var--name`|`color: var(--name)`|
 |`color--name`|`c--name`|`color: var(--name)`|
 |`width--var--side-bar-width`|`w--var--side-bar-width`| `width: var(--side-bar-width)`||
 |`width--side-bar-width`|`w--side-bar-width`| `width: var(--side-bar-width)`||
+|`width--var--24x`|`w--var--24x`|`width: var(--24x)`|
+|`width--24x`|`w--24x`||`Not Valid, variable name with number not supported with '--' use '--var--' instead`|
 
 **Example**
 ```html

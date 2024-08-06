@@ -1,11 +1,11 @@
 # Advanced Customization
 Using `aliascss.config.js` we can fully customize how aliascss work, infact you can create whole diffrent version of aliascss.
 
-### Compiler
-You can create your own compiler for each and every css properties or add new peoperties by extending the current 
-configuration file.
-```js file="aliasccs.config.js"
-export config={
+### `extend` : create your own compiler
+You can create your own compiler for each and every css properties or add new properties by extending the current 
+configuration file.Using extend you can create your version of AliasCSS which can be completely diffrent design sysytem.
+```js filename="aliasccs.config.js" 
+const config={
     
     extend:{
         background:{
@@ -34,7 +34,7 @@ export config={
         }
     },
 }
-
+export default config;
 
 ```
 In above we create two compiler , `background` and `shadow`, `background` will overwrite default compiler
@@ -49,10 +49,10 @@ not a valid css property, we need to provide property  to tell which css propert
 |`property`|`string`|css-property  to be used incase compiler name is not cssproperty |
 
 
-### Customize media selector
+### `media` Customize media selector
 
-```js file="aliascss.config.js"
-export config={
+```js filename="aliascss.config.js"
+const config={
     ...
     media:{
         prefix:{
@@ -61,29 +61,29 @@ export config={
     }
     ...
 }
-
+export default config;
 ```
 
 You can ovideide default media prefix selector to your own selector declaration. To Customise simply add media property
 on your `aliascss.config.js` file and add prefix object with prefix and media selector as per your need.
 
-### extractorFunction
+### `extractorFunction` 
 
 Aliascss compiler will look for classNames either in  `class` or `className` attribute. But sometimes you need want to use
 classnames in other places as well, for example for conditional uses of classNames. For that we can use extractorFunction, to tell aliasccs compiler 
 to compile the given classNames.
 
-```js file="aliascss.config.js"
-export config={
+```js filename="aliascss.config.js"
+const config={
     ...
    extractorFunction:'x',// you can use x('aliascss-classNames')
     ...
 }
-
+export default config;
 ```
 
 Now in your project you can create a extractorFunction and use it.
-```jsx filr="Button.tsx" showLineNumbers
+```jsx filename="Button.tsx" showLineNumbers
 import { useState } from "react";
 
 // just  create a simple extractorFunction which return the input
@@ -102,13 +102,51 @@ export default function Button() {
         </div>
     );
 }
+
 ```
 
-### Custom Color
+### `importModuleAs` : Use Aliascss for CSS module
+
+CSS Module will be vey helful to avoid className conflicts and avoid css declartion order isuues. Many frontend frameworks
+support importing css module which will be scoped to given component or page. 
+ By using simple trick we can make aliascss to work as a module and make css scoped.
+
+```js filename="aliascss.config.js"
+const config={
+    ...
+    '--module':true,
+   importModuleAs:'x',// you can use x['aliascss-classNames']
+    ...
+}
+export default config;
+```
+
+Now in your project you can create a extractorFunction and use it.
+```jsx filename="Button.tsx" showLineNumbers
+import { useState } from "react";
+import x from './Button.tsx.module.css' // note when module is used aliascss will create a css file with module.css to current filename 
+
+export default function Button() {
+    let [isActive,SetActive]=useState(false)
+    return (
+        <div>
+            <button 
+            onClick={()=>SetActive(!isActive)}
+             className={
+                isActive?
+                x['bgc-primary100 border1-s-primary700 c-primary700']
+                :
+                x['bgc-gray200 c-gray700 b1px-s-gray700']}>Button</button>
+        </div>
+    );
+}
+```
+
+### Custom Colors
 To add custom colors you can add custom property in `aliascss.config.js` file
 
 ```js file="aliascss.config.js"
-export config={
+const config={
     ...
    custom:{
         colors:{
@@ -120,16 +158,16 @@ export config={
    }
     ...
 }
-
+export default config;
 ```
 It is recommended to use camelCase for the name of custom color. Using '-' or '_' in the custom color name might cause error.
 
-### Predefine classnames
+### `prebuild` Predefine classnames
 
 It is very easy to export predefine className in the application using `prebuild` property in `aliascss.config.js`
 
 ```js file="aliascss.config.js"
-export config={
+const config={
     ...
    prebuild:{
  
@@ -145,7 +183,7 @@ export config={
     },
     ...
 }
-
+export default config;
 ```
 
 `prebuild className` can be easily used along with `selector`
@@ -155,13 +193,13 @@ export config={
 
 ```
 
-### group
+### `group` : Group AliasCSS classNames
  You can group valid aliascss classNames in a group which will be available globally in your project.
   Note group cannot
  be used with selector.
 
  ```js file="aliascss.config.js"
-export config={
+const config={
     ...
    group:{
 		'container':' df fdc bsbb aic flex-shrink-1 flex-grow-1 ',
@@ -170,10 +208,10 @@ export config={
 	},
     ...
 }
-
+export default config;
 ```
 
-### ignore
+### `ignore` : Tell AliasCSS to ignore className
 Some classNames can collide with other classNames if you are working with other css frameworks or 
 you own custom css. you can tell aliascss to ignore those classNames which can  collide with other.
 
@@ -183,14 +221,14 @@ export config={
    ignore:['color-primary fs-xl']
     ...
 }
-
+export default config;
 ```
 
-### statement
+### `statement` : Add global css statement :
 `statement` property will allow you to inject css statement in every css file compile by aliascss. 
 It has global scope and available in every css file compile by aliascss.
  ```js file="aliascss.config.js"
-export config={
+const config={
     ...
    statement:`
         :root{
@@ -207,7 +245,7 @@ export config={
 	`,
     ...
 }
-
+export default config;
 ```
 Note:- Try to avoid using statement `property` when you are compile file by file i.e using '--file'.Instead inject 
 seperate css file in your root layout or master css file.

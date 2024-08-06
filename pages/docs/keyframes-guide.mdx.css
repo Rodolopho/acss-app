@@ -1,25 +1,37 @@
 .bgc-ecf0f1{background-color:#ecf0f1}
 .oh{overflow: hidden}
-.w100p{width:100%}
-.h100p{height:100%}
+.w-100p{width: 100%}
+.h-100px{height: 100px}
 .pa{position: absolute}
-.t0{top:0}
-.l0{left:0}
+.t-0{top:-0}
+.l-0{left:-0}
 .df{display: flex}
 .aic{align-items: center}
 .acc{align-content: center}
 .jcc{justify-content: center}
 .zi-100000{z-index:-100000}
-.adl0d2s{animation-delay:0.2s}
-.adl0d4s{animation-delay:0.4s}
+.adl-0d2s{animation-delay: 0.2s}
+.adl-0d4s{animation-delay: 0.4s}
 .mt32px{margin-top:32px}
 .p32px{padding:32px}
 .pr{position: relative}
-.dot{border-radius:100%} 
+.w100p{width:100%}
+.h100p{height:100%}
+.t0{top:0}
+.l0{left:0}
+.adl0d2s{animation-delay:0.2s}
+.adl0d4s{animation-delay:0.4s}
+.an-flash{animation-name:flash}
+.adu2s{animation-duration:2s}
+.animation-name-flash{animation-name:flash}
+.animation-duration-2s{animation-duration: 2s}
+.an-fadeOut{animation-name:fadeOut}
+.adu-1s{animation-duration: 1s}
+.dot{border-radius: 100%} 
 .dot{border:5px solid #555} 
-.dot{margin:10px} 
+.dot{margin:-10px} 
 .dot{animation-name:loading} 
-.dot{animation-duration:0.6s} 
+.dot{animation-duration: 0.6s} 
 .dot{animation-timing-function:ease-in-out} 
 .dot{animation-direction: alternate} 
 .dot{animation-iteration-count: infinite} 
@@ -34,4 +46,10 @@
 
 @keyframes loading{
  100% {transform:scale(2) } 100% {border-color:#475467} 100% {transform:scale(2) } 100% {border-color:#475467}
+}
+@keyframes flash{
+ 0%,50%,100% {opacity: 1} 25%,75% {opacity: 0} 0%,50%,100% {opacity: 1} 25%,75% {opacity: 0}
+}
+@keyframes fadeOut{
+ 0% {opacity: 1} 100% {opacity: 0}
 }

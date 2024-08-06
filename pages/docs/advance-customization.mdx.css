@@ -1,0 +1,3 @@
+.text-sm{font-size:14px;line-height:20px}
+@media (min-width : 992px){.lg-text-xl{font-size:20px;line-height:30px}}
+.--hover-text-md:hover{font-size:16px;line-height:24px}

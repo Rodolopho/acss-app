@@ -3,24 +3,24 @@
 With `npm` version  there are lots of exrta front-end / workflow feature we can use out of the box.
 
 ```sh 
-npm install alias-css
+npm install --save-dev aliascss
 ```
 
 
 Given command will compile all aliascss classNames of `public/*.html` files  to `public/css/acss.css` file
 
 ```sh
-npx alias-css 'public/*.html' 'public/css/acss.css' 
+npx aliascss 'public/*.html' 'public/css/acss.css' 
 ```
 
 > output css file must be there if not it should be created manually. 
 
->Guide-`npx alias-css 'input-glob-pattern' 'path/to/output/style.css'`
+>Guide-`npx aliascss 'input-glob-pattern' 'path/to/output/style.css'`
 
 ### Watch for files
 
 ```sh
-npx alias-css 'public/*.html' 'public/css/acss.css' --watch
+npx aliascss 'app/**/*.(tsx|jsx)' 'public/css/acss.css' --watch
 ```
 
 @package.json
@@ -28,7 +28,7 @@ npx alias-css 'public/*.html' 'public/css/acss.css' --watch
 ....
  "scripts": {
     ...
-    "aliascss-build": "alias-css 'public/*.html' 'public/css/aliascss.css'",
+    "aliascss-build": "aliascss 'public/*.html' 'public/css/aliascss.css'",
     "aliascss-watch": "aliascss-build --watch"
   }
   ...
@@ -43,9 +43,9 @@ npx alias-css 'public/*.html' 'public/css/acss.css' --watch
 Basic structure of config file 
  
 ```javascript copy  showLineNumbers filename="aliascss.config.js"
-export let config= {
+const config= {
     // input glob pattern or array of glob pattern
-    input:'public/*.html',
+    input:['app/**/*.(tsx|jsx)', 'components/**/*.(tsx|jsx)','public/*.html'],
 
     // Output css file , file must exist or should be created manully if file doesnot exist
     output:{
@@ -61,16 +61,28 @@ export let config= {
             xs:'@media (max-width : 600px)'
         }
     },
+    // support for css Module
+    '--module':true,
+    
+    // import module as i.e import x form 'page.module.css'
+    importModuleAs:'x',
+
+    // uncomment minify is true if you want main css file to be minified by cssnano
+
+    // minify:true,
+
     // name of extractorFunction
     extractorFunction:"x",
-        
+     
+     // prefix aliascss  ac-bgc-red ac--hover-color-red
+    // prefix:'ac',
 
     //Truncate the css file , you should let it true unless you know what your are doing
     truncate:true,
     	
      //ADD Custom color Value
 	custom:{
-		color:{
+		colors:{
             //custom name for color value  must not have  "-" or "_" to work perfectly.
 			'main':"rgb(12,23,45)",// now you can use bgc-main
 			'theme':'#c6c6c6'
@@ -87,6 +99,11 @@ export let config= {
                 return value;
             }
         },
+        'txt-color':{
+            proerty:'color',  
+            extend:'color' // now you can use txt-color in place color 
+        },
+
         // Now you can use shadow as className property e.g shadow-xs 
         'shadow':{
             property:'box-shadow',
@@ -145,23 +162,24 @@ export let config= {
     // You wanna  tell aliascss to ignore it...
 	ignore:['fs12px', 'c-red'],// these classnames will be ignored
 }
+export default config;
 ```
 
 Now you can do,
 
-`npx alias-css --config `
+`npx aliascss --config `
 
  **Watch**
 
-`npx alias-css --config --watch`
+`npx aliascss --config --watch`
 
 @package.json
 ```json copy filename="package.json"
 ....
  "scripts": {
     ...
-    "aliascss-build": "alias-css --config",
-    "aliascss-watch": "alias-css --config --watch"
+    "aliascss-build": "aliascss --config",
+    "aliascss-watch": "aliascss --config --watch"
   }
   ...
   

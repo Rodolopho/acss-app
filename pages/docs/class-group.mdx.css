@@ -16,3 +16,8 @@
 .container{justify-content: center} 
 .container{z-index:-100000} 
 
+.error{color:#F04438} 
+.error::after{background-color:#FEE4E2} 
+.error::after{color:#B42318} 
+.error::after{border:1px solid #B42318} 
+

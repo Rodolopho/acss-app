@@ -68,6 +68,10 @@
 .fs12px{font-size:12px}
 .dib{display: inline-block}
 
+/* AliasCSS : These are classnames compiled  from accordion.mdx*/
+
+.fs200px{font-size:200px}
+
 /* AliasCSS : These are classnames compiled  from basic.mdx*/
 
 .color-blue{color:blue}
@@ -75,11 +79,44 @@
 .c-blue{color:blue}
 .fs3rem{font-size:3rem}
 
+/* AliasCSS : These are classnames compiled  from advance-customization.mdx*/
+
+.text-sm{font-size:14px;line-height:20px}
+@media (min-width : 992px){.lg-text-xl{font-size:20px;line-height:30px}}
+.--hover-text-md:hover{font-size:16px;line-height:24px}
+
+/* AliasCSS : These are classnames compiled  from class-group.mdx*/
+
+.p32px{padding:32px}
+.container{display: flex} 
+.container{background-color: var(--main-color)} 
+.container{overflow: hidden} 
+.container{width:100%} 
+.container{height:100%} 
+.container{position: absolute} 
+.container{top:0} 
+.container{left:0} 
+.container{display: flex} 
+.container{align-items: center} 
+.container{align-content: center} 
+.container{justify-content: center} 
+.container{z-index:-100000} 
+
+.error{color:#F04438} 
+.error::after{background-color:#FEE4E2} 
+.error::after{color:#B42318} 
+.error::after{border:1px solid #B42318} 
+
+
+/* AliasCSS : These are classnames compiled  from getting_started.mdx*/
+
+.color-gray500{color:#667085}
+
 /* AliasCSS : These are classnames compiled  from keyframes-guide.mdx*/
 
 .bgc-ecf0f1{background-color:#ecf0f1}
 .oh{overflow: hidden}
-.h100p{height:100%}
+.h100px{height:100px}
 .pa{position: absolute}
 .t0{top:0}
 .l0{left:0}
@@ -89,7 +126,13 @@
 .zi-100000{z-index:-100000}
 .adl0d2s{animation-delay:0.2s}
 .adl0d4s{animation-delay:0.4s}
-.p32px{padding:32px}
+.h100p{height:100%}
+.an-flash{animation-name:flash}
+.adu2s{animation-duration:2s}
+.animation-name-flash{animation-name:flash}
+.animation-duration2s{animation-duration:2s}
+.an-fadeOut{animation-name:fadeOut}
+.adu1s{animation-duration:1s}
 .dot{border-radius:100%} 
 .dot{border:5px solid #555} 
 .dot{margin:10px} 
@@ -110,27 +153,12 @@
 @keyframes loading{
  100% {transform:scale(2) } 100% {border-color:#475467} 100% {transform:scale(2) } 100% {border-color:#475467}
 }
-
-/* AliasCSS : These are classnames compiled  from class-group.mdx*/
-
-.container{display: flex} 
-.container{background-color: var(--main-color)} 
-.container{overflow: hidden} 
-.container{width:100%} 
-.container{height:100%} 
-.container{position: absolute} 
-.container{top:0} 
-.container{left:0} 
-.container{display: flex} 
-.container{align-items: center} 
-.container{align-content: center} 
-.container{justify-content: center} 
-.container{z-index:-100000} 
-
-
-/* AliasCSS : These are classnames compiled  from getting_started.mdx*/
-
-.color-gray500{color:#667085}
+@keyframes flash{
+ 0%,50%,100% {opacity:1} 25%,75% {opacity:0} 0%,50%,100% {opacity:1} 25%,75% {opacity:0}
+}
+@keyframes fadeOut{
+ 0% {opacity: 1} 100% {opacity: 0}
+}
 
 /* AliasCSS : These are classnames compiled  from screens.mdx*/
 
@@ -142,6 +170,11 @@
 @media (max-width : 576px){.xs_p-fdc p{flex-direction: column}}
 @media (min-width : 768px){.md-width500px{width:500px}}
 @media (min-width : 768px){.md-w500p{width:500%}}
+
+/* AliasCSS : These are classnames compiled  from AttributeSelector.mdx*/
+
+.\[data-state\=close\]-display-none[data-state="close"]{display:none}
+.\[class\~\=code\]-font-mono[class~="code"]{font: mono}
 
 /* AliasCSS : These are classnames compiled  from stateAndSelector.mdx*/
 
@@ -173,35 +206,20 @@
 .p16px32px{padding:16px 32px}
 .mh100vh{min-height:100vh}
 .bgc-0000000000d7{background-color:rgba(000,000,000,0.7)}
-
-/* AliasCSS : These are classnames compiled  from color.jsx*/
-
-.fs10px{font-size:10px}
-.cc{cursor: copy}
-.br8px{border-radius:8px}
-.p10px{padding:10px}
-@media (min-width : 768px){.md-m10px{margin:10px}}
-@media (min-width : 768px){.md-g8px{gap:8px}}
-.w72px{width:72px}
-.h72px{height:72px}
-.br9px{border-radius:9px}
-@media (min-width : 768px){.md-w100px{width:100px}}
-@media (min-width : 768px){.md-h100px{height:100px}}
-.text-xs{font-size:12px;line-height:18px}
-.fw5{font-weight: 500}
+.\[theme\=dark\]-bgc-gray300[theme="dark"]{background-color:#D0D5DD}
 
 /* AliasCSS : These are classnames compiled  from inputClassName.jsx*/
 
 .jc-sb{justify-content:space-between}
 .p8px12px{padding:8px 12px}
 .bgc-fff{background-color:#fff}
+.br8px{border-radius:8px}
 .b1px-s-gray300{border:1px solid #D0D5DD}
 .shadow-xs{box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05)}
 .ol-n{outline:none}
 .b-n{border:none}
 .-fv-bxsn:focus-visible{box-shadow: none}
 .-fv-bn:focus-visible{border:none}
-.text-sm{font-size:14px;line-height:20px}
 .fw-4{font-weight:400}
 .c-gray500{color:#667085}
 .button-sm{display:inline-flex;justify-content:center;align-items:center;gap:8px;padding:8px 14px;border-radius:8px;box-sizing:border-box}
@@ -238,6 +256,8 @@
 .fd-c{flex-direction:column}
 .p4px10px4px4px{padding:4px 10px 4px 4px}
 .bgc-blue50{background-color:#EFF8FF}
+.text-xs{font-size:12px;line-height:18px}
+.fw5{font-weight: 500}
 .wxc{width:max-content}
 .g12px{gap:12px}
 .p2px10px{padding:2px 10px}
@@ -306,10 +326,61 @@
 .br8px0px0px8px{border-radius:8px 0px 0px 8px}
 .brt1px-s-gray300{border-right:1px solid #D0D5DD}
 
-/* AliasCSS : These are classnames compiled  from accordion.mdx*/
+/* AliasCSS : These are classnames compiled  from color.jsx*/
 
-._all-bgc-red *{background-color:red}
+.fs10px{font-size:10px}
+.cc{cursor: copy}
+.p10px{padding:10px}
+@media (min-width : 768px){.md-m10px{margin:10px}}
+@media (min-width : 768px){.md-g8px{gap:8px}}
+.w72px{width:72px}
+.h72px{height:72px}
+.br9px{border-radius:9px}
+@media (min-width : 768px){.md-w100px{width:100px}}
+@media (min-width : 768px){.md-h100px{height:100px}}
 
-/* AliasCSS : These are classnames compiled  from accordion.mdx*/
+/* AliasCSS : These are classnames compiled  from quickCompiler.jsx*/
 
-.fs200px{font-size:200px}
+.bgc-blue500{background-color:#2E90FA}
+
+/* AliasCSS : These are classnames compiled  from quickCompiler.jsx*/
+
+.c-fff{color:#fff}
+
+/* AliasCSS : These are classnames compiled  from staticClassNames.jsx*/
+
+.bgc-gray300{background-color:#D0D5DD}
+
+/* AliasCSS : These are classnames compiled  from staticClassNames.jsx*/
+
+.bgc-gray200{background-color:#EAECF0}
+
+/* AliasCSS : These are classnames compiled  from staticClassNames.jsx*/
+
+._li-nc-2n-bgc-gray100 li:nth-child(2n){background-color:#F2F4F7}
+
+/* AliasCSS : These are classnames compiled  from basic.mdx*/
+
+.fs-3rem{font-size: 3rem}
+
+/* AliasCSS : These are classnames compiled  from basic.mdx*/
+
+.font-size-3rem{font-size: 3rem}
+
+/* AliasCSS : These are classnames compiled  from stateAndSelector.mdx*/
+
+._p-fs-14px p{font-size: 14px}
+
+/* AliasCSS : These are classnames compiled  from keyframes-guide.mdx*/
+
+.animation-duration-2s{animation-duration: 2s}
+.adu-1s{animation-duration: 1s}
+
+/* AliasCSS : These are classnames compiled  from keyframes-guide.mdx*/
+
+.w-100p{width: 100%}
+.h-100px{height: 100px}
+.t-0{top:-0}
+.l-0{left:-0}
+.adl-0d2s{animation-delay: 0.2s}
+.adl-0d4s{animation-delay: 0.4s}

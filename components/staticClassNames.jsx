@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import './staticClassNames.jsx.css'
 import { Search } from 'react-feather';
-import { staticClassNames } from '../node_modules/alias-css/lib/index'
+import { staticClassNames } from '../node_modules/aliascss/lib/index'
 
 
 export default function SearchStaticClassName(){
@@ -50,8 +50,8 @@ export default function SearchStaticClassName(){
    
            { !! Object.keys(classNames).length &&  ( 
              <div 
-            class=" zi12345 b1px-s-gray300 w100p p8px12px l0px t100p bgc-fff xh60vh  mw320px oya shadow-md mt2px br8px">
-            <ul class="p0px m0px lsn  text-md _li-nc-2n-bgc-gray50">
+            class=" zi12345 b1px-s-gray300 w100p p8px12px l0px t100p bgc-gray200 xh60vh  mw320px oya shadow-md mt2px br8px">
+            <ul class="p0px m0px lsn  text-md _li-nc-2n-bgc-gray100">
 
                 {Object.keys(classNames).map((key,i)=>(
                     <li class="df aic jcsb p8px12px  w100p" key={i}>
