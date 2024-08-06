@@ -1,21 +1,24 @@
 import { Sandpack } from "@codesandbox/sandpack-react"
 import { useTheme, ThemeProvider } from 'next-themes'
 
-import React, {useState}from 'react'
+import React, {useState, useEffect}from 'react'
 
 import './index.mdx.css'
 
 export default function Index() {
   // const { theme, setTheme,resolvedTheme } = useTheme()
   const [theme, setTheme] = useState('light')
+  useEffect(()=>{
+    setTheme(document.documentElement.classList.contains('dark')?'dark':'light')
+  },[])
   return (
     <ThemeProvider>
-    <div className="p16px32px mh100vh bgc-0000000000d7">
+    <div className="p16px32px mh100vh bgc-0000000000d7 --is(_html--has(_.dark))-bgc-red">
       <div style={{marginBottom:'10px'}}>
       <label style={{color:'white', marginRight:'10px'}}>Editor Theme</label>
         <select onChange={(e)=>setTheme(e.target.value)} style={{padding:'auto 12px',borderRadius:'5px','border':'1px solid white'}}>
-          <option  value="light" default>light</option>
-          <option  value="dark" default>dark</option>
+          <option  value="light" >light</option>
+          <option  value="dark" selected={(theme==='dark')?'selected':''}>dark</option>
         </select>
       </div>
     
@@ -30,6 +33,7 @@ export default function Index() {
             editorHeight: 700, // default - 300
              editorWidthPercentage: 60, // default - 50
              showNavigator: true,
+             copyContent:true,
          }}
         
 

@@ -4,6 +4,7 @@
   "stateAndSelector":"CSS State & Element Selector",
   "AttributeSelector":"Attribute Selector",
   "screens":"Targeting Devices and Screens",
+  "andIndentifier":"Magic '&' Identifier",
   "variables":"CSS Variables",
   "class-group":"Class Group",
   "keyframes-guide":"keyframes Guide /Animation",

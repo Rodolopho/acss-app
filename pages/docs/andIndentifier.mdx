@@ -1,0 +1,30 @@
+# Magic `&` Identifier
+
+### Sepcial `&` character in className
+
+By default in AliasCSS the Element selector or Pseudo Element selector identifier used, are applied after the className i.e they are 
+scoped to given className i.e in`_div-bgc-red` className `div` selector follows className `_div-bgc-red div {...}`, what if you want 
+the `div` selector to come before the give class `_div-bgc-red`  like `div _div-bgc-red{...}`. To acheive same feature, you can 
+use `&` at the point where you want the selector to come before the className.
+```html
+    <h1 class="_div&-bgc-red">Hello World!</h1>
+``` 
+```css
+ div ._div\&-bgc-red{
+    background-color:red
+ }
+```
+##### Reallife usecase Example
+```html
+    <div class="--is(_html[class~=dark])&-bgc--dark-bg-color">
+        .......
+    </div>
+``` 
+```css
+ :is( html[class~="dark"]) .--is\(_html\[class\~\=dark\]\)\&-bgc--dark-bg-color{
+    background-color: var(--dark-bg-color)
+    }
+ 
+ ```
+
+ 
