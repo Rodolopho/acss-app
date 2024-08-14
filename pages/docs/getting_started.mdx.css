@@ -1,2 +1,2 @@
 .fs12px{font-size:12px}
-.color-gray500{color:#667085}
+.color-gray500{color:var(--gray500,#667085)}

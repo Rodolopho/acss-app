@@ -1,7 +1,3 @@
-.mt32px{margin-top:32px}
-.df{display: flex}
-.p32px{padding:32px}
-.pr{position: relative}
 .container{display: flex} 
 .container{background-color: var(--main-color)} 
 .container{overflow: hidden} 
@@ -14,10 +10,14 @@
 .container{align-items: center} 
 .container{align-content: center} 
 .container{justify-content: center} 
-.container{z-index:-100000} 
+.container{z-index:100000} 
 
-.error{color:#F04438} 
-.error::after{background-color:#FEE4E2} 
-.error::after{color:#B42318} 
-.error::after{border:1px solid #B42318} 
+.error{color:var(--error500,#F04438)} 
+.error::after{background-color:var(--error100,#FEE4E2)} 
+.error::after{color:var(--error700,#B42318)} 
+.error::after{border:1px solid var(--error700,#B42318)} 
 
+.mt32px{margin-top:32px}
+.df{display: flex}
+.p32px{padding:32px}
+.pr{position: relative}

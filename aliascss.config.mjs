@@ -1,4 +1,4 @@
-export const config={
+ const config={
     input:['pages/**/*.mdx','components/**/*.(jsx|mdx)'],
     output:{
         '--file':true,
@@ -6,3 +6,5 @@ export const config={
 
     }
 }
+
+export default config;

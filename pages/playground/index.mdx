@@ -1,5 +1,10 @@
-import { Sandpack } from "@codesandbox/sandpack-react"
+import { Sandpack,useActiveCode} from "@codesandbox/sandpack-react"
 import { useTheme, ThemeProvider } from 'next-themes'
+import Editor from '../../components/editor'
+
+
+
+
 
 import React, {useState, useEffect}from 'react'
 
@@ -8,23 +13,32 @@ import './index.mdx.css'
 export default function Index() {
   // const { theme, setTheme,resolvedTheme } = useTheme()
   const [theme, setTheme] = useState('light')
+  const [convert, setConvert] = useState(false)
+
+  // const [code, updateCode] = useActiveCode()
   useEffect(()=>{
     setTheme(document.documentElement.classList.contains('dark')?'dark':'light')
   },[])
+  
   return (
     <ThemeProvider>
-    <div className="p16px32px mh100vh bgc-0000000000d7 --is(_html--has(_.dark))-bgc-red">
-      <div style={{marginBottom:'10px'}}>
+    { !!convert && <Editor setConvert={setConvert} />}
+    <div className="p16px-32px mh100vh bgc-0000000000d7 ">
+      <div  class="df g32px aic" style={{marginBottom:'10px'}}>
+      <div>
       <label style={{color:'white', marginRight:'10px'}}>Editor Theme</label>
         <select onChange={(e)=>setTheme(e.target.value)} style={{padding:'auto 12px',borderRadius:'5px','border':'1px solid white'}}>
           <option  value="light" >light</option>
           <option  value="dark" selected={(theme==='dark')?'selected':''}>dark</option>
         </select>
+        </div>
+        <button onClick={()=>setConvert(!convert)} class="button-xs text-xs -h-c-gray100 -h-fwb c-fff b-1px-s-fff">Convert</button>
       </div>
     
         <Sandpack
         template="static"
         theme={theme}
+    
 
         options={{
              showLineNumbers: true, // default - true
@@ -34,27 +48,22 @@ export default function Index() {
              editorWidthPercentage: 60, // default - 50
              showNavigator: true,
              copyContent:true,
+              externalResources: ["https://cdn.jsdelivr.net/npm/aliascss@latest/dist/aliascss.js","https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"]
          }}
+          
         
 
         files={{
-            "index.html":`<!DOCTYPE html>
- <html>
- <head>
-   <title>AliasCSS Playground</title>
-   <meta charset="UTF-8" />
-   <link rel="stylesheet" href="/styles.css" />
-   <script defer src="https://cdn.jsdelivr.net/npm/aliascss@latest/dist/aliascss.js"></script>
- </head>
- <body class="[theme=dark]-bgc-gray300" theme="${theme}">
-   <h1 class="">Hello world</h1>
- </body>
-
- </html>`
+            "index.html":`<!-- AliasCSS and alpineJs is already install for your experiments use -->
+ <h1 x-data="{ message: 'I ❤️ Alpine' }" x-text="message"></h1>
+ <h1 class="--after-content-I_❤️_AliasCSS"></h1>`
         }}
         />
+        
+
     </div>
     
     </ThemeProvider>
   )
+
 }

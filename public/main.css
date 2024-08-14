@@ -1,7 +1,6 @@
 
-/* AliasCSS : These are classnames compiled  from color_ref.mdx*/
-
-.p0px32px{padding:0px 32px}
+/* Start :-----------ACSS color_ref.mdx------------------------*/
+.p0px32px{padding:0px32px}
 .mt32px{margin-top:32px}
 .bgc-2552552550d8{background-color:rgba(255,255,255,0.8)}
 .w150px{width:150px}
@@ -11,15 +10,15 @@
 .zi1234{z-index:1234}
 .btm0px{bottom:0px}
 .r32px{right:32px}
-.shadow-xl{box-shadow: 0px 20px 24px -4px rgba(16, 24, 40, 0.08), 0px 8px 8px -4px rgba(16, 24, 40, 0.03)}
+.shadow-xl{box-shadow:var(--shadow-xl, 0px 20px 24px -4px rgba(16, 24, 40, 0.08), 0px 8px 8px -4px rgba(16, 24, 40, 0.03))}
 .mb32px{margin-bottom:32px}
 .br16px{border-radius:16px}
-.p8px16px{padding:8px 16px}
-.b1px-s-blue400{border:1px solid #53B1FD}
+.p8px16px{padding:8px16px}
+.b1px-s-blue400{border:1px solid var(--blue400,#53B1FD)}
 .text-xl{font-size:20px;line-height:30px}
 .-fo-bn:focus{border:none}
 .-fo-oln:focus{outline:none}
-.c-gray600{color:#475467}
+.c-gray600{color:var(--gray600,#475467)}
 .bgc-inherit{background-color:inherit}
 .g32px{gap:32px}
 .xw1280px{max-width:1280px}
@@ -33,8 +32,8 @@
 .flex-shrink0{flex-shrink:0}
 .t--var--aside-top{top: var(--aside-top)}
 .-sb-w5px::-webkit-scrollbar{width:5px}
-.-st-bgc-blue50::-webkit-scrollbar-track{background-color:#EFF8FF}
-.-stm-bgc-blue100::-webkit-scrollbar-thumb{background-color:#D1E9FF}
+.-st-bgc-blue50::-webkit-scrollbar-track{background-color:var(--blue50,#EFF8FF)}
+.-stm-bgc-blue100::-webkit-scrollbar-thumb{background-color:var(--blue100,#D1E9FF)}
 .g8px{gap:8px}
 .pst{position: sticky}
 .pr16px{padding-right:16px}
@@ -50,8 +49,11 @@
 .fww{flex-wrap: wrap}
 .p0px{padding:0px}
 
-/* AliasCSS : These are classnames compiled  from index.mdx*/
+            
+/* End :-----------ACSS color_ref.mdx----------------------------*/
 
+            
+/* Start :-----------ACSS index.mdx------------------------*/
 .d-f{display:flex}
 @media (min-width : 992px){.lg-fdr-i{flex-direction: row !important}}
 .pt32px{padding-top:32px}
@@ -68,27 +70,53 @@
 .fs12px{font-size:12px}
 .dib{display: inline-block}
 
-/* AliasCSS : These are classnames compiled  from accordion.mdx*/
+            
+/* End :-----------ACSS index.mdx----------------------------*/
 
+            
+/* Start :-----------ACSS accordion.mdx------------------------*/
 .fs200px{font-size:200px}
 
-/* AliasCSS : These are classnames compiled  from basic.mdx*/
+            
+/* End :-----------ACSS accordion.mdx----------------------------*/
 
-.color-blue{color:blue}
-.font-size3rem{font-size:3rem}
-.c-blue{color:blue}
-.fs3rem{font-size:3rem}
+            
+/* Start :-----------ACSS AttributeSelector.mdx------------------------*/
+.\[data-state\=close\]-display-none[data-state="close"]{display:none}
+.\[class\~\=code\]-font-mono[class~="code"]{font:mono}
 
-/* AliasCSS : These are classnames compiled  from advance-customization.mdx*/
+            
+/* End :-----------ACSS AttributeSelector.mdx----------------------------*/
 
+            
+/* Start :-----------ACSS advance-customization.mdx------------------------*/
 .text-sm{font-size:14px;line-height:20px}
 @media (min-width : 992px){.lg-text-xl{font-size:20px;line-height:30px}}
 .--hover-text-md:hover{font-size:16px;line-height:24px}
 
-/* AliasCSS : These are classnames compiled  from class-group.mdx*/
+            
+/* End :-----------ACSS advance-customization.mdx----------------------------*/
 
-.p32px{padding:32px}
-.container{display: flex} 
+            
+/* Start :-----------ACSS andIndentifier.mdx------------------------*/
+ div ._div\&-bgc-red{background-color:red}
+:is( html[class~="dark"]) .--is\(_html\[class\~\=dark\]\)\&-bgc--dark-bg-color{background-color: var(--dark-bg-color)}
+
+            
+/* End :-----------ACSS andIndentifier.mdx----------------------------*/
+
+            
+/* Start :-----------ACSS basic.mdx------------------------*/
+.color-blue{color:blue}
+.font-size-3rem{font-size: 3rem}
+.c-blue{color:blue}
+.fs-3rem{font-size: 3rem}
+
+            
+/* End :-----------ACSS basic.mdx----------------------------*/
+
+            
+/* Start :-----------ACSS class-group.mdx------------------------*/
 .container{background-color: var(--main-color)} 
 .container{overflow: hidden} 
 .container{width:100%} 
@@ -100,68 +128,82 @@
 .container{align-items: center} 
 .container{align-content: center} 
 .container{justify-content: center} 
-.container{z-index:-100000} 
+.container{z-index:100000} 
 
-.error{color:#F04438} 
-.error::after{background-color:#FEE4E2} 
-.error::after{color:#B42318} 
-.error::after{border:1px solid #B42318} 
+.error{color:var(--error500,#F04438)} 
+.error::after{background-color:var(--error100,#FEE4E2)} 
+.error::after{color:var(--error700,#B42318)} 
+.error::after{border:1px solid var(--error700,#B42318)} 
 
+.p32px{padding:32px}
 
-/* AliasCSS : These are classnames compiled  from getting_started.mdx*/
+            
+/* End :-----------ACSS class-group.mdx----------------------------*/
 
-.color-gray500{color:#667085}
+            
+/* Start :-----------ACSS getting_started.mdx------------------------*/
+.color-gray500{color:var(--gray500,#667085)}
 
-/* AliasCSS : These are classnames compiled  from keyframes-guide.mdx*/
+            
+/* End :-----------ACSS getting_started.mdx----------------------------*/
+
+            
+/* Start :-----------ACSS keyframes-guide.mdx------------------------*/
+.dot{border-radius:100%} 
+.dot{border:5px solid #555} 
+.dot{margin:10px} 
+.dot{animation-name:loading} 
+.dot{animation-duration:0.6s} 
+.dot{animation-timing-function:ease-in-out} 
+.dot{animation-direction: alternate} 
+.dot{animation-iteration-count: infinite} 
 
 .bgc-ecf0f1{background-color:#ecf0f1}
 .oh{overflow: hidden}
-.h100px{height:100px}
+.w-100p{width: 100%}
+.h-100px{height: 100px}
 .pa{position: absolute}
-.t0{top:0}
-.l0{left:0}
+.t-0{top: 0}
+.l-0{left: 0}
 .aic{align-items: center}
 .acc{align-content: center}
 .jcc{justify-content: center}
-.zi-100000{z-index:-100000}
+.zi-100000{z-index:100000}
+.adl-0d2s{animation-delay: 0.2s}
+.adl-0d4s{animation-delay: 0.4s}
+.h100p{height:100%}
+.t0{top:0}
+.l0{left:0}
 .adl0d2s{animation-delay:0.2s}
 .adl0d4s{animation-delay:0.4s}
-.h100p{height:100%}
 .an-flash{animation-name:flash}
 .adu2s{animation-duration:2s}
 .animation-name-flash{animation-name:flash}
-.animation-duration2s{animation-duration:2s}
+.animation-duration-2s{animation-duration: 2s}
 .an-fadeOut{animation-name:fadeOut}
-.adu1s{animation-duration:1s}
-.dot{border-radius:100%} 
-.dot{border:5px solid #555} 
-.dot{margin:10px} 
-.dot{animation-name:loading} 
-.dot{animation-duration:0.6s} 
-.dot{animation-timing-function:ease-in-out} 
-.dot{animation-direction: alternate} 
-.dot{animation-iteration-count: infinite} 
-.dot{border-radius:100%} 
-.dot{border:5px solid #555} 
-.dot{margin:10px} 
-.dot{animation-name:loading} 
-.dot{animation-duration:0.6s} 
-.dot{animation-timing-function:ease-in-out} 
-.dot{animation-direction: alternate} 
-.dot{animation-iteration-count: infinite} 
+.adu-1s{animation-duration: 1s}
+@keyframes loading{ 100% {transform:scale(2)} 100% {border-color:var(--gray600,#475467)}
+}
 
-@keyframes loading{
- 100% {transform:scale(2) } 100% {border-color:#475467} 100% {transform:scale(2) } 100% {border-color:#475467}
+@keyframes flash{ 0%,50%,100% {opacity: 1} 25%,75% {opacity: 0}
 }
-@keyframes flash{
- 0%,50%,100% {opacity:1} 25%,75% {opacity:0} 0%,50%,100% {opacity:1} 25%,75% {opacity:0}
-}
+
 @keyframes fadeOut{
  0% {opacity: 1} 100% {opacity: 0}
 }
 
-/* AliasCSS : These are classnames compiled  from screens.mdx*/
 
+            
+/* End :-----------ACSS keyframes-guide.mdx----------------------------*/
+
+            
+/* Start :-----------ACSS npm-guide.mdx------------------------*/
+
+            
+/* End :-----------ACSS npm-guide.mdx----------------------------*/
+
+            
+/* Start :-----------ACSS screens.mdx------------------------*/
 @media (max-width : 576px){.xs-dn{display: none}}
 @media (max-width : 576px){.xs-display-none{display:none}}
 @media (max-width : 576px){.xs-flex-direction-column{flex-direction:column}}
@@ -171,165 +213,63 @@
 @media (min-width : 768px){.md-width500px{width:500px}}
 @media (min-width : 768px){.md-w500p{width:500%}}
 
-/* AliasCSS : These are classnames compiled  from AttributeSelector.mdx*/
+            
+/* End :-----------ACSS screens.mdx----------------------------*/
 
-.\[data-state\=close\]-display-none[data-state="close"]{display:none}
-.\[class\~\=code\]-font-mono[class~="code"]{font: mono}
-
-/* AliasCSS : These are classnames compiled  from stateAndSelector.mdx*/
-
+            
+/* Start :-----------ACSS stateAndSelector.mdx------------------------*/
 .bgc-cccccc{background-color:#cccccc}
 .--hover-bgc-yellow:hover{background-color:yellow}
 .-h-bgc-yellow:hover{background-color:yellow}
 ._h3-c-white h3{color:white}
-._p-fs14px p{font-size:14px}
 
-/* AliasCSS : These are classnames compiled  from variables.mdx*/
+            
+/* End :-----------ACSS stateAndSelector.mdx----------------------------*/
 
+            
+/* Start :-----------ACSS variables.mdx------------------------*/
 .width--blockquote-width{width: var(--blockquote-width)}
 .color--grey-default{color: var(--grey-default)}
 .--hover-color--grey-alt:hover{color: var(--grey-alt)}
 
-/* AliasCSS : These are classnames compiled  from codify.jsx*/
+            
+/* End :-----------ACSS variables.mdx----------------------------*/
 
+            
+/* Start :-----------ACSS index.mdx------------------------*/
+.p16px-32px{padding:16px 32px}
+.mh100vh{min-height:100vh}
+.bgc-0000000000d7{background-color:rgba(000,000,000,0.7)}
+.button-xs{display:inline-flex;justify-content:center;align-items:center;gap:8px;padding:8px 12px;border-radius:8px;box-sizing:border-box}
+.text-xs{font-size:12px;line-height:18px}
+.-h-c-gray100:hover{color:var(--gray100,#F2F4F7)}
+.-h-fwb:hover{font-weight: bold}
+.c-fff{color:#fff}
+.b-1px-s-fff{border:1px solid #fff}
+.\[theme\=dark\]-bgc-gray300[theme="dark"]{background-color:var(--gray300,#D0D5DD)}
+
+            
+/* End :-----------ACSS index.mdx----------------------------*/
+
+            
+/* Start :-----------ACSS codify.jsx------------------------*/
 .jcsb{justify-content: space-between}
 .cp{cursor: pointer}
 .w18px{width:18px}
 .h18px{height:18px}
-.stroke-gray700{stroke:#344054}
+.stroke-gray700{stroke:var(--gray700,#344054)}
 .stroke-width1px{stroke-width:1px}
 .stroke-linecap-round{stroke-linecap:round}
 .stroke-linejoin-round{stroke-linejoin:round}
 
-/* AliasCSS : These are classnames compiled  from index.mdx*/
+            
+/* End :-----------ACSS codify.jsx----------------------------*/
 
-.p16px32px{padding:16px 32px}
-.mh100vh{min-height:100vh}
-.bgc-0000000000d7{background-color:rgba(000,000,000,0.7)}
-.\[theme\=dark\]-bgc-gray300[theme="dark"]{background-color:#D0D5DD}
-
-/* AliasCSS : These are classnames compiled  from inputClassName.jsx*/
-
-.jc-sb{justify-content:space-between}
-.p8px12px{padding:8px 12px}
-.bgc-fff{background-color:#fff}
-.br8px{border-radius:8px}
-.b1px-s-gray300{border:1px solid #D0D5DD}
-.shadow-xs{box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05)}
-.ol-n{outline:none}
-.b-n{border:none}
-.-fv-bxsn:focus-visible{box-shadow: none}
-.-fv-bn:focus-visible{border:none}
-.fw-4{font-weight:400}
-.c-gray500{color:#667085}
-.button-sm{display:inline-flex;justify-content:center;align-items:center;gap:8px;padding:8px 14px;border-radius:8px;box-sizing:border-box}
-.b1px-s-blue200{border:1px solid #B2DDFF}
-.bgc-blue100{background-color:#D1E9FF}
-.c-gray700{color:#344054}
-.-h-bgc-blue300:hover{background-color:#84CAFF}
-.fill-none{fill:none}
-
-/* AliasCSS : These are classnames compiled  from modalSearch.jsx*/
-
-.cursor-pointer{cursor:pointer}
-.stroke-blue500{stroke:#2E90FA}
-.stroke-width2px{stroke-width:2px}
-.bgc-red{background-color:red}
-.bgc-0000000000d6{background-color:rgba(000,000,000,0.6)}
-.w100vw{width:100vw}
-.h100vh{height:100vh}
-.zi99{z-index:99}
-.t0px{top:0px}
-.l0px{left:0px}
-.m32px{margin:32px}
-.bgc-gray100{background-color:#F2F4F7}
-.hxc{height:max-content}
-.pr62px{padding-right:62px}
-.w80p{width:80%}
-.t16px{top:16px}
-.r16px{right:16px}
-.stroke-error500{stroke:#F04438}
-
-/* AliasCSS : These are classnames compiled  from quickCompiler.jsx*/
-
-.g16px{gap:16px}
-.fd-c{flex-direction:column}
-.p4px10px4px4px{padding:4px 10px 4px 4px}
-.bgc-blue50{background-color:#EFF8FF}
-.text-xs{font-size:12px;line-height:18px}
-.fw5{font-weight: 500}
-.wxc{width:max-content}
-.g12px{gap:12px}
-.p2px10px{padding:2px 10px}
-.g4px{gap:4px}
-.gap4px{gap:4px}
-.h-30rem{height: 30rem}
-.b-1px-s-ccc{border:1px solid #ccc}
-.oa{overflow: auto}
-.br-5px{border-radius: 5px}
-.p24px{padding:24px}
-.bl15px-s-blueLight600{border-left:15px solid #0086C9}
-.ff-courier{font-family:courier}
-.o-a{opacity: a}
-.c-green700{color:#087443}
-.fw6{font-weight: 600}
-.c-blue700{color:#175CD3}
-.-fln-c-primary700::first-line{color:#6941C6}
-.c-error400{color:#F97066}
-.fwb{font-weight: bold}
-.c-error500{color:#F04438}
-
-/* AliasCSS : These are classnames compiled  from staticClassNames.jsx*/
-
-.w100fr{width:100fr}
-.text-lg{font-size:18px;line-height:28px}
-.stroke-gray400{stroke:#98A2B3}
-.oln{outline:none}
-.bn{border:none}
-.c-gray{color:gray}
-.bgc-transparent{background-color:transparent}
-.text-md{font-size:16px;line-height:24px}
-.zi12345{z-index:12345}
-.t100p{top:100%}
-.xh60vh{max-height:60vh}
-.mw320px{min-width:320px}
-.shadow-md{box-shadow: 0px 4px 8px -2px rgba(16, 24, 40, 0.1), 0px 2px 4px -2px rgba(16, 24, 40, 0.06)}
-.mt2px{margin-top:2px}
-.m0px{margin:0px}
-.lsn{list-style: none}
-._li-nc-2n-bgc-gray50 li:nth-child(2n){background-color:#F9FAFB}
-.asfe{align-self: flex-end}
-
-/* AliasCSS : These are classnames compiled  from aside.jsx*/
-
-._span-c-blue600 span{color:#1570EF}
-._span-bgc-blue50 span{background-color:#EFF8FF}
-.ccc{color:currentColor}
-.br6px{border-radius:6px}
-.p4px8px{padding:4px 8px}
-.tdn{text-decoration: none}
-.-h-bgc-blue50:hover{background-color:#EFF8FF}
-
-/* AliasCSS : These are classnames compiled  from input-1.mdx*/
-
-.tal{text-align: left}
-._input-fv-box-shadow-none input:focus-visible{box-shadow:none}
-.b1px-s-primary300{border:1px solid #D6BBFB}
-.bxs0px0px0px5px-primary100{box-shadow:0px 0px 0px 5px #F4EBFF}
-.xw400px{max-width:400px}
-
-/* AliasCSS : These are classnames compiled  from input.mdx*/
-
-.-fv-box-shadow-none:focus-visible{box-shadow:none}
-.c-gray400{color:#98A2B3}
-.m-8px-12px{margin:-8px -12px}
-.br8px0px0px8px{border-radius:8px 0px 0px 8px}
-.brt1px-s-gray300{border-right:1px solid #D0D5DD}
-
-/* AliasCSS : These are classnames compiled  from color.jsx*/
-
+            
+/* Start :-----------ACSS color.jsx------------------------*/
 .fs10px{font-size:10px}
 .cc{cursor: copy}
+.br8px{border-radius:8px}
 .p10px{padding:10px}
 @media (min-width : 768px){.md-m10px{margin:10px}}
 @media (min-width : 768px){.md-g8px{gap:8px}}
@@ -338,49 +278,174 @@
 .br9px{border-radius:9px}
 @media (min-width : 768px){.md-w100px{width:100px}}
 @media (min-width : 768px){.md-h100px{height:100px}}
+.fw5{font-weight: 500}
 
-/* AliasCSS : These are classnames compiled  from quickCompiler.jsx*/
+            
+/* End :-----------ACSS color.jsx----------------------------*/
 
-.bgc-blue500{background-color:#2E90FA}
+            
+/* Start :-----------ACSS custom-editor.jsx------------------------*/
 
-/* AliasCSS : These are classnames compiled  from quickCompiler.jsx*/
+            
+/* End :-----------ACSS custom-editor.jsx----------------------------*/
 
-.c-fff{color:#fff}
+            
+/* Start :-----------ACSS editor.jsx------------------------*/
+.h100vh{height:100vh}
+._all-\[class\~\=sp-editor\]-height-50vh-i *[class~="sp-editor"]{height: 50vh !important}
+._all-\[class\~\=sp-preview\]-height-50vh-i *[class~="sp-preview"]{height: 50vh !important}
+.zi-2000000{z-index:2000000}
+.w100vw{width:100vw}
+.t32px{top:32px}
+.zi2{z-index:2}
+.b1px-s-gray600{border:1px solid var(--gray600,#475467)}
+.--hover-bgc-error200:hover{background-color:var(--error200,#FECDCA)}
+.br-8px{border-radius: 8px}
+.p12px-14px{padding:12px 14px}
 
-/* AliasCSS : These are classnames compiled  from staticClassNames.jsx*/
+            
+/* End :-----------ACSS editor.jsx----------------------------*/
 
-.bgc-gray300{background-color:#D0D5DD}
+            
+/* Start :-----------ACSS inputClassName.jsx------------------------*/
+.jc-sb{justify-content:space-between}
+.p8px-12px{padding:8px 12px}
+.b1px-s-gray300{border:1px solid var(--gray300,#D0D5DD)}
+.shadow-xs{box-shadow:var(--shadow-xs, 0px 1px 2px rgba(16, 24, 40, 0.05))}
+.ol-n{outline:none}
+.b-n{border:none}
+.-fv-bxsn:focus-visible{box-shadow: none}
+.-fv-bn:focus-visible{border:none}
+.fw-4{font-weight:400}
+.c-gray500{color:var(--gray500,#667085)}
+.button-sm{display:inline-flex;justify-content:center;align-items:center;gap:8px;padding:8px 14px;border-radius:8px;box-sizing:border-box}
+.b1px-s-blue200{border:1px solid var(--blue200,#B2DDFF)}
+.bgc-blue100{background-color:var(--blue100,#D1E9FF)}
+.c-gray700{color:var(--gray700,#344054)}
+.-h-bgc-blue300:hover{background-color:var(--blue300,#84CAFF)}
+.fill-none{fill:none}
 
-/* AliasCSS : These are classnames compiled  from staticClassNames.jsx*/
+            
+/* End :-----------ACSS inputClassName.jsx----------------------------*/
 
-.bgc-gray200{background-color:#EAECF0}
+            
+/* Start :-----------ACSS logo.jsx------------------------*/
 
-/* AliasCSS : These are classnames compiled  from staticClassNames.jsx*/
+            
+/* End :-----------ACSS logo.jsx----------------------------*/
 
-._li-nc-2n-bgc-gray100 li:nth-child(2n){background-color:#F2F4F7}
+            
+/* Start :-----------ACSS modalSearch.jsx------------------------*/
+.cursor-pointer{cursor:pointer}
+.stroke-blue500{stroke:var(--blue500,#2E90FA)}
+.stroke-width2px{stroke-width:2px}
+.bgc-red{background-color:red}
+.bgc-0000000000d6{background-color:rgba(000,000,000,0.6)}
+.zi99{z-index:99}
+.t0px{top:0px}
+.l0px{left:0px}
+.m32px{margin:32px}
+.bgc-gray100{background-color:var(--gray100,#F2F4F7)}
+.hxc{height:max-content}
+.pr62px{padding-right:62px}
+.w80p{width:80%}
+.t16px{top:16px}
+.r16px{right:16px}
+.stroke-error500{stroke:var(--error500,#F04438)}
 
-/* AliasCSS : These are classnames compiled  from basic.mdx*/
+            
+/* End :-----------ACSS modalSearch.jsx----------------------------*/
 
-.fs-3rem{font-size: 3rem}
+            
+/* Start :-----------ACSS quickCompiler.jsx------------------------*/
+.g16px{gap:16px}
+.fd-c{flex-direction:column}
+.p4px-10px-4px-4px{padding:4px 10px 4px 4px}
+.bgc-blue50{background-color:var(--blue50,#EFF8FF)}
+.wxc{width:max-content}
+.g12px{gap:12px}
+.bgc-fff{background-color:#fff}
+.p2px-10px{padding:2px 10px}
+.g4px{gap:4px}
+.gap4px{gap:4px}
+.h-30rem{height: 30rem}
+.b-1px-s-ccc{border:1px solid #ccc}
+.oa{overflow: auto}
+.br-5px{border-radius: 5px}
+.p24px{padding:24px}
+.bl15px-s-blueLight600{border-left:15px solid var(--blueLight600,#0086C9)}
+.ff-courier{font-family:courier}
+.o-a{opacity:-a}
+.c-green700{color:var(--green700,#087443)}
+.fw6{font-weight: 600}
+.c-blue700{color:var(--blue700,#175CD3)}
+.-fln-c-primary700::first-line{color:var(--primary700,#6941C6)}
+.c-error400{color:var(--error400,#F97066)}
+.fwb{font-weight: bold}
+.c-error500{color:var(--error500,#F04438)}
 
-/* AliasCSS : These are classnames compiled  from basic.mdx*/
+            
+/* End :-----------ACSS quickCompiler.jsx----------------------------*/
 
-.font-size-3rem{font-size: 3rem}
+            
+/* Start :-----------ACSS staticClassNames.jsx------------------------*/
+.w100fr{width:100fr}
+.text-lg{font-size:18px;line-height:28px}
+.stroke-gray400{stroke:var(--gray400,#98A2B3)}
+.oln{outline:none}
+.bn{border:none}
+.c-gray{color:gray}
+.bgc-transparent{background-color:transparent}
+.text-md{font-size:16px;line-height:24px}
+.zi12345{z-index:12345}
+.t100p{top:100%}
+.bgc-gray200{background-color:var(--gray200,#EAECF0)}
+.xh60vh{max-height:60vh}
+.mw320px{min-width:320px}
+.shadow-md{box-shadow:var(--shadow-ms, 0px 4px 8px -2px rgba(16, 24, 40, 0.1), 0px 2px 4px -2px rgba(16, 24, 40, 0.06))}
+.mt2px{margin-top:2px}
+.m0px{margin:0px}
+.lsn{list-style: none}
+._li-nc-2n-bgc-gray100 li:nth-child(2n){background-color:var(--gray100,#F2F4F7)}
+.asfe{align-self: flex-end}
 
-/* AliasCSS : These are classnames compiled  from stateAndSelector.mdx*/
+            
+/* End :-----------ACSS staticClassNames.jsx----------------------------*/
 
-._p-fs-14px p{font-size: 14px}
+            
+/* Start :-----------ACSS aside.jsx------------------------*/
+._span-c-blue600 span{color:var(--blue600,#1570EF)}
+._span-bgc-blue50 span{background-color:var(--blue50,#EFF8FF)}
+.ccc{color:currentColor}
+.br6px{border-radius:6px}
+.p4px8px{padding:4px8px}
+.tdn{text-decoration: none}
+.-h-bgc-blue50:hover{background-color:var(--blue50,#EFF8FF)}
 
-/* AliasCSS : These are classnames compiled  from keyframes-guide.mdx*/
+            
+/* End :-----------ACSS aside.jsx----------------------------*/
 
-.animation-duration-2s{animation-duration: 2s}
-.adu-1s{animation-duration: 1s}
+            
+/* Start :-----------ACSS input-1.mdx------------------------*/
+.tal{text-align: left}
+._input-fv-box-shadow-none input:focus-visible{box-shadow:none}
+.p8px12px{padding:8px12px}
+.b1px-s-primary300{border:1px solid var(--primary300,#D6BBFB)}
+.bxs0px0px0px5px-primary100{box-shadow:0px0px0px5px var(--primary100,#F4EBFF)}
+.xw400px{max-width:400px}
 
-/* AliasCSS : These are classnames compiled  from keyframes-guide.mdx*/
+            
+/* End :-----------ACSS input-1.mdx----------------------------*/
 
-.w-100p{width: 100%}
-.h-100px{height: 100px}
-.t-0{top:-0}
-.l-0{left:-0}
-.adl-0d2s{animation-delay: 0.2s}
-.adl-0d4s{animation-delay: 0.4s}
+            
+/* Start :-----------ACSS input.mdx------------------------*/
+.-fv-box-shadow-none:focus-visible{box-shadow:none}
+.c-gray400{color:var(--gray400,#98A2B3)}
+.m-8px-12px{margin: 8px 12px}
+.br8px0px0px8px{border-radius:8px0px0px8px}
+.brt1px-s-gray300{border-right:1px solid var(--gray300,#D0D5DD)}
+
+            
+/* End :-----------ACSS input.mdx----------------------------*/
+
+            

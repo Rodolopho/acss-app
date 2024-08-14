@@ -9,7 +9,7 @@ export default function InputBox(props){
         <div>
             <form onSubmit={(e)=>props.handleSubmit(e,term)}>
                         <div class="d-f jc-sb g8px">
-                            <div class="df aic w100p g8px p8px12px  br8px b1px-s-gray300 shadow-xs">
+                            <div class="df aic w100p g8px p8px-12px  br8px b1px-s-gray300 shadow-xs">
                                 <div class="df jcsb aic w100p g8px  ">
                                     <input onChange={handleChange} class="ol-n b-n -fo-oln -fo-bn -fv-bxsn -fv-bn w100p text-sm fw-4 c-gray500 " id="acss-input" autocomplete="off" spellcheck="false" placeholder="Type ACSS classname/s and get its compiled CSS defination e.g br5px" />
                                     <span class="df">

@@ -21,8 +21,8 @@ export default function QuickCompiler(){
                 <InputBox handleSubmit={handleSubmit}/>
 
                 <div className="df jcsb">
-                    <div class="p4px10px4px4px br16px bgc-blue50 text-xs fw5 c-gray500 wxc aic g12px dif">
-                        <span class="bgc-fff p2px10px br16px df aic g4px">Note</span>
+                    <div class="p4px-10px-4px-4px br16px bgc-blue50 text-xs fw5 c-gray500 wxc aic g12px dif">
+                        <span class="bgc-fff p2px-10px br16px df aic g4px">Note</span>
                         <span class="df aic gap4px"> input classname/s seperated by space.</span>
                        
                     </div>

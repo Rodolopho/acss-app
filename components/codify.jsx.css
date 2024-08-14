@@ -3,7 +3,7 @@
 .cp{cursor: pointer}
 .w18px{width:18px}
 .h18px{height:18px}
-.stroke-gray700{stroke:#344054}
+.stroke-gray700{stroke:var(--gray700,#344054)}
 .color-red{color:red}
 .stroke-width1px{stroke-width:1px}
 .stroke-linecap-round{stroke-linecap:round}

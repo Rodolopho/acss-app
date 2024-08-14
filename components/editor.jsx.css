@@ -1,0 +1,16 @@
+.h100vh{height:100vh}
+._all-\[class\~\=sp-editor\]-height-50vh-i *[class~="sp-editor"]{height: 50vh !important}
+._all-\[class\~\=sp-preview\]-height-50vh-i *[class~="sp-preview"]{height: 50vh !important}
+.zi-2000000{z-index:2000000}
+.pf{position: fixed}
+.l0{left:0}
+.t0{top:0}
+.w100vw{width:100vw}
+.pa{position: absolute}
+.r32px{right:32px}
+.t32px{top:32px}
+.zi2{z-index:2}
+.b1px-s-gray600{border:1px solid var(--gray600,#475467)}
+.--hover-bgc-error200:hover{background-color:var(--error200,#FECDCA)}
+.br-8px{border-radius: 8px}
+.p12px-14px{padding:12px 14px}

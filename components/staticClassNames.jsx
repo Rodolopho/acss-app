@@ -36,7 +36,7 @@ export default function SearchStaticClassName(){
     
         return (
         <div className='df pr g8px w100p fdc '  >
-            <div class="df pr aic w100fr  g16px p8px12px bgc-gray100 br8px g8px b1px-s-gray300   ">
+            <div class="df pr aic w100fr  g16px p8px-12px bgc-gray100 br8px g8px b1px-s-gray300   ">
                 <div class="df  aic w100p g12px text-lg oya">
                     <span class="df">
                         <Search className="w18px  h18px stroke-gray400 stroke-width2px stroke-linecap-round stroke-linejoin-round fill-none"/>
@@ -50,11 +50,11 @@ export default function SearchStaticClassName(){
    
            { !! Object.keys(classNames).length &&  ( 
              <div 
-            class=" zi12345 b1px-s-gray300 w100p p8px12px l0px t100p bgc-gray200 xh60vh  mw320px oya shadow-md mt2px br8px">
+            class=" zi12345 b1px-s-gray300 w100p p8px-12px l0px t100p bgc-gray200 xh60vh  mw320px oya shadow-md mt2px br8px">
             <ul class="p0px m0px lsn  text-md _li-nc-2n-bgc-gray100">
 
                 {Object.keys(classNames).map((key,i)=>(
-                    <li class="df aic jcsb p8px12px  w100p" key={i}>
+                    <li class="df aic jcsb p8px-12px  w100p" key={i}>
                         <div class="df  fdc w100p  ">
                             <div class="c-gray700 fwb text-sm" >{'.'+key}</div>
                             <div class="c-blue700 text-sm fw5 asfe ">{ '{ '+classNames[key]+ ' }'}</div>

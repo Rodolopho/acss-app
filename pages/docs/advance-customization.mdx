@@ -1,22 +1,24 @@
+import { Callout } from 'nextra/components'
+
 # Advanced Customization
 Using `aliascss.config.js` we can fully customize how aliascss work, infact you can create whole diffrent version of aliascss.
 
 ### `extend` : create your own compiler
 You can create your own compiler for each and every css properties or add new properties by extending the current 
-configuration file.Using extend you can create your version of AliasCSS which can be completely diffrent design sysytem.
+configuration file.Using extend you can create your version of AliasCSS which can be completely diffrent design system.
 ```js filename="aliasccs.config.js" 
 const config={
     
     extend:{
-        background:{
-            alias:'bg',
+        background-color:{
+            alias:'bgc',
             values:['transparent:t:no-color']
-            compiler:(value)->value,
+            compiler:(value)=>value.replace(/^-/,''),
         },
         shadow:{
             property:'box-shadow',
             compiler:(value)=>{
-                value=value.slice(1);
+                value=value.slice(1);// remove '-' form value;
                 const values={
                     '3xl': ' 0px 32px 64px -12px var(--shadow-color,rgba(16, 24, 40, 0.14))',
                     'xxxl': ' 0px 32px 64px -12px var(--shadow-color,rgba(16, 24, 40, 0.14))',
@@ -40,15 +42,192 @@ export default config;
 In above we create two compiler , `background` and `shadow`, `background` will overwrite default compiler
  as it is valid css property. In the case of `shadow` , It will be  added as new compiler, since `shadow` is custom property i.e 
 not a valid css property, we need to provide property  to tell which css property this compiler is for.
+
+#### Group compiler
+
+Normally, aliacss classNames holds single property and  value for it, when we want to have classNames that holds  
+for multiple css properties declaration, we can use compiler with type='group', as given below.
+```js filename="aliasccs.config.js" 
+const config={
+    
+    extend:{
+        background:{
+            alias:'bg',
+            values:['transparent:t:no-color']
+            compiler:(value)=>value,
+        },
+
+        'import-var':{
+            type:'group',
+            groups:{
+                    'spacing':`
+                    --space-1:4px;
+                    --space-2:8px;
+                    --space-3:12px;
+                    --space-4:16px;
+                    --space-5:24px;
+                    --space-6:32px;
+                    --space-7:40px;
+                    --space-8:48px;
+                    --space-9:64px;
+                    `,
+                    theme:`
+                    
+                    `
+            },
+
+    },
+    'Text':{
+            type:'group',
+            compiler:(value)=>{
+                let result='';
+                const match=/-([-]?[\w\.]+)/;
+                const property=['font-size','line-height','letter-spacing','font-weight'];
+                value.match(new RegExp(match,'g')).forEach((e,i)=>{
+                    if(i<property.length){
+                        result+=`${property[i]}:${e.replace(match,'$1').replace(/(\d)d(\d)/,'$1.$2').replace(/([\d])p([\s]|$)/,'$1%$2')};`;
+                    }
+                    
+                })
+                return result;
+                
+            },
+            groups:{
+                '1':'font-size:12px;letter-spacing:0.0025em;line-height:16px;',
+                '2':'font-size:14px;letter-spacing:0em;line-height:20px;',
+                '3':'font-size:16px;letter-spacing:0em;line-height:24px;',
+                '4':'font-size:18px;letter-spacing:-0.0025em;line-height:26px;',
+                '5':'font-size:20px;letter-spacing:-0.005em;line-height:28px;',
+                '6':'font-size:24px;letter-spacing:-0.00625em;line-height:30px;',
+                '7':'font-size:28px;letter-spacing:-0.0075em;line-height:36px;',
+                '8':'font-size:35px;letter-spacing:-0.01em;line-height:40px;',
+                '9':'font-size:60px;letter-spacing:-0.025em;line-height:60px;',
+                'xs':'font-size:12px;letter-spacing:0.0025em;line-height:16px;',
+                'sm':'font-size:14px;letter-spacing:0em;line-height:20px;',
+                'md':'font-size:16px;letter-spacing:0em;line-height:24px;',
+                'lg':'font-size:18px;letter-spacing:-0.0025em;line-height:26px;',
+                'xl':'font-size:20px;letter-spacing:-0.005em;line-height:28px;',
+                '2xl':'font-size:24px;letter-spacing:-0.00625em;line-height:30px;',
+                '3xl':'font-size:28px;letter-spacing:-0.0075em;line-height:36px;',
+                '4xl':'font-size:35px;letter-spacing:-0.01em;line-height:40px;',
+                '5xl':'font-size:60px;letter-spacing:-0.025em;line-height:60px;',
+            },
+            
+            
+    },
+    Box:{
+        compiler:(value)=>{
+                let result='';
+                const match=/-([-]?[\w\.]+)/;
+                const property=['width','height','padding'];
+                value.match(new RegExp(match,'g')).forEach((e,i)=>{
+                    if(i<property.length){
+                        result+=`${property[i]}:${e.replace(match,'$1').replace(/(\d)d(\d)/,'$1.$2').replace(/([\d])p([\s]|$)/,'$1%$2')};`;
+                    }else{
+            
+                        result=result.replace(/;$/,` ${e.replace(match,'$1').replace(/(\d)d(\d)/,'$1.$2').replace(/([\d])p([\s]|$)/,'$1%$2')};`)
+                    }
+                    
+                })
+                return result;
+                
+            },
+        type:'group',
+    },
+    Position:{
+        'alias':'pos',
+        compiler:(value)=>{
+                let result='';
+                const match=/-([-]?[\w\.]+)/;
+                const property=['position','top','right','bottom','left'];
+                value.match(new RegExp(match,'g')).forEach((e,i)=>{
+                    if(i<property.length){
+                        result+=`${property[i]}:${e.replace(match,'$1').replace(/(\d)d(\d)/,'$1.$2').replace(/([\d])p([\s]|$)/,'$1%$2')};`;
+                    }
+                    
+                })
+                return result;
+                
+            },
+        type:'group',
+    }, 
+    Colorize:{
+        'alias':'pos',
+        compiler:(value,custom)=>{
+                let result='';
+                const match=/-([-]?[\w\.]+)/;
+                const property=['background-color','border-color','color',];
+                value.match(new RegExp(match,'g')).forEach((e,i)=>{
+                    
+                    if(i<property.length){
+                        if(e.match(/^--[a-zA-Z]/)){
+                            result+=`${property[i]}:var(${e});`
+                        }else{
+                            result+=`${property[i]}:${getCompiler('color').compiler(e,custom)};`;
+                        }          
+                    }
+                    
+                })
+                return result;
+                
+            },
+        type:'group',
+    },  
+    Container:{
+        type:"group",
+        compiler:(value)=>value,
+        groups:{
+            '1':'display:block;margin:auto;width:var(--container-1,448px)',
+            '2':'display:block;margin:auto;width:var(--container-2,688px)',
+            '3':'display:block;margin:auto;width:var(--container-3,880px)',
+            '4':'display:block;margin:auto;width:var(--container-4,1136px)',
+            'xs':'display:block;margin:auto;width:var(--container-xs,448px)',
+            'sm':'display:block;margin:auto;width:var(--container-sm,688px)',
+            'md':'display:block;margin:auto;width:var(--container-md,880px)',
+            'lg':'display:block;margin:auto;width:var(--container-lg,1136px)',
+        }
+    },
+    Section:{
+        type:"group",
+        compiler:(value)=>value,
+        groups:{
+            '1':'display:block;padding:var(--section-padding-1,24px) auto',
+            '2':'display:block;padding:var(--section-padding-2,40px) auto',
+            '3':'display:block;padding:var(--section-padding-3,64px) auto',
+            '4':'display:block;padding:var(--section-padding-4,80px) auto',
+            'xs':'display:block;padding:var(--section-padding-xs,24px) auto',
+            'sm':'display:block;padding:var(--section-padding-sm,40px) auto',
+            'md':'display:block;padding:var(--section-padding-md,64px) auto',
+            'lg':'display:block;padding:var(--section-padding-lg,80px) auto',
+
+        }
+    },                 
+}
+        
+        
+    },
+    // Note:- Above classNames are influenced from radix-ui.com
+}
+export default config;
+
+```
+Similary, using type of `group`, we can use it to group cssproperties and value and/or used as groupCSSPropertiesCompiler.
+
+
+
 ##### Compiler properties
 | Property|Type|Description|
 | -------|----|------|
 |`values`|`[Array]`|default or predefine values|
 |`alias`|`string`|create a alias for given property|
-|`compiler`|`function`|function that accept value portion and returns value replacement|
+|`compiler`|`function`|function that accept value portion as first and custom object as second arguments and returns value replacement|
 |`property`|`string`|css-property  to be used incase compiler name is not cssproperty |
+|`groups`|`{}`|used to define static group of multiple properties  |
+|`type`|`string`|when value is `group` it will treated as group compiler  |
 
-
+<Callout type="info" emoji="ℹ️">
+  Compiler Names cannot have number and uppercase letter other that first character. 
+</Callout>
 ### `media` Customize media selector
 
 ```js filename="aliascss.config.js"
@@ -195,8 +374,7 @@ export default config;
 
 ### `group` : Group AliasCSS classNames
  You can group valid aliascss classNames in a group which will be available globally in your project.
-  Note group cannot
- be used with selector.
+  `Note:- group cannot be used with selector.`
 
  ```js file="aliascss.config.js"
 const config={
@@ -204,7 +382,7 @@ const config={
    group:{
 		'container':' df fdc bsbb aic flex-shrink-1 flex-grow-1 ',
 		'section':'flex-shrink0 bsbb',
-        'button-base':'bgc-gray300 oln --hover-bgc-gray400 bn --focus-ontline-none'
+     'button-base':'bgc-gray300 oln --hover-bgc-gray400 bn --focus-ontline-none'
 	},
     ...
 }
@@ -247,5 +425,5 @@ const config={
 }
 export default config;
 ```
-Note:- Try to avoid using statement `property` when you are compile file by file i.e using '--file'.Instead inject 
+Note:- Try to avoid using `statement` property when you are compiling file by file i.e using '--file'. Instead inject 
 seperate css file in your root layout or master css file.

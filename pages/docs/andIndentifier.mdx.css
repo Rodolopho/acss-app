@@ -1,0 +1,2 @@
+ div ._div\&-bgc-red{background-color:red}
+:is( html[class~="dark"]) .--is\(_html\[class\~\=dark\]\)\&-bgc--dark-bg-color{background-color: var(--dark-bg-color)}
