@@ -1,10 +1,10 @@
 # CSS Selector
 
 ### Pseudo Selector & State
- We can also target psedu selector / element  in your class name by using flags(-- or for shorhand -) e.g --hover or -h. For an example:-
+ We can also target pseduo selector / element  in your class name by using flags(-- or --shorFlag) e.g --hover or --h. For an example:-
  ```html copy 
  <div class="bgc-cccccc --hover-bgc-yellow"> Hi! I will change background color on hover</div>
- <div class="bgc-cccccc -h-bgc-yellow"> Hi! I will also change background color on hover</div>
+ <div class="bgc-cccccc --h-bgc-yellow"> Hi! I will also change background color on hover</div>
  ```
  Here by using --hover flag ( ***can be used -h shorthand flag***) we are telling to use it in :hover state
  
@@ -12,82 +12,82 @@
  
  | flags  |short-flag | corresponding css selector  |
  |-------------|---|---------:|
- |--active|-a or -ac|:active|   
-  |--after|-af|::after| 
-  |--after-hover|-afh|::after:hover|
-  |--autofill|-atf|:-webkit-autofill|
-  |--anylink|-al|:-webkit-anylink|
-  |--backdrop|-bd|::backdrop|
-  |--before|-bf|::before| 
-  |--before-hover|-bfh|::before:hover| 
-  |--blank|-bl|:blank| 
-  |--checked|-ch|:checked| 
-  |--cue|-cu|::cue| 
-  |--current|-cur|:current| 
-  |--default|-de|:default| 
-  |--disabled|-di|:disabled| 
-  |--empty|-em|:empty| 
-  |--enabled|-en|:enabled| 
-  |--first-child|-fc|:first-child| 
-  |--first-letter|-fl|::first-letter|  
-  |--first-line|-fln|::first-line| 
-  |--first-of-type |-fot|:first-of-type| 
-  |--focus| -f or -fo|:focus| 
-  |--focus-within| -fw|:focus-within| 
-  |--focus-visible| -fv|:focus-visible| 
-  |--file-selector-button| -fsb |::file-selector-button| 
-  |--fullscreen| -fs |::fullscreen| 
-  |--hover|-h or -ho|:hover| 
-  |--has|-hs|:has| 
-  |--hover-after|-haf|:hover::after| 
-  |--hover-before|-hbf|:hover::before| 
-  |--hover-target|-htg|:hover:target| 
-  |--in-range|-ir|:in-range| 
-  |--indeterminate|-ind|:indeterminate| 
-  |--invalid|-inv|:invalid| 
-  |--is|-is|:is| 
-  |--lang|-lan|:lang| 
-  |--last-child|-lc|:last-child| 
-  |--last-of-type|-lot|:last-of-type| 
-  |--link|-ln or -l|:link| 
-  |--not-|-n-|:not| 
-  |--nth-child-|-nc-|:nth-child| 
-  |--nth-last-child-|-nlc-|:nth-last-child| 
-  |--nth-last-of-type-|-nlot-|:nth-last-of-type| 
-  |--nth-of-type-|-not-|:nth-of-type| 
-  |--marker|-m|:marker| 
-  |--only-of-type |-oot|:only-of-type| 
-  |--only-child|-oc|:only-child| 
-  |--optional|-op|:optional|  
-  |--out-of-range|-oor|:out-of-range| 
-  |--placeholder|-ph|::placeholder| 
-  |--placeholder-shadow|-phs|::placeholder-shadow| 
-  |--popover-open|-po|:popover-open| 
-  |--read-only |-ro|:read-only| 
-  |--read-write|-rw|:read-write| 
-  |--required|-rq|:required| 
-  |--root|-rt|:root| 
-  |--selection|-s|::selection| 
-  |--scrollbar|-sb|::-webkit-scrollbar|
-  |--webkit-scrollbar|-sb|::-webkit-scrollbar|
-  |--scrollbar-track|-st|::-webkit-scrollbar-track|
-  |--webkit-scrollbar-track|-st|::-webkit-scrollbar-track|
-  |--scrollbar-thumb|-stm|::-webkit-scrollbar-thumb|
-  |--webkit-scrollbar-thumb|-stm|::-webkit-scrollbar-thumb|
-  |--spelling-error|-se|::spelling-error|
-  |--target |-tg|:target| 
-  |--user-invalid |-ui|:user-invalid| 
-  |--valid|-va|:valid| 
-  |--visited|-vi or -v|:visited| 
-  |--where|-w|:where| 
+ |--active|--a or --ac|:active|   
+  |--after|--af|::after| 
+  |--after-hover|--afh|::after:hover|
+  |--autofill|--atf|:-webkit-autofill|
+  |--anylink|--al|:-webkit-anylink|
+  |--backdrop|--bd|::backdrop|
+  |--before|--bf|::before| 
+  |--before-hover|--bfh|::before:hover| 
+  |--blank|--bl|:blank| 
+  |--checked|--ch|:checked| 
+  |--cue|--cu|::cue| 
+  |--current|--cur|:current| 
+  |--default|--de|:default| 
+  |--disabled|--di|:disabled| 
+  |--empty|--em|:empty| 
+  |--enabled|--en|:enabled| 
+  |--first-child|--fc|:first-child| 
+  |--first-letter|--fl|::first-letter|  
+  |--first-line|--fln|::first-line| 
+  |--first-of-type |--fot|:first-of-type| 
+  |--focus| --f or --fo|:focus| 
+  |--focus-within| --fw|:focus-within| 
+  |--focus-visible| --fv|:focus-visible| 
+  |--file-selector-button| --fsb |::file-selector-button| 
+  |--fullscreen| --fs |::fullscreen| 
+  |--hover|--h or --ho|:hover| 
+  |--has|--hs|:has| 
+  |--hover-after|--haf|:hover::after| 
+  |--hover-before|--hbf|:hover::before| 
+  |--hover-target|--htg|:hover:target| 
+  |--in-range|--ir|:in-range| 
+  |--indeterminate|--ind|:indeterminate| 
+  |--invalid|--inv|:invalid| 
+  |--is|--is|:is| 
+  |--lang|--lan|:lang| 
+  |--last-child|--lc|:last-child| 
+  |--last-of-type|--lot|:last-of-type| 
+  |--link|--ln or -l|:link| 
+  |--not-|--n-|:not| 
+  |--nth-child-|--nc-|:nth-child| 
+  |--nth-last-child-|--nlc-|:nth-last-child| 
+  |--nth-last-of-type-|--nlot-|:nth-last-of-type| 
+  |--nth-of-type-|--nthot-|:nth-of-type| 
+  |--marker|--m|:marker| 
+  |--only-of-type |--oot|:only-of-type| 
+  |--only-child|--oc|:only-child| 
+  |--optional|--op|:optional|  
+  |--out-of-range|--oor|:out-of-range| 
+  |--placeholder|--ph|::placeholder| 
+  |--placeholder-shadow|--phs|::placeholder-shadow| 
+  |--popover-open|--po|:popover-open| 
+  |--read-only |--ro|:read-only| 
+  |--read-write|--rw|:read-write| 
+  |--required|--rq|:required| 
+  |--root|--rt|:root| 
+  |--selection|--s|::selection| 
+  |--scrollbar|--sb|::-webkit-scrollbar|
+  |--webkit-scrollbar|--sb|::-webkit-scrollbar|
+  |--scrollbar-track|--st|::-webkit-scrollbar-track|
+  |--webkit-scrollbar-track|--st|::-webkit-scrollbar-track|
+  |--scrollbar-thumb|--stm|::-webkit-scrollbar-thumb|
+  |--webkit-scrollbar-thumb|--stm|::-webkit-scrollbar-thumb|
+  |--spelling-error|--se|::spelling-error|
+  |--target |--tg|:target| 
+  |--user-invalid |--ui|:user-invalid| 
+  |--valid|--va|:valid| 
+  |--visited|--vi or- -v|:visited| 
+  |--where|--w|:where| 
 
   **Examples**
   
  |  classname  |shorthand    | css                 |Remarks|
 |----------- |-----------   |----------------------|------------|
-|`--hover-display-flex`|`-h-df`|`:hover{display: flex ;}`|
-|`--focus-list-style-none`|`-fo-lsn`|`:focus{list-style:none;}`|
-|`--nth-child-2n-margin-left20px`|`-nc-2n-ml20px`|`:nth-child(2n){margin-left:20px ;}`|
+|`--hover-display-flex`|`--h-df`|`:hover{display: flex ;}`|
+|`--focus-list-style-none`|`--fo-lsn`|`:focus{list-style:none;}`|
+|`--nth-child-2n-margin-left20px`|`--nc-2n-ml20px`|`:nth-child(2n){margin-left:20px ;}`|
  
  ### Element Selector
  **Similary , we can also select or target the element  by using '_' at the begining  of class name . eg:-**
