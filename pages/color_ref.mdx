@@ -1,6 +1,6 @@
 import { useState } from 'react';
 // import {customColors} from '../ref/customColors'
-import {customColors} from '../node_modules/alias-css/lib/static/customColors.js'
+import {customColors} from '../node_modules/aliascss/lib/static/customColors.js'
 import Aside from '../components/partials/aside'
 import Color from '../components/color'
 
@@ -15,7 +15,7 @@ const [colors, setColors]=useState(customColors);
 const [selected, setSelected]=useState("All");
 
   const colorsCato=['All','Primary','Success','Error','Warning','Gray','Indigo','Violet','Orange','Green','Blue','Moss','Teal','Cyan','purple',
-                    'fuchsia','Pink','Rose','Yellow','Info','Danger',];
+                    'fuchsia','Pink','Rose','Yellow'];
 
      function handleClick(color){
       if(color==='All') {
