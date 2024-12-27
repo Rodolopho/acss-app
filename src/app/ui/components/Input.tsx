@@ -1,4 +1,4 @@
-import './input.tsx.css';
+import './Input.tsx.css';
 function Input() {
     return (
         <div>
