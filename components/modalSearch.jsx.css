@@ -1,4 +1,4 @@
-.p0px32px{padding:0px32px}
+.p-0px-32px{padding: 0px 32px}
 .cursor-pointer{cursor:pointer}
 .w18px{width:18px}
 .h18px{height:18px}
@@ -9,24 +9,28 @@
 .fill-none{fill:none}
 .bgc-red{background-color:red}
 .bgc-0000000000d6{background-color:rgba(000,000,000,0.6)}
-.w100vw{width:100vw}
+.w-100vw{width: 100vw}
 .h100vh{height:100vh}
-.zi99{z-index:99}
+.zi-99{z-index:99}
 .pf{position: fixed}
-.br8px{border-radius:8px}
+.br-8px{border-radius: 8px}
 .df{display: flex}
 .jcc{justify-content: center}
-.t0px{top:0px}
-.l0px{left:0px}
-.m32px{margin:32px}
+.t-0px{top: 0px}
+.l-0px{left: 0px}
+.m-32px{margin: 32px}
+:is( html[class~="dark"]) .--is\(_html\[class\~\=dark\]\)\&-border-1px-s-error500{border:1px solid var(--error500,#F04438)}
+:is( html[class~="dark"]) .--is\(_html\[class\~\=dark\]\)\&-filter-invert-100{filter:invert(100)}
 .bgc-gray100{background-color:var(--gray100,#F2F4F7)}
 .shadow-xs{box-shadow:var(--shadow-xs, 0px 1px 2px rgba(16, 24, 40, 0.05))}
 .hxc{height:max-content}
-.p32px{padding:32px}
+.p-32px{padding: 32px}
 .pr{position: relative}
-.pr62px{padding-right:62px}
-.w80p{width:80%}
+.pr-62px{padding-right: 62px}
+.w-80p{width: 80%}
 .pa{position: absolute}
-.t16px{top:16px}
-.r16px{right:16px}
+.t-16px{top: 16px}
+.r-16px{right: 16px}
+.w-18px{width: 18px}
+.h-18px{height: 18px}
 .stroke-error500{stroke:var(--error500,#F04438)}

@@ -18,9 +18,9 @@
     "@types/node": "20.4.5",
     "@types/react": "18.2.18",
     "@types/react-dom": "18.2.7",
-    "aliascss": "^1.1.10",
     "eslint": "8.46.0",
     "eslint-config-next": "13.4.12",
+    "lucide-static": "^0.469.0",
     "next": "^13.5.6",
     "next-themes": "^0.3.0",
     "nextra": "^2.10.0",
@@ -32,6 +32,7 @@
     "typescript": "5.1.6"
   },
   "devDependencies": {
-    "alias-css": "^1.0.7"
+    "alias-css": "^1.0.7",
+    "aliascss": "^1.1.12"
   }
 }

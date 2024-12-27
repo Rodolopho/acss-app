@@ -6,47 +6,47 @@ import { Card, Cards, FileTree, Callout } from 'nextra/components'
 ## Installation 
 
 ### NPM 
-```
+```sh copy
 npm install --save-dev aliascss
 ```
 
 ### CDN 
-```html
+```html copy
 <script defer src="https://cdn.jsdelivr.net/npm/aliascss@latest/dist/aliascss.js"></script>
 ```
 
-## Recommended way of using AlisaCSS
+## Recommended way of using AliasCSS
 
 First install aliascss via npm,
 
-```
+```sh copy
 npm install --save-dev aliascss
 ```
 
 Then, create a `aliascss.config.js` file in your project root directory.
 
 ### `aliascss.config.js`
- The config file must have at least input and out property.
+ The config file must have at least input and output property.
 
  Basic structure of config file
 ```js copy  showLineNumbers filename="aliascss.config.js"
-export let config= {
+ const config= {
     input:['app/**/*.(jsx|tsx)', 'components/**/*.(jsx|tsx)'],
     output:{
       location:'public/css/master.css',
       '--file':true,
     },
-    ...
 }
+export default config;
 ```
-Here, the `aliascss.config.js` file must export config object with atleast input and output properties, input property accept glob pattern or array of glob pattern .
-`--file` set to true  will generate [filename].css for each and every file in their same file location.
-<Callout type="warning">
-You must create master.css file manually
+Here, the `aliascss.config.js` file must export config object as default with at least input and output properties, input property accept glob pattern or array of glob pattern .
+`--file`(optional) set to true  will generate [filename].css for each and every file in their same file location.
+<Callout type="info">
+You are recommended to create output css file manually.
 </Callout>
 Now, you can use easily create and compile the aliascss.
 
-```shell
+```sh copy
  npx aliascss --config
   ```
 
@@ -54,7 +54,7 @@ Now, you can use easily create and compile the aliascss.
 
   ###### To watch and automatically compile , you can use  ` --watch ` flag.
 
-  ```shell
+  ```sh copy
   npx aliascss --config --watch
   ```
 
@@ -74,17 +74,20 @@ Now, you can use easily create and compile the aliascss.
         </FileTree>
 
         And aliascss.config.js 
-        ```js
-            export const config={
-                input:'app/**/*.jxs',
-                output:{
-                  location:'public/css/app.css',
-                  '--file':true
-            }
-        ```
+
+  ```js  copy
+    const config={
+        input:'app/**/*.jxs',
+        output:{
+          location:'public/css/app.css',
+          '--file':true
+      },
+    }
+    export default config;
+     ```
         Then, after running following command with `--file` set to true
 
-        ```shell
+        ```sh copy
             npx aliascss --config --watch
         ```
         ###### Folder structure becomes

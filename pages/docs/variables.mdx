@@ -17,3 +17,14 @@ with '--'.
     <h3 class="color--grey-default --hover-color--grey-alt">Hello World</h3>
 </div>
 ```
+
+## Declaring css variable using aliascss className.
+
+To define css variables using classN names  use this format, `--var-name:value`, value passed is just a plain string and 
+it is not compiler to any value format as there is no way for aliascss to know the type of value you want to use. However ,length based are goog to go in this case.
+**Example**
+```html
+<div class="width--blockquote-width color--grey-alt --grey:--grey-default" style="--grey-default:rgba(210, 213, 217, 1);--grey-alt:rgba(186, 189, 194, 1)">
+    <h3 class="color--grey --hover-color--grey-hover --grey-hover:black">Hello World</h3>
+</div>
+```

@@ -1,0 +1,57 @@
+
+/* Start :-----------ACSS layout.tsx------------------------*/
+
+            
+/* End :-----------ACSS layout.tsx----------------------------*/
+
+            
+/* Start :-----------ACSS npage.tsx------------------------*/
+
+            
+/* End :-----------ACSS npage.tsx----------------------------*/
+
+            
+/* Start :-----------ACSS page.tsx------------------------*/
+
+            
+/* End :-----------ACSS page.tsx----------------------------*/
+
+            
+/* Start :-----------ACSS Input.tsx------------------------*/
+.df{display: flex}
+.g8px{gap:8px}
+.fdc{flex-direction: column}
+.text-md{font-size:16px;line-height:24px}
+.fw5{font-weight: 500}
+.aic{align-items: center}
+.p8px12px{padding:8px12px}
+.bgc-fff{background-color:#fff}
+.br8px{border-radius:8px}
+.b1px-s-gray300{border:1px solid var(--gray300,#D0D5DD)}
+.shadow-xs{box-shadow:var(--shadow-xs, 0px 1px 2px rgba(16, 24, 40, 0.05))}
+.xw400px{max-width:400px}
+.jcsb{justify-content: space-between}
+.w100p{width:100%}
+.text-lg{font-size:18px;line-height:28px}
+.oln{outline:none}
+.bn{border:none}
+.w18px{width:18px}
+.h18px{height:18px}
+.stroke-gray400{stroke:var(--gray400,#98A2B3)}
+.stroke-width2px{stroke-width:2px}
+.stroke-linecap-round{stroke-linecap:round}
+.stroke-linejoin-round{stroke-linejoin:round}
+.fill-none{fill:none}
+.text-sm{font-size:14px;line-height:20px}
+.c-gray500{color:var(--gray500,#667085)}
+
+            
+/* End :-----------ACSS Input.tsx----------------------------*/
+
+            
+/* Start :-----------ACSS MessengerBox.tsx------------------------*/
+
+            
+/* End :-----------ACSS MessengerBox.tsx----------------------------*/
+
+            

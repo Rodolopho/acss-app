@@ -15,7 +15,6 @@
 .text-lg{font-size:18px;line-height:28px}
 .oln{outline:none}
 .bn{border:none}
-.-fv-box-shadow-none:focus-visible{box-shadow:none}
 .text-sm{font-size:14px;line-height:20px}
 .c-gray500{color:var(--gray500,#667085)}
 .b1px-s-primary300{border:1px solid var(--primary300,#D6BBFB)}
@@ -32,3 +31,4 @@
 .m-8px-12px{margin: 8px 12px}
 .br8px0px0px8px{border-radius:8px0px0px8px}
 .brt1px-s-gray300{border-right:1px solid var(--gray300,#D0D5DD)}
+.--fv-box-shadow-none:focus-visible{box-shadow:none}

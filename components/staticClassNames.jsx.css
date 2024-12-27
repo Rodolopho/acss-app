@@ -22,7 +22,7 @@
 .fill-none{fill:none}
 .oln{outline:none}
 .bn{border:none}
-.-fv-bxsn:focus-visible{box-shadow: none}
+.--fv-bxsn:focus-visible{box-shadow: none}
 .c-gray{color:gray}
 .bgc-transparent{background-color:transparent}
 .text-md{font-size:16px;line-height:24px}
@@ -37,7 +37,6 @@
 .p0px{padding:0px}
 .m0px{margin:0px}
 .lsn{list-style: none}
-._li-nc-2n-bgc-gray100 li:nth-child(2n){background-color:var(--gray100,#F2F4F7)}
 .jcsb{justify-content: space-between}
 .c-gray700{color:var(--gray700,#344054)}
 .fwb{font-weight: bold}

@@ -1,12 +1,12 @@
 import { Callout } from 'nextra/components'
 
 # Advanced Customization
-Using `aliascss.config.js` we can fully customize how aliascss work, infact you can create whole diffrent version of aliascss.
+Using `aliascss.config.js` we can fully customize how aliascss work, in fact you can create whole different version of aliascss.
 
 ### `extend` : create your own compiler
 You can create your own compiler for each and every css properties or add new properties by extending the current 
-configuration file.Using extend you can create your version of AliasCSS which can be completely diffrent design system.
-```js filename="aliasccs.config.js" 
+configuration file.Using extend you can create your version of AliasCSS which can be completely different design system.
+```js filename="aliascss.config.js" 
 const config={
     
     extend:{
@@ -211,7 +211,7 @@ const config={
 export default config;
 
 ```
-Similary, using type of `group`, we can use it to group cssproperties and value and/or used as groupCSSPropertiesCompiler.
+Similarly, using type of `group`, we can use it to group css properties and value and/or used as groupCSSPropertiesCompiler.
 
 
 
@@ -221,7 +221,7 @@ Similary, using type of `group`, we can use it to group cssproperties and value 
 |`values`|`[Array]`|default or predefine values|
 |`alias`|`string`|create a alias for given property|
 |`compiler`|`function`|function that accept value portion as first and custom object as second arguments and returns value replacement|
-|`property`|`string`|css-property  to be used incase compiler name is not cssproperty |
+|`property`|`string`|css-property  to be used incase compiler name is not css property |
 |`groups`|`{}`|used to define static group of multiple properties  |
 |`type`|`string`|when value is `group` it will treated as group compiler  |
 
@@ -243,13 +243,13 @@ const config={
 export default config;
 ```
 
-You can ovideide default media prefix selector to your own selector declaration. To Customise simply add media property
+You can overwrite default media prefix selector to your own selector declaration. To customize simply add media property
 on your `aliascss.config.js` file and add prefix object with prefix and media selector as per your need.
 
 ### `extractorFunction` 
 
 Aliascss compiler will look for classNames either in  `class` or `className` attribute. But sometimes you need want to use
-classnames in other places as well, for example for conditional uses of classNames. For that we can use extractorFunction, to tell aliasccs compiler 
+classnames in other places as well, for example for conditional uses of classNames. For that we can use extractorFunction, to tell aliascss compiler 
 to compile the given classNames.
 
 ```js filename="aliascss.config.js"
@@ -268,14 +268,15 @@ import { useState } from "react";
 // just  create a simple extractorFunction which return the input
 const x=(y:string)=>y;
 export default function Button() {
-    let [isActive,SetActive]=useState(false)
+    let [isActive,setActive]=useState(false)
     return (
         <div>
             <button 
-            onClick={()=>SetActive(!isActive)}
+            onClick={()=>setActive(!isActive)}
              className={
                 isActive?
                 x('bgc-primary100 border1-s-primary700 c-primary700')
+                // or x`bgc-primary100 border1-s-primary700 c-primary700`
                 :
                 x('bgc-gray200 c-gray700 b1px-s-gray700')}>Button</button>
         </div>
@@ -286,7 +287,7 @@ export default function Button() {
 
 ### `importModuleAs` : Use Aliascss for CSS module
 
-CSS Module will be vey helful to avoid className conflicts and avoid css declartion order isuues. Many frontend frameworks
+CSS Module will be vey helpful to avoid className conflicts and avoid css declaration order  or scope issues. Many frontend frameworks
 support importing css module which will be scoped to given component or page. 
  By using simple trick we can make aliascss to work as a module and make css scoped.
 
@@ -382,7 +383,7 @@ const config={
    group:{
 		'container':' df fdc bsbb aic flex-shrink-1 flex-grow-1 ',
 		'section':'flex-shrink0 bsbb',
-     'button-base':'bgc-gray300 oln --hover-bgc-gray400 bn --focus-ontline-none'
+     'button-base':'bgc-gray300 oln --hover-bgc-gray400 bn --focus-outline-none'
 	},
     ...
 }
@@ -426,4 +427,4 @@ const config={
 export default config;
 ```
 Note:- Try to avoid using `statement` property when you are compiling file by file i.e using '--file'. Instead inject 
-seperate css file in your root layout or master css file.
+separate css file in your root layout or master css file.

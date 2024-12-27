@@ -6,8 +6,8 @@
 .aic{align-items: center}
 .button-xs{display:inline-flex;justify-content:center;align-items:center;gap:8px;padding:8px 12px;border-radius:8px;box-sizing:border-box}
 .text-xs{font-size:12px;line-height:18px}
-.-h-c-gray100:hover{color:var(--gray100,#F2F4F7)}
-.-h-fwb:hover{font-weight: bold}
+.--h-c-gray100:hover{color:var(--gray100,#F2F4F7)}
+.--h-fwb:hover{font-weight: bold}
 .c-fff{color:#fff}
 .b-1px-s-fff{border:1px solid #fff}
-.\[theme\=dark\]-bgc-gray300[theme="dark"]{background-color:var(--gray300,#D0D5DD)}
+.--after-content-I_❤️_AliasCSS::after{content:"I ❤️ AliasCSS"}

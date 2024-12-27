@@ -6,17 +6,20 @@ import Editor from '../../components/editor'
 
 
 
+
+
 import React, {useState, useEffect}from 'react'
 
 import './index.mdx.css'
 
 export default function Index() {
   // const { theme, setTheme,resolvedTheme } = useTheme()
-  const [theme, setTheme] = useState('light')
+  const [theme, setTheme] = useState('dark')
   const [convert, setConvert] = useState(false)
 
   // const [code, updateCode] = useActiveCode()
   useEffect(()=>{
+    console.log(document.documentElement.classList);
     setTheme(document.documentElement.classList.contains('dark')?'dark':'light')
   },[])
   
@@ -32,31 +35,33 @@ export default function Index() {
           <option  value="dark" selected={(theme==='dark')?'selected':''}>dark</option>
         </select>
         </div>
-        <button onClick={()=>setConvert(!convert)} class="button-xs text-xs -h-c-gray100 -h-fwb c-fff b-1px-s-fff">Convert</button>
+        <button onClick={()=>setConvert(!convert)} class="button-xs text-xs --h-c-gray100 --h-fwb c-fff b-1px-s-fff">Convert</button>
       </div>
     
         <Sandpack
         template="static"
         theme={theme}
-    
-
+        
         options={{
              showLineNumbers: true, // default - true
             showInlineErrors: true, // default - false
             wrapContent: true, // default - false
-            editorHeight: 700, // default - 300
+            editorHeight: 700, // default - 300  
              editorWidthPercentage: 60, // default - 50
              showNavigator: true,
              copyContent:true,
-              externalResources: ["https://cdn.jsdelivr.net/npm/aliascss@latest/dist/aliascss.js","https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"]
+              externalResources: ["https://cdn.jsdelivr.net/npm/aliascss@1.1.13/dist/aliascss.js","https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"]
          }}
           
         
 
         files={{
-            "index.html":`<!-- AliasCSS and alpineJs is already install for your experiments use -->
- <h1 x-data="{ message: 'I ❤️ Alpine' }" x-text="message"></h1>
- <h1 class="--after-content-I_❤️_AliasCSS"></h1>`
+            "index.html":`<div class="bgc-primary600 c-fff p-30px-18px br-12px">
+  <h1>Hello World</h1>
+  <p>Welcome to AliasCSS</p>
+ </div>
+
+            `
         }}
         />
         

@@ -1,13 +1,17 @@
+.is-active span{color:var(--blue600,#1570EF)} 
+.is-active span{background-color:var(--blue50,#EFF8FF)} 
+
 .dif{display: inline-flex}
 .fdc{flex-direction: column}
 .g8px{gap:8px}
-._span-c-blue600 span{color:var(--blue600,#1570EF)}
-._span-bgc-blue50 span{background-color:var(--blue50,#EFF8FF)}
+.dn{display: none}
+.cp{cursor: pointer}
+.c-gray500{color:var(--gray500,#667085)}
 .df{display: flex}
 .ccc{color:currentColor}
 .br6px{border-radius:6px}
-.p4px8px{padding:4px8px}
+.p-4px-8px{padding: 4px 8px}
 .tdn{text-decoration: none}
-.-h-bgc-blue50:hover{background-color:var(--blue50,#EFF8FF)}
+.--h-bgc-blue50:hover{background-color:var(--blue50,#EFF8FF)}
 .text-xs{font-size:12px;line-height:18px}
 .fw5{font-weight: 500}

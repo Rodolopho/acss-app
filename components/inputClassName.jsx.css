@@ -11,10 +11,11 @@
 .jcsb{justify-content: space-between}
 .ol-n{outline:none}
 .b-n{border:none}
-.-fo-oln:focus{outline:none}
-.-fo-bn:focus{border:none}
-.-fv-bxsn:focus-visible{box-shadow: none}
-.-fv-bn:focus-visible{border:none}
+.bgc-transparent{background-color:transparent}
+.--fo-oln:focus{outline:none}
+.--fo-bn:focus{border:none}
+.--fv-bxsn:focus-visible{box-shadow: none}
+.--fv-bn:focus-visible{border:none}
 .text-sm{font-size:14px;line-height:20px}
 .fw-4{font-weight:400}
 .c-gray500{color:var(--gray500,#667085)}
@@ -22,11 +23,14 @@
 .b1px-s-blue200{border:1px solid var(--blue200,#B2DDFF)}
 .bgc-blue100{background-color:var(--blue100,#D1E9FF)}
 .c-gray700{color:var(--gray700,#344054)}
+:is( html[class~="dark"]) .--is\(_html\[class\~\=dark\]\)\&-bgc-gray700{background-color:var(--gray700,#344054)}
+:is( html[class~="dark"]) .--is\(_html\[class\~\=dark\]\)\&-c-gray100{color:var(--gray100,#F2F4F7)}
 .cp{cursor: pointer}
-.-h-bgc-blue300:hover{background-color:var(--blue300,#84CAFF)}
+.--h-bgc-blue300:hover{background-color:var(--blue300,#84CAFF)}
 .w18px{width:18px}
 .h18px{height:18px}
 .stroke-gray700{stroke:var(--gray700,#344054)}
+:is( html[class~="dark"]) .--is\(_html\[class\~\=dark\]\)\&-stroke-gray100{stroke:var(--gray100,#F2F4F7)}
 .stroke-width1px{stroke-width:1px}
 .stroke-linecap-round{stroke-linecap:round}
 .stroke-linejoin-round{stroke-linejoin:round}

@@ -39,10 +39,10 @@ const [selected, setSelected]=useState("All");
   
   return (
     <div class="p0px32px mt32px">
-        <div class="bgc-2552552550d8 w150px  pf df md-dn zi1234 btm0px r32px shadow-xl mb32px br16px p8px16px b1px-s-blue400">
-          <select class="  text-xl -fo-bn -fo-oln c-gray600 bgc-inherit  " onChange={(e)=>handleClick(e.target.value)}>
+        <div class="bgc-2552552550d8 w150px  pf df md-dn zi1234 btm0px r32px shadow-xl mb32px br16px p-8px-16px b1px-s-blue400">
+          <select className="text-xl --fo-bn --fo-oln c-gray600 bgc-transparent" onChange={(e)=>handleClick(e.target.value)}>
           {[...colorsCato].map((key)=>{
-            return <option selected={key===selected} value={key}>{key}</option>
+            return <option selected={key===selected} value={key} >{key}</option>
           })}
           </select>
         </div>
@@ -50,7 +50,7 @@ const [selected, setSelected]=useState("All");
     <div   className=" df g32px  xw1280px  mla mra  _all-bsbb pr " style={{"--aside-width":"150px"}}>
      
       
-     <div className='dn   md-df  fb--var--aside-width flex-shrink0 t--var--aside-top   -sb-w5px -st-bgc-blue50 -stm-bgc-blue100 g8px   pst pr16px h--var--height  oxh oya ' 
+     <div className='dn   md-df  fb--var--aside-width flex-shrink0 t--var--aside-top   --sb-w5px --st-bgc-blue50 --stm-bgc-blue100 g8px   pst pr16px h--var--height  oxh oya ' 
       style={{ "--aside-top":"calc(32px + var(--nextra-navbar-height))","--height":'calc(100vh - var(--nextra-navbar-height) - var(--nextra-menu-height))'}}>
           <Aside colorsCato={colorsCato} selected={selected} handleClick={handleClick} />
       </div>

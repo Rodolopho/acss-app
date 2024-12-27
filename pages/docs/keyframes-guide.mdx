@@ -1,8 +1,8 @@
 ## Keyframes 
 AliasCSS provides custom attribute  'keyframes-[name]' which can be used to define CSS keyframes declaration.
 
-```html 
-      <div  class="bgc-ecf0f1 oh w-100p h-100px pa t-0 l-0 df aic acc jcc zi-100000" 
+```html copy
+      <div  class="bgc-ecf0f1 oh w-100p h-100px pa t-0 l-0 df aic acc jcc" 
         keyframes-loading="@100-transform-scale2 @100-border-color-gray600">
             <span class="dot" class-dot="br-100p b-5px-solid-555 m-10px an-loading adu-0d6s atf-eio ada aici "></span>
             <span class="dot adl-0d2s"></span>
@@ -15,7 +15,7 @@ export function Animation() {
  
   return (
     <div className="mt32px df p32px pr">
-        <div  class="bgc-ecf0f1 oh w100p h100p pa t0 l0 df aic acc jcc zi-100000" 
+        <div  class="bgc-ecf0f1 oh w100p h100p pa t0 l0 df aic acc jcc " 
         keyframes-loading="@100-tf-s2 @100-bc-gray600">
             <span class="dot" class-dot="br100p b5px-solid-555 m10px an-loading adu0d6s atf-eio ada aici "></span>
             <span class="dot adl0d2s"></span>
@@ -30,16 +30,16 @@ export function Animation() {
 # Usage
 
 With using`keyframes-[name]`  we can define simple animation very easily
-```html
+```html copy
 <!-- Flash -->
  <h1 keyframes-flash='@[0,50,100]-o-1 @[25,75]-o-0'  class="an-flash adu2s">Flash!</h1>
 
- <!-- Flash using full sementaic className -->
+ <!-- Flash using full semantic className -->
  <h1 keyframes-flash='@[0,50,100]-opacity-1 @[25,75]-opacity-0'  class="animation-name-flash animation-duration-2s">Flash!</h1>
 
 ```
 ``
-Syntax: keyframes-[animation-name]="@[percentage]-aliasccs @[percentage]-aliasccs @[percentage]-aliasccs"
+Syntax: keyframes-[animation-name]="@[percentage]-aliascss @[percentage]-aliascss @[percentage]-aliascss"
 E.g
 ``
 

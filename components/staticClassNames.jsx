@@ -43,7 +43,7 @@ export default function SearchStaticClassName(){
                     </span>
 
 
-                    <input  onChange={handleChange} class="oln  bn -fv-bxsn c-gray bgc-transparent text-md w100p "  placeholder="Static classname" />
+                    <input  onChange={handleChange} class="oln  bn --fv-bxsn c-gray bgc-transparent text-md w100p "  placeholder="Static classname" />
                 </div>
             </div>
            

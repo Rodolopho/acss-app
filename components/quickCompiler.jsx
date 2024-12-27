@@ -21,9 +21,9 @@ export default function QuickCompiler(){
                 <InputBox handleSubmit={handleSubmit}/>
 
                 <div className="df jcsb">
-                    <div class="p4px-10px-4px-4px br16px bgc-blue50 text-xs fw5 c-gray500 wxc aic g12px dif">
-                        <span class="bgc-fff p2px-10px br16px df aic g4px">Note</span>
-                        <span class="df aic gap4px"> input classname/s seperated by space.</span>
+                    <div class="p4px-10px-4px-4px br16px bgc-blue50 --is(_html[class~=dark])&-bgc-gray700 --is(_html[class~=dark])&-c-blue100 text-xs fw5 c-gray500 wxc aic g12px dif">
+                        <span class="bgc-fff p2px-10px br16px df aic g4px --is(_html[class~=dark])&-bgc-blue700 --is(_html[class~=dark])&-c-blue100">Note</span>
+                        <span class="df aic gap4px"> input classname/s separated by space.</span>
                        
                     </div>
 
@@ -56,9 +56,9 @@ export function CSSStm(props){
         const split=stm.replace("{","----").replace(/}[\s]?$/,"----").split('----');
          return (
             <div className='df fdc c-green700 fw6 '>
-                <span className="c-gray700">{split[0]+'{'}</span>
+                <span className="c-gray700 --is(_html[class~=dark])&-c-gray400">{split[0]+'{'}</span>
                 <span className="c-blue700 fw5">&nbsp;&nbsp;&nbsp;&nbsp;{split[1]}</span>
-                <span className="c-gray700">{'}'}</span>
+                <span className="c-gray700 --is(_html[class~=dark])&-c-gray400">{'}'}</span>
                 {/* <pre className=" -fln-c-primary700">
                     {//stm.replace("{","{\n\t").replace(/}[\s]?$/,"\n}")}
                 </pre> */}
