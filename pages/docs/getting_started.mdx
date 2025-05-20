@@ -59,16 +59,16 @@ Now, you can use easily create and compile the aliascss.
   ```
 
 ### when `--file` is set to `true`  
-    It will also creates css file for each file having valid aliascss class names at the same location of 
-    file with the same filename added with .css extension.
+    It will creates css file for each and every file having valid aliascss class names at the same location of 
+    current working/processing file with the same filename added with .css extension.
     ###### For example if you have the following structure:
 
         <FileTree>
         <FileTree.Folder name="app" defaultOpen>
-            <FileTree.File name="page.jxs" />
-            <FileTree.File name="article.jxs" />
+            <FileTree.File name="page.jsx" />
+            <FileTree.File name="article.jsx" />
             <FileTree.Folder name="about" defaultOpen>
-            <FileTree.File name="page.jxs" />
+            <FileTree.File name="page.jsx" />
             </FileTree.Folder>
         </FileTree.Folder>
         </FileTree>
@@ -77,7 +77,7 @@ Now, you can use easily create and compile the aliascss.
 
   ```js  copy
     const config={
-        input:'app/**/*.jxs',
+        input:'app/**/*.jsx',
         output:{
           location:'public/css/app.css',
           '--file':true
@@ -93,13 +93,13 @@ Now, you can use easily create and compile the aliascss.
         ###### Folder structure becomes
              <FileTree>
             <FileTree.Folder name="app" defaultOpen>
-                <FileTree.File name="page.jxs" />
-                <FileTree.File name="page.jxs.css" />
-                <FileTree.File name="article.jxs" />
-                <FileTree.File name="article.jxs.css" />
+                <FileTree.File name="page.jsx" />
+                <FileTree.File name="page.jsx.css" />
+                <FileTree.File name="article.jsx" />
+                <FileTree.File name="article.jsx.css" />
                 <FileTree.Folder name="about" defaultOpen>
-                <FileTree.File name="page.jxs" />
-                <FileTree.File name="page.jxs.css" />
+                <FileTree.File name="page.jsx" />
+                <FileTree.File name="page.jsx.css" />
                 </FileTree.Folder>
                 </FileTree.Folder>
             </FileTree>

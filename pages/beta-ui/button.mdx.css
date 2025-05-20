@@ -1,79 +1,3 @@
-
-/* Start :-----------ACSS keyframes-guide.mdx------------------------*/ 
-.dot{border-radius:100%} 
-.dot{border:5px solid #555} 
-.dot{margin:10px} 
-.dot{animation-name:loading} 
-.dot{animation-duration:0.6s} 
-.dot{animation-timing-function:ease-in-out} 
-.dot{animation-direction: alternate} 
-.dot{animation-iteration-count: infinite} 
-
-.bgc-ecf0f1{background-color:#ecf0f1}
-.oh{overflow: hidden}
-.w-100p{width: 100%}
-.h-100px{height: 100px}
-.pa{position: absolute}
-.t-0{top: 0}
-.l-0{left: 0}
-.df{display: flex}
-.aic{align-items: center}
-.acc{align-content: center}
-.jcc{justify-content: center}
-.adl-0d2s{animation-delay: 0.2s}
-.adl-0d4s{animation-delay: 0.4s}
-.mt32px{margin-top:32px}
-.p32px{padding:32px}
-.pr{position: relative}
-.w100p{width:100%}
-.h100p{height:100%}
-.t0{top:0}
-.l0{left:0}
-.adl0d2s{animation-delay:0.2s}
-.adl0d4s{animation-delay:0.4s}
-.an-flash{animation-name:flash}
-.adu2s{animation-duration:2s}
-.animation-name-flash{animation-name:flash}
-.animation-duration-2s{animation-duration: 2s}
-.an-fadeOut{animation-name:fadeOut}
-.adu-1s{animation-duration: 1s}
-.p-64px-32px{padding: 64px 32px}
-.bg-rg-gray300-gray600{background:radial-gradient( var(--gray300,#D0D5DD), var(--gray600,#475467) )}
-.aici{animation-iteration-count: infinite}
-.w-64px{width: 64px}
-.h-64px{height: 64px}
-.br-50p{border-radius: 50%}
-.an-pop-up{animation-name:pop-up}
-.adu-1d5s{animation-duration: 1.5s}
-.ada{animation-direction: alternate}
-.atf--timing-func{animation-timing-function: var(--timing-func)}
-.afmbo{animation-fill-mode: both}
-@keyframes loading{ 100% {transform:scale(2)} 100% {border-color:var(--gray600,#475467)}
-}
-
-@keyframes flash{ 0%,50%,100% {opacity: 1} 25%,75% {opacity: 0}
-}
-
-@keyframes fadeOut{
- 0% {opacity: 1} 100% {opacity: 0}
-}
-
-@keyframes pop-up{ 0% {transform:translateY(0);transform-origin: 50% 50%;box-shadow: var(--shadow-down)} 100% {transform:translateY(-50px);transform-origin: 50% 50%;box-shadow: var(--shadow-up)}
-}
-
-
-            
-/* End :-----------ACSS keyframes-guide.mdx----------------------------*/
-
-            
-/* Start :-----------ACSS accordion.mdx------------------------*/
-.fs200px{font-size:200px}
-
-            
-/* End :-----------ACSS accordion.mdx----------------------------*/
-
-            
-/* Start :-----------ACSS button.mdx------------------------*/ 
 .button-base-outline{padding: 8px 22px} 
 .button-base-outline{border:2px solid} 
 .button-base-outline{font-size:16px} 
@@ -86,7 +10,31 @@
 .button-base-outline{justify-content: center} 
 .button-base-outline{box-shadow:0px 3px 1px -2px rgb(0%,0%,0%,0.20)} 
 .button-base-outline{cursor: pointer} 
+.button-base-outline{padding: 8px 22px} 
+.button-base-outline{border:2px solid} 
+.button-base-outline{font-size:16px} 
+.button-base-outline{line-height: 26px} 
+.button-base-outline{word-wrap: break-word} 
+.button-base-outline{border-radius: 50} 
+.button-base-outline{font-weight: 500} 
+.button-base-outline{display: inline-block} 
+.button-base-outline{align-items: center} 
+.button-base-outline{justify-content: center} 
+.button-base-outline{box-shadow:0px 3px 1px -2px rgb(0%,0%,0%,0.20)} 
+.button-base-outline{cursor: pointer} 
+
+.button-base-outline-rounded{padding: 8px 22px} 
+.button-base-outline-rounded{border:2px solid} 
+.button-base-outline-rounded{font-size:16px} 
+.button-base-outline-rounded{line-height: 26px} 
+.button-base-outline-rounded{word-wrap: break-word} 
 .button-base-outline-rounded{border-radius: 50} 
+.button-base-outline-rounded{font-weight: 500} 
+.button-base-outline-rounded{display: inline-block} 
+.button-base-outline-rounded{align-items: center} 
+.button-base-outline-rounded{justify-content: center} 
+.button-base-outline-rounded{box-shadow:0px 3px 1px -2px rgb(0%,0%,0%,0.20)} 
+.button-base-outline-rounded{cursor: pointer} 
 .button-base-outline-rounded{padding: 8px 22px} 
 .button-base-outline-rounded{border:2px solid} 
 .button-base-outline-rounded{font-size:16px} 
@@ -100,6 +48,7 @@
 .button-base-outline-rounded{box-shadow:0px 3px 1px -2px rgb(0%,0%,0%,0.20)} 
 .button-base-outline-rounded{cursor: pointer} 
 
+.df{display: flex}
 .g-16px{gap: 16px}
 ._button\[p-8px-22px\,b0\,fs16px\,lh-26px\,ls-0d46px\,wwbw\,br-4px\,fw5\,dib\,aic\,jcc\,bxs-0px-3px-1px--2px-rgb-0p-0p-0p-0d20\,cp\] button{padding: 8px 22px} 
 ._button\[p-8px-22px\,b0\,fs16px\,lh-26px\,ls-0d46px\,wwbw\,br-4px\,fw5\,dib\,aic\,jcc\,bxs-0px-3px-1px--2px-rgb-0p-0p-0p-0d20\,cp\] button{border:0} 
@@ -148,7 +97,9 @@
 .p64px-32px{padding:64px 32px}
 .bgc-primary100{background-color:var(--primary100,#F4EBFF)}
 .c-primary700{color:var(--primary700,#6941C6)}
+.pr{position: relative}
 .--hover-bgc-primary200:hover{background-color:var(--primary200,#E9D7FE)}
+.oh{overflow: hidden}
 .tfo-center{transform-origin:-center}
 .--hover--after-tf-s3:hover::after{transform:scale(3)}
 .--after-\[cont\,w100p\,bgc-primary800\,t0px\,l--100p\,br100p\,h100p\,pa\,o0d5\,tn-all-0d35s\,zi-1\]::after{content:""} 
@@ -205,10 +156,15 @@
 .br-40px-25px-25px-0px{border-radius: 40px 25px 25px 0px}
 .adl-1s{animation-delay: 1s}
 .clip-path-ellipse-90p-60p-at-5p-5p{clip-path:ellipse(90% 60%  at 5% 5% )}
+.aic{align-items: center}
+.jcc{justify-content: center}
 .tf-sy--1__r-180deg{transform:scaleY(-1) rotate(180deg)}
 .dib{display: inline-block}
+.pa{position: absolute}
 .an-eye{animation-name:eye}
+.aici{animation-iteration-count: infinite}
 .atfl{animation-timing-function: linear}
+.adu2s{animation-duration:2s}
 .h64px{height:64px}
 .w64px{width:64px}
 .br100px{border-radius:100px}
@@ -216,52 +172,16 @@
 .adl1s{animation-delay:1s}
 .an-mouth{animation-name:mouth}
 .adu1s{animation-duration:1s}
+.ada{animation-direction: alternate}
 .br50p{border-radius:50%}
 .bgc-gray100-i{background-color:var(--gray100,#F2F4F7) !important}
 .asc{align-self: center}
 .ml70px{margin-left:70px}
-@keyframes eye{ 0% {margin-left: 20px} 50% {margin:auto} 100% {margin-right: 20px}
+@keyframes eye{
+ 0% {margin-left: 20px} 50% {margin:auto} 100% {margin-right: 20px} 0% {margin-left: 20px} 50% {margin:auto} 100% {margin-right: 20px}
 }
 
 @keyframes mouth{
  100% {transform:scale(1.1)}
 }
 
-
-            
-/* End :-----------ACSS button.mdx----------------------------*/
-
-            
-/* Start :-----------ACSS inputs.mdx------------------------*/
-
-            
-/* End :-----------ACSS inputs.mdx----------------------------*/
-
-            
-/* Start :-----------ACSS typography.mdx------------------------*/
-.heading-2xl{font-size:72px ; line-height:90px ; letter-spacing:-0.02em}
-.font-weight-bold{font-weight:700}
-.fwb{font-weight: bold}
-.heading-xl{font-size: 60px; line-height: 72px; letter-spacing:-0.02em}
-.heading-lg{font-size:48px ; line-height: 60px; letter-spacing:-0.02em}
-.heading-md{font-size: 36px; line-height: 44px; letter-spacing:-0.02em}
-.fw7{font-weight: 700}
-.heading-sm{font-size: 30px; line-height: 38px}
-.fw6{font-weight: 600}
-.heading-xs{font-size: 24px; line-height: 32px}
-.fw5{font-weight: 500}
-.text-xl{font-size:20px;line-height:30px}
-.text-lg{font-size:18px;line-height:28px}
-.text-md{font-size:16px;line-height:24px}
-.text-sm{font-size:14px;line-height:20px}
-.text-xs{font-size:12px;line-height:18px}
-.mt-24px{margin-top: 24px}
-.bl-2px-s-gray300{border-left:2px solid var(--gray300,#D0D5DD)}
-.c-gray700{color:var(--gray700,#344054)}
-.pl-24px{padding-left: 24px}
-.fsi{font-style: italic}
-
-            
-/* End :-----------ACSS typography.mdx----------------------------*/
-
-            

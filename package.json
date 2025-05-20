@@ -32,6 +32,6 @@
     "typescript": "5.1.6"
   },
   "devDependencies": {
-    "aliascss": "^1.1.12"
+    "aliascss": "^1.1.19"
   }
 }

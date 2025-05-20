@@ -1,6 +1,7 @@
 {
   "getting_started": "Getting Started",
   "basic": "Basic",
+  "StaticClassNames": "Static ClassNames",
   "stateAndSelector":"CSS State & Element Selector",
   "AttributeSelector":"Attribute Selector",
   "screens":"Targeting Devices and Screens",

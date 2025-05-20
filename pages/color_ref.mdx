@@ -56,6 +56,8 @@ const [selected, setSelected]=useState("All");
       </div>
       <div className="dif fdc"> 
         <h1 className="display-sm w100p fwn pl10px ">{selected + ' Colors'}</h1>
+                  <i style={{'color':'gray','margin-left':'auto'}}>Ref:<small style={{'text-decoration':'underline'}}>untitledui.com</small></i>
+
         <ul className=" df fww p0px ">
           {Object.keys(colors).map((key,index)=>{
         
@@ -66,6 +68,7 @@ const [selected, setSelected]=useState("All");
             )
           }
         )}
+        
                       
         </ul>
       </div>

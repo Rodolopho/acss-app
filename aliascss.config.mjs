@@ -1,6 +1,6 @@
  const config={
     //input:['pages/**/*.mdx','components/**/*.(jsx|mdx)','src/app/**/*.(jsx|mdx)'],
-    input:['src/app/**/*.(tsx|jsx|mdx)'],
+    input:['pages/beta-ui/**/*.(tsx|jsx|mdx)','pages/docs/keyframes-guide.mdx'],
     output:{
         '--file':true,
         //location:'public/main.css'

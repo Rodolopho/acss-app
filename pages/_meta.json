@@ -9,7 +9,9 @@
   "beta-ui":{
     "title":"Components",
     "type":"page",
-    "display":"hidden"
+    "theme":{
+      "layout":"full"
+    }
     
   },
   "docs": {

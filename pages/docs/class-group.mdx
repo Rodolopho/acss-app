@@ -1,4 +1,21 @@
-## Make reusable classname by grouping valid AliasCSS Classnames
+
+## In-line Grouping of acss
+
+ We can also group the acss class when we have different style we want to apply for the same state or selector. For Example.
+
+```html
+<button class="b0 color-fff bgc-blue --hover-c-gray --hover-border-radius-4px --hover-bgc-skyBlue" >Label</button>
+```
+In this example we are targeting `hover ` state multiple times, we are repeating ourself. we can avoid this by grouping the 
+acss in `[acss,acss,acss]`. In short the above code can also be written as:
+```html
+<button class="b0 color-fff bgc-blue --hover-[c-gray,border-radius-4px,bgc-skyBlue]" >Label</button>
+```
+```html
+<div class="[data-state=open][display-flex,left-0]" >...</div>
+```
+
+## Global ClassName:-Make reusable  classname by grouping valid AliasCSS Classnames
 AliasCSS provides custom attribute  'class-[name]' to group valid aliasCSS classnames.
 
 ```html 

@@ -1,0 +1,26 @@
+.fs200px{font-size:200px}
+.df{display: flex}
+.aic{align-items: center}
+.p64px-32px{padding:64px 32px}
+.heading-2xl{font-size:72px ; line-height:90px ; letter-spacing:-0.02em}
+.font-weight-bold{font-weight:700}
+.fwb{font-weight: bold}
+.heading-xl{font-size: 60px; line-height: 72px; letter-spacing:-0.02em}
+.heading-lg{font-size:48px ; line-height: 60px; letter-spacing:-0.02em}
+.heading-md{font-size: 36px; line-height: 44px; letter-spacing:-0.02em}
+.fw7{font-weight: 700}
+.heading-sm{font-size: 30px; line-height: 38px}
+.fw6{font-weight: 600}
+.heading-xs{font-size: 24px; line-height: 32px}
+.fw5{font-weight: 500}
+.text-xl{font-size:20px;line-height:30px}
+.text-lg{font-size:18px;line-height:28px}
+.text-md{font-size:16px;line-height:24px}
+.text-sm{font-size:14px;line-height:20px}
+.text-xs{font-size:12px;line-height:18px}
+.p-64px-32px{padding: 64px 32px}
+.mt-24px{margin-top: 24px}
+.bl-2px-s-gray300{border-left:2px solid var(--gray300,#D0D5DD)}
+.c-gray700{color:var(--gray700,#344054)}
+.pl-24px{padding-left: 24px}
+.fsi{font-style: italic}

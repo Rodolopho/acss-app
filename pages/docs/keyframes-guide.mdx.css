@@ -43,6 +43,17 @@
 .animation-duration-2s{animation-duration: 2s}
 .an-fadeOut{animation-name:fadeOut}
 .adu-1s{animation-duration: 1s}
+.p-64px-32px{padding: 64px 32px}
+.bg-rg-gray300-gray600{background:radial-gradient( var(--gray300,#D0D5DD), var(--gray600,#475467) )}
+.aici{animation-iteration-count: infinite}
+.w-64px{width: 64px}
+.h-64px{height: 64px}
+.br-50p{border-radius: 50%}
+.an-pop-up{animation-name:pop-up}
+.adu-1d5s{animation-duration: 1.5s}
+.ada{animation-direction: alternate}
+.atf--timing-func{animation-timing-function: var(--timing-func)}
+.afmbo{animation-fill-mode: both}
 @keyframes loading{
  100% {transform:scale(2)} 100% {border-color:var(--gray600,#475467)} 100% {transform:scale(2)} 100% {border-color:var(--gray600,#475467)}
 }
@@ -53,5 +64,9 @@
 
 @keyframes fadeOut{
  0% {opacity: 1} 100% {opacity: 0}
+}
+
+@keyframes pop-up{
+ 0% {transform:translateY(0);transform-origin: 50% 50%;box-shadow: var(--shadow-down)} 100% {transform:translateY(-50px);transform-origin: 50% 50%;box-shadow: var(--shadow-up)} 0% {transform:translateY(0);transform-origin: 50% 50%;box-shadow: var(--shadow-down)} 100% {transform:translateY(-50px);transform-origin: 50% 50%;box-shadow: var(--shadow-up)}
 }
 

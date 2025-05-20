@@ -1,30 +1,46 @@
 ## CSS Variable 
-CSS variables can be used in every className to every css-property. using `--var--` or `--` identifier after the property. The main diffrent 
-between them are with `--var--` you can use varaible name that startswith numeric character e.g `--1x:4px` but not 
+CSS variables can be used in every AliasCSS className  `--var--` or `--` identifier after the property. The main different  
+between them are with `--var--` you can use variable name that startswith numeric character e.g `--1x:4px` but not 
 with '--'.
-|classname|shorthand|css|Remarks|
-|---------|---------|---|-------|
-|`color--var--name`|`c--var--name`|`color: var(--name)`|
-|`color--name`|`c--name`|`color: var(--name)`|
-|`width--var--side-bar-width`|`w--var--side-bar-width`| `width: var(--side-bar-width)`||
-|`width--side-bar-width`|`w--side-bar-width`| `width: var(--side-bar-width)`||
-|`width--var--24x`|`w--var--24x`|`width: var(--24x)`|
-|`width--24x`|`w--24x`||`Not Valid, variable name with number not supported with '--' use '--var--' instead`|
 
 **Example**
 ```html
-<div class="width--blockquote-width" style="--grey-default:rgba(210, 213, 217, 1);--grey-alt:rgba(186, 189, 194, 1)">
-    <h3 class="color--grey-default --hover-color--grey-alt">Hello World</h3>
+<div class="--header-color:skyBlue">
+    <h3 class="color--header-color --hover--header-color:blue">Hello World</h3>
 </div>
 ```
+### Defining Default value for css variable
+We can give default value for css variable adding `:value` when using css variables. The default value will be used if the variable is not defined in the style attribute or in the className.
+```html
+<h1 class="color--header-color:skyBlue">Hello World</h1>
+
+```
+### Few Examples of using css variables
+
+|classname|shorthand|css|Remarks|
+|---------|---------|---|-------|
+|`background-color--var--main-bg`|`bgc--var--main-bg`|`color: var(--main-bg)`|
+|`background-color--main-bg`|`bgc--main-bg`|`color: var(--main-bg)`|
+|`background-color--main-bg:blue`|`bgc--main-bg:blue`|`color: var(--main-bg,blue)`|with default value|
+|`color--name`|`c--name`|`color: var(--name)`|
+|`width--var--side-bar-width:200px`|`w--var--side-bar-width:200px`| `width: var(--side-bar-width,200px)`||
+|`width--side-bar-width`|`w--side-bar-width`| `width: var(--side-bar-width)`||
+|`width--var--24x`|`w--var--24x`|`width: var(--24x)`|
+|`width--24x`|`w--24x`| `width:-24x`|use --var-- , if this is css variable|
+
+
 
 ## Declaring css variable using aliascss className.
 
-To define css variables using classN names  use this format, `--var-name:value`, value passed is just a plain string and 
-it is not compiler to any value format as there is no way for aliascss to know the type of value you want to use. However ,length based are goog to go in this case.
+To define css variables using classnames  use this format, `--var-name:value`, value passed is just a plain string and 
+it is not compiler to any value format as there is no way for aliascss to know the type of value you want to use. However ,length based are good to go in this case.
+optionally you can end your variable name with '-text' to treat value as string. Similarly, variable names that ends with '-color', AliasCSS will try to treat its value as color identifier
 **Example**
 ```html
-<div class="width--blockquote-width color--grey-alt --grey:--grey-default" style="--grey-default:rgba(210, 213, 217, 1);--grey-alt:rgba(186, 189, 194, 1)">
-    <h3 class="color--grey --hover-color--grey-hover --grey-hover:black">Hello World</h3>
+<div class="color--grey-alt --grey:--grey-default" 
+    style="--grey-default:rgba(210, 213, 217, 1);--grey-alt:rgba(186, 189, 194, 1)">
+    <h3 class="color--grey --hover-color--grey-hover --grey-hover:black">
+        Hello World
+    </h3>
 </div>
 ```

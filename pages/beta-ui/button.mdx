@@ -1,0 +1,137 @@
+import { Tabs } from 'nextra/components'
+import './button.mdx.css'
+ 
+
+
+# Button
+
+<Tabs items={['Solid', 'Outlined', 'Variants']} defaultIndex="1 " >
+  <Tabs.Tab >
+  **Solid Buttons**
+  <div class="df g-16px _button[p-8px-22px,b0,fs16px,lh-26px,ls-0d46px,wwbw,br-4px,fw5,dib,aic,jcc,bxs-0px-3px-1px--2px-rgb-0p-0p-0p-0d20,cp]">
+   <button class="bgc-primary600 c-primary25 --hover-bgc-primary700">Primary</button>
+   <button class="bgc-success600 c-success25 --hover-bgc-success700">Success</button>
+   <button class="bgc-error600 c-warning25 --hover-bgc-error700">Error</button>
+   <button class="bgc-warning600 c-warning25 --hover-bgc-warning700">Warning</button>
+</div>
+  ```html copy
+  <div class="_button[p-8px-22px,b0,fs16px,lh-26px,ls-0d46px,wwbw,br-4px,fw5,dib,aic,jcc,bxs-0px-3px-1px--2px-rgb-0p-0p-0p-0d20,cp]">
+   <button class="bgc-primary600 c-primary25 --hover-bgc-primary700">Primary</button>
+   <button class="bgc-success600 c-success25 --hover-bgc-success700">Success</button>
+   <button class="bgc-error600 c-warning25 --hover-bgc-error700">Error</button>
+   <button class="bgc-warning600 c-warning25 --hover-bgc-warning700">Warning</button>
+</div>
+  ```
+  ----
+  <div class="df g16px _button[p-8px-22px,b0,fs16px,lh-26px,ls-0d46px,wwbw,br-4px,fw5,dib,aic,jcc,bxs-0px-3px-1px--2px-rgb-0p-0p-0p-0d20,cp,tn-all-0d35s]">
+   <button
+      class="bgc-primary600 c-primary100 
+      --hover-bgc-primary700 --h-bxs-2px-2px-2px-primary50__2px-2px-1px-1px-primary700 --h-tf-t--2px --h-br-4px-0px-4px-0px"
+      >
+   Button
+   </button>
+  
+</div>
+
+  ```html copy
+  <div class="df g16px _button[p-8px-22px,b0,fs16px,lh-26px,ls-0d46px,wwbw,br-4px,fw5,dib,aic,jcc,bxs-0px-3px-1px--2px-rgb-0p-0p-0p-0d20,cp,tn-all-0d35s]">
+   <button
+      class="bgc-primary600 c-primary100 
+      --hover-bgc-primary700 --h-bxs-2px-2px-2px-primary50__2px-2px-1px-1px-primary700 --h-tf-t--2px --h-br-4px-0px-4px-0px"
+      >
+   Button
+   </button>
+  
+</div>
+```
+---
+<div class="df g32px p64px-32px _button[p-8px-22px,b0,fs16px,lh-26px,ls-0d46px,wwbw,br-4px,fw5,dib,aic,jcc,bxs-0px-3px-1px--2px-rgb-0p-0p-0p-0d20,cp,tn-all-0d35s]">
+   <button class="bgc-primary100 c-primary700 pr --hover-bgc-primary200 oh --after-tr-s0 tfo-center --hover--after-tf-s3  --after-[cont,w100p,bgc-primary800,t0px,l--100p,br100p,h100p,pa,o0d5,tn-all-0d35s,zi-1]" >Primary</button>
+   <button class="bgc-success100 c-success700 --hover-bgc-success200 pr oh --after-tr-s0 tfo-center --hover--after-tf-s20  --after-[cont,w10px,bgc-success700,b-1px-s-success900,t-10px,l--15px,br100p,h10px,pa,o0d5,tn-all-0d55s,zi-1]">Success</button>
+   <button class="bgc-error100 c-error700 --hover-bgc-error200">Error</button>
+   <button class="bgc-warning100 c-warning700 --hover-bgc-warning200">Warning</button>
+</div>
+
+```html copy
+<div class="df g32px p64px-32px _button[p-8px-22px,b0,fs16px,lh-26px,ls-0d46px,wwbw,br-4px,fw5,dib,aic,jcc,bxs-0px-3px-1px--2px-rgb-0p-0p-0p-0d20,cp,tn-all-0d35s]">
+   <button class="bgc-primary100 c-primary700 pr --hover-bgc-primary200 oh --after-tr-s0 tfo-center --hover--after-tf-s3  --after-[cont,w100p,bgc-primary800,t0px,l--100p,br100p,h100p,pa,o0d5,tn-all-0d35s,zi-1]" >Primary</button>
+   <button class="bgc-success100 c-success700 --hover-bgc-success200 pr oh --after-tr-s0 tfo-center --hover--after-tf-s20  --after-[cont,w10px,bgc-success700,b-1px-s-success900,t-10px,l--15px,br100p,h10px,pa,o0d5,tn-all-0d55s,zi-1]">Success</button>
+   <button class="bgc-error100 c-error700 --hover-bgc-error200">Error</button>
+   <button class="bgc-warning100 c-warning700 --hover-bgc-warning200">Warning</button>
+</div>
+```
+
+  </Tabs.Tab>
+  <Tabs.Tab>
+ <div className="df g16px p64px-32px">
+    <button
+        class="button-base-outline bgc-primary100 c-primary700 ____all--hover-filter-i-1 --hover-filter-i-1 --hover-bgc-primary200"
+        class-button-base-outline="p-8px-22px b2px-s  fs16px lh-26px ls-0d46px wwbw 
+            br-50 fw5  dib aic jcc bxs-0px-3px-1px--2px-rgb-0p-0p-0p-0d20  cp "
+    >
+        Primary
+    </button>
+    <button class="button-base-outline bgc-success100 c-success700 --hover-bgc-success200">Success</button>
+    <button class="button-base-outline bgc-error100 c-error700 --hover-bgc-error200">Error</button>
+    <button class="button-base-outline bgc-warning100 c-warning700 --hover-bgc-warning200">Warning</button>
+</div>
+```html copy
+<div className="df g16px p64px-32px">
+    <button
+        class="button-base-outline bgc-primary100 c-primary700 ____all--hover-filter-i-1 --hover-filter-i-1 --hover-bgc-primary200"
+        class-button-base-outline="p-8px-22px b2px-s  fs16px lh-26px ls-0d46px wwbw 
+            br-50 fw5  dib aic jcc bxs-0px-3px-1px--2px-rgb-0p-0p-0p-0d20  cp "
+    >
+        Primary
+    </button>
+    <button class="button-base-outline bgc-success100 c-success700 --hover-bgc-success200">Success</button>
+    <button class="button-base-outline bgc-error100 c-error700 --hover-bgc-error200">Error</button>
+    <button class="button-base-outline bgc-warning100 c-warning700 --hover-bgc-warning200">Warning</button>
+</div>
+```
+---
+<div className="df g16px p64px-32px">
+    <button
+        class="button-base-outline-rounded bgc-primary100 c-primary700 ____all--hover-filter-i-1 --hover-filter-i-1 --hover-bgc-primary200"
+        class-button-base-outline-rounded="p-8px-22px b2px-s  fs16px lh-26px ls-0d46px wwbw 
+            br-50 fw5  dib aic jcc bxs-0px-3px-1px--2px-rgb-0p-0p-0p-0d20  cp "
+    >
+        Primary
+    </button>
+    <button class="button-base-outline-rounded bgc-success100 c-success700 --hover-bgc-success200">Success</button>
+    <button class="button-base-outline-rounded bgc-error100 c-error700 --hover-bgc-error200">Error</button>
+    <button class="button-base-outline-rounded bgc-warning100 c-warning700 --hover-bgc-warning200">Warning</button>
+</div>
+```html copy
+<div className="df g16px p64px-32px">
+    <button
+        class="button-base-outline-rounded bgc-primary100 c-primary700 ____all--hover-filter-i-1 --hover-filter-i-1 --hover-bgc-primary200"
+        class-button-base-outline-rounded="p-8px-22px b2px-s  fs16px lh-26px ls-0d46px wwbw 
+            br-50px fw5  dib aic jcc bxs-0px-3px-1px--2px-rgb-0p-0p-0p-0d20  cp "
+    >
+        Primary
+    </button>
+    <button class="button-base-outline-rounded bgc-success100 c-success700 --hover-bgc-success200">Success</button>
+    <button class="button-base-outline-rounded bgc-error100 c-error700 --hover-bgc-error200">Error</button>
+    <button class="button-base-outline-rounded bgc-warning100 c-warning700 --hover-bgc-warning200">Warning</button>
+</div>
+```
+
+  </Tabs.Tab>
+  <Tabs.Tab>
+  **Guide** Guide to use Components.
+  </Tabs.Tab>
+  <div class="b-5px-s-gray600 c-fff p-30px-18px br-500px dif h100px tf-s-0d5">
+  <div class="df  but g18px fww xw-300px  _button-p12px-56px _button--fc-br-25px-0px-40px-25px _button--fc-bgc-gray100 _button-b5px-s-gray700  ">
+   
+    <button class="pr br-40px-25px-25px-0px adl-1s clip-path-ellipse-90p-60p-at-5p-5p df aic jcc tf-sy--1__r-180deg">
+      <span keyframes-eye="@0-ml-20px @50-ma @100-mr-20px" class="dib pa an-eye aici atfl adu2s h64px w64px br100px bgc-gray600 adl1s"></span>
+    </button>
+    
+    <button class=" pr br-40px-25px-25px-0px clip-path-ellipse-90p-60p-at-5p-5p df aic jcc">
+      <span keyframes-eye="@0-ml-20px @50-ma @100-mr-20px" class="dib pa an-eye aici atfl adu2s h64px w64px br100px bgc-gray600 "></span></button>
+    <button keyframes-mouth="@100-tf-s-1d1" class="an-mouth aici adu1s ada br50p bgc-gray100-i asc ml70px"></button>
+  </div>
+ </div>
+         
+</Tabs>

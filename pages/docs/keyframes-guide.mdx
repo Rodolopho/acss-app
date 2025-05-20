@@ -47,3 +47,23 @@ E.g
 <div keyframes-fadeOut="@0-opacity-1 @100-opacity-0" class="an-fadeOut adu-1s">Fade Out</div>
 ```
 
+#### Using acss group
+we can also group properties and value for given time using `[]` for example `keyframes-name=@0-[left-20px,tf-r-45deg,color-gray500] @[10,35,57]-[left-40px,tf-r--45deg,color-blue]`
+<div className='df aic jcc p-64px-32px'>
+<div class="bg-rg-gray300-gray600 aici w-64px h-64px br-50p  an-pop-up adu-1d5s ada atf--timing-func afmbo " 
+   keyframes-pop-up="@0-[tf-ty-0,tfo-50p-50p,bxs--shadow-down] @100-[tf-ty--50px,tfo-50p-50p,bxs--shadow-up]"
+   style={{
+    "--shadow-up": "0 50px 3px -20px rgba(0,0,0,0.3)",
+    "--shadow-down": "0 50px 3px -5px rgba(0,0,0,0.3)",
+   "--timing-func":"cubic-bezier(0.250, 0.460, 0.450, 0.940)"
+   }}
+   >
+   </div>
+</div>
+```html copy
+<div class=" bg-rg-gray300-gray600   w-64px h-64px br-50p an-pop-up adu-1d5s ada atf--timing-func aici afmbo " 
+   keyframes-pop-up="@0-[tf-ty-0,tfo-50p-50p,bxs--shadow-down] @100-[tf-ty--50px,tfo-50p-50p,bxs--shadow-up]"
+   style="--shadow-up: 0 50px 3px -20px rgba(0,0,0,0.3);--shadow-down: 0 50px 3px -5px rgba(0,0,0,0.3);
+   --timing-func:cubic-bezier(0.250, 0.460, 0.450, 0.940)"
+   ></div>
+```
