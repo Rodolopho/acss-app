@@ -6,14 +6,7 @@
       "layout":"full"
      }
   },
-  "beta-ui":{
-    "title":"Components",
-    "type":"page",
-    "theme":{
-      "layout":"full"
-    }
-    
-  },
+
   "docs": {
     "title":"Docs",
     "type":"page",
