@@ -10,4 +10,6 @@
 .--h-fwb:hover{font-weight: bold}
 .c-fff{color:#fff}
 .b-1px-s-fff{border:1px solid #fff}
-.--after-content-I_❤️_AliasCSS::after{content:"I ❤️ AliasCSS"}
+.bgc-primary600{background-color:var(--primary600,#7F56D9)}
+.p-30px-18px{padding: 30px 18px}
+.br-12px{border-radius: 12px}

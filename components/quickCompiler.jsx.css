@@ -25,11 +25,11 @@
 .br-5px{border-radius: 5px}
 .p24px{padding:24px}
 .bl15px-s-blueLight600{border-left:15px solid var(--blueLight600,#0086C9)}
-.fdc{flex-direction: column}
 .ff-courier{font-family:courier}
 .text-sm{font-size:14px;line-height:20px}
 .o-a{opacity:-a}
 .w100p{width:100%}
+.fdc{flex-direction: column}
 .c-green700{color:var(--green700,#087443)}
 .fw6{font-weight: 600}
 .c-gray700{color:var(--gray700,#344054)}
@@ -38,3 +38,5 @@
 .c-error400{color:var(--error400,#F97066)}
 .fwb{font-weight: bold}
 .c-error500{color:var(--error500,#F04438)}
+.c-blue{color:blue}
+.c-warning{color:warning}

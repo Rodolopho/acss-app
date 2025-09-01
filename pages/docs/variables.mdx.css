@@ -1,3 +1,9 @@
-.width--blockquote-width{width: var(--blockquote-width)}
-.color--grey-default{color: var(--grey-default)}
-.--hover-color--grey-alt:hover{color: var(--grey-alt)}
+.--header-color\:skyBlue{--header-color:skyBlue}
+.color--header-color{color: var(--header-color)}
+.--hover--header-color\:blue:hover{--header-color:blue}
+.color--header-color\:skyBlue{color: var(--header-color,skyBlue)}
+.color--grey-alt{color: var(--grey-alt)}
+.--grey\:--grey-default{--grey: var(--grey-default)}
+.color--grey{color: var(--grey)}
+.--hover-color--grey-hover:hover{color: var(--grey-hover)}
+.--grey-hover\:black{--grey-hover:black}

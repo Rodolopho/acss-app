@@ -17,6 +17,34 @@
 .error::after{color:var(--error700,#B42318)} 
 .error::after{border:1px solid var(--error700,#B42318)} 
 
+.b0{border:0}
+.color-fff{color:#fff}
+.bgc-blue{background-color:blue}
+.--hover-c-gray:hover{color:gray}
+.--hover-border-radius-4px:hover{border-radius: 4px}
+.--hover-bgc-skyBlue:hover{background-color:skyBlue}
+.--hover-\[c-gray\,border-radius-4px\,bgc-skyBlue\]:hover{color:gray} 
+.--hover-\[c-gray\,border-radius-4px\,bgc-skyBlue\]:hover{border-radius: 4px} 
+.--hover-\[c-gray\,border-radius-4px\,bgc-skyBlue\]:hover{background-color:skyBlue} 
+
+.\[data-state\=open\]\[display-flex\,left-0\][data-state="open"]{display:flex} 
+.\[data-state\=open\]\[display-flex\,left-0\][data-state="open"]{left: 0} 
+
+.btn{border:0} 
+.btn{color:#fff} 
+.btn{background-color:blue} 
+ 
+
+.btn:hover{color:gray} 
+.btn:hover{border-radius: 4px} 
+.btn:hover{background-color:skyBlue} 
+ 
+
+.active[data-state="open"]{display:flex} 
+.active[data-state="open"]{left: 0} 
+ 
+
+.container{container:  /* ***Warning:Might not be Valid value *** */}
 .mt32px{margin-top:32px}
 .df{display: flex}
 .p32px{padding:32px}

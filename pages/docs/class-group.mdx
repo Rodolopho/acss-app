@@ -14,8 +14,17 @@ acss in `[acss,acss,acss]`. In short the above code can also be written as:
 ```html
 <div class="[data-state=open][display-flex,left-0]" >...</div>
 ```
+####  using '--as-' suffix
 
-## Global ClassName:-Make reusable  classname by grouping valid AliasCSS Classnames
+we can group or bundle  acss classnames in a new reusable classname by adding --as-[new-class-name] at the end of inline-acss-group.
+```html
+<button class="[b0,color-fff,bgc-blue]--as-btn --hover-[c-gray,border-radius-4px,bgc-skyBlue]--as-btn btn" >Label</button>
+```
+```html
+<div class="[data-state=open][display-flex,left-0]--as-active active" >...</div>
+```
+
+### Global ClassName:-Make reusable  classname by grouping valid AliasCSS Classnames
 AliasCSS provides custom attribute  'class-[name]' to group valid aliasCSS classnames.
 
 ```html 

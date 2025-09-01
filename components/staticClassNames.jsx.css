@@ -8,6 +8,8 @@
 .g16px{gap:16px}
 .p8px-12px{padding:8px 12px}
 .bgc-gray100{background-color:var(--gray100,#F2F4F7)}
+:is( html.dark) .--is\(_html\.dark\)\&-bgc-gray900{background-color:var(--gray900,#101828)}
+:is( html.dark) .--is\(_html\.dark\)\&-b-1px-s-gray50{border:1px solid var(--gray50,#F9FAFB)}
 .br8px{border-radius:8px}
 .b1px-s-gray300{border:1px solid var(--gray300,#D0D5DD)}
 .g12px{gap:12px}
@@ -24,12 +26,14 @@
 .bn{border:none}
 .--fv-bxsn:focus-visible{box-shadow: none}
 .c-gray{color:gray}
+:is( html.dark) .--is\(_html\.dark\)\&-c-gray-25{color:var(--gray-25,#FCFCFD)}
 .bgc-transparent{background-color:transparent}
 .text-md{font-size:16px;line-height:24px}
 .zi12345{z-index:12345}
 .l0px{left:0px}
 .t100p{top:100%}
 .bgc-gray200{background-color:var(--gray200,#EAECF0)}
+:is( html.dark) .--is\(_html\.dark\)\&-bgc-gray-900{background-color:var(--gray-900,#101828)}
 .xh60vh{max-height:60vh}
 .mw320px{min-width:320px}
 .shadow-md{box-shadow:var(--shadow-ms, 0px 4px 8px -2px rgba(16, 24, 40, 0.1), 0px 2px 4px -2px rgba(16, 24, 40, 0.06))}
@@ -39,8 +43,10 @@
 .lsn{list-style: none}
 .jcsb{justify-content: space-between}
 .c-gray700{color:var(--gray700,#344054)}
+:is( html.dark) .--is\(_html\.dark\)\&-c-gray-50{color:var(--gray-50,#F9FAFB)}
 .fwb{font-weight: bold}
 .text-sm{font-size:14px;line-height:20px}
 .c-blue700{color:var(--blue700,#175CD3)}
+:is( html.dark) .--is\(_html\.dark\)\&-c-gray-50-i{color:var(--gray-50,#F9FAFB) !important}
 .fw5{font-weight: 500}
 .asfe{align-self: flex-end}

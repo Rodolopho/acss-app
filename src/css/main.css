@@ -66,202 +66,454 @@
 /* End :-----------ACSS keyframes-guide.mdx----------------------------*/
 
             
-/* Start :-----------ACSS accordion.mdx------------------------*/
-.fs200px{font-size:200px}
-
-            
-/* End :-----------ACSS accordion.mdx----------------------------*/
-
-            
-/* Start :-----------ACSS button.mdx------------------------*/ 
-.button-base-outline{padding: 8px 22px} 
-.button-base-outline{border:2px solid} 
-.button-base-outline{font-size:16px} 
-.button-base-outline{line-height: 26px} 
-.button-base-outline{word-wrap: break-word} 
-.button-base-outline{border-radius: 50} 
-.button-base-outline{font-weight: 500} 
-.button-base-outline{display: inline-block} 
-.button-base-outline{align-items: center} 
-.button-base-outline{justify-content: center} 
-.button-base-outline{box-shadow:0px 3px 1px -2px rgb(0%,0%,0%,0.20)} 
-.button-base-outline{cursor: pointer} 
-.button-base-outline-rounded{border-radius: 50} 
-.button-base-outline-rounded{padding: 8px 22px} 
-.button-base-outline-rounded{border:2px solid} 
-.button-base-outline-rounded{font-size:16px} 
-.button-base-outline-rounded{line-height: 26px} 
-.button-base-outline-rounded{word-wrap: break-word} 
-.button-base-outline-rounded{border-radius: 50px} 
-.button-base-outline-rounded{font-weight: 500} 
-.button-base-outline-rounded{display: inline-block} 
-.button-base-outline-rounded{align-items: center} 
-.button-base-outline-rounded{justify-content: center} 
-.button-base-outline-rounded{box-shadow:0px 3px 1px -2px rgb(0%,0%,0%,0.20)} 
-.button-base-outline-rounded{cursor: pointer} 
-
-.g-16px{gap: 16px}
-._button\[p-8px-22px\,b0\,fs16px\,lh-26px\,ls-0d46px\,wwbw\,br-4px\,fw5\,dib\,aic\,jcc\,bxs-0px-3px-1px--2px-rgb-0p-0p-0p-0d20\,cp\] button{padding: 8px 22px} 
-._button\[p-8px-22px\,b0\,fs16px\,lh-26px\,ls-0d46px\,wwbw\,br-4px\,fw5\,dib\,aic\,jcc\,bxs-0px-3px-1px--2px-rgb-0p-0p-0p-0d20\,cp\] button{border:0} 
-._button\[p-8px-22px\,b0\,fs16px\,lh-26px\,ls-0d46px\,wwbw\,br-4px\,fw5\,dib\,aic\,jcc\,bxs-0px-3px-1px--2px-rgb-0p-0p-0p-0d20\,cp\] button{font-size:16px} 
-._button\[p-8px-22px\,b0\,fs16px\,lh-26px\,ls-0d46px\,wwbw\,br-4px\,fw5\,dib\,aic\,jcc\,bxs-0px-3px-1px--2px-rgb-0p-0p-0p-0d20\,cp\] button{line-height: 26px} 
-._button\[p-8px-22px\,b0\,fs16px\,lh-26px\,ls-0d46px\,wwbw\,br-4px\,fw5\,dib\,aic\,jcc\,bxs-0px-3px-1px--2px-rgb-0p-0p-0p-0d20\,cp\] button{word-wrap: break-word} 
-._button\[p-8px-22px\,b0\,fs16px\,lh-26px\,ls-0d46px\,wwbw\,br-4px\,fw5\,dib\,aic\,jcc\,bxs-0px-3px-1px--2px-rgb-0p-0p-0p-0d20\,cp\] button{border-radius: 4px} 
-._button\[p-8px-22px\,b0\,fs16px\,lh-26px\,ls-0d46px\,wwbw\,br-4px\,fw5\,dib\,aic\,jcc\,bxs-0px-3px-1px--2px-rgb-0p-0p-0p-0d20\,cp\] button{font-weight: 500} 
-._button\[p-8px-22px\,b0\,fs16px\,lh-26px\,ls-0d46px\,wwbw\,br-4px\,fw5\,dib\,aic\,jcc\,bxs-0px-3px-1px--2px-rgb-0p-0p-0p-0d20\,cp\] button{display: inline-block} 
-._button\[p-8px-22px\,b0\,fs16px\,lh-26px\,ls-0d46px\,wwbw\,br-4px\,fw5\,dib\,aic\,jcc\,bxs-0px-3px-1px--2px-rgb-0p-0p-0p-0d20\,cp\] button{align-items: center} 
-._button\[p-8px-22px\,b0\,fs16px\,lh-26px\,ls-0d46px\,wwbw\,br-4px\,fw5\,dib\,aic\,jcc\,bxs-0px-3px-1px--2px-rgb-0p-0p-0p-0d20\,cp\] button{justify-content: center} 
-._button\[p-8px-22px\,b0\,fs16px\,lh-26px\,ls-0d46px\,wwbw\,br-4px\,fw5\,dib\,aic\,jcc\,bxs-0px-3px-1px--2px-rgb-0p-0p-0p-0d20\,cp\] button{box-shadow:0px 3px 1px -2px rgb(0%,0%,0%,0.20)} 
-._button\[p-8px-22px\,b0\,fs16px\,lh-26px\,ls-0d46px\,wwbw\,br-4px\,fw5\,dib\,aic\,jcc\,bxs-0px-3px-1px--2px-rgb-0p-0p-0p-0d20\,cp\] button{cursor: pointer} 
-
-.bgc-primary600{background-color:var(--primary600,#7F56D9)}
-.c-primary25{color:var(--primary25,#FCFAFF)}
-.--hover-bgc-primary700:hover{background-color:var(--primary700,#6941C6)}
-.bgc-success600{background-color:var(--success600,#079455)}
-.c-success25{color:var(--success25,#F6FEF9)}
-.--hover-bgc-success700:hover{background-color:var(--success700,#067647)}
-.bgc-error600{background-color:var(--error600,#D92D20)}
-.c-warning25{color:var(--warning25,#FFFCF5)}
-.--hover-bgc-error700:hover{background-color:var(--error700,#B42318)}
-.bgc-warning600{background-color:var(--warning600,#DC6803)}
-.--hover-bgc-warning700:hover{background-color:var(--warning700,#B54708)}
-.g16px{gap:16px}
-._button\[p-8px-22px\,b0\,fs16px\,lh-26px\,ls-0d46px\,wwbw\,br-4px\,fw5\,dib\,aic\,jcc\,bxs-0px-3px-1px--2px-rgb-0p-0p-0p-0d20\,cp\,tn-all-0d35s\] button{padding: 8px 22px} 
-._button\[p-8px-22px\,b0\,fs16px\,lh-26px\,ls-0d46px\,wwbw\,br-4px\,fw5\,dib\,aic\,jcc\,bxs-0px-3px-1px--2px-rgb-0p-0p-0p-0d20\,cp\,tn-all-0d35s\] button{border:0} 
-._button\[p-8px-22px\,b0\,fs16px\,lh-26px\,ls-0d46px\,wwbw\,br-4px\,fw5\,dib\,aic\,jcc\,bxs-0px-3px-1px--2px-rgb-0p-0p-0p-0d20\,cp\,tn-all-0d35s\] button{font-size:16px} 
-._button\[p-8px-22px\,b0\,fs16px\,lh-26px\,ls-0d46px\,wwbw\,br-4px\,fw5\,dib\,aic\,jcc\,bxs-0px-3px-1px--2px-rgb-0p-0p-0p-0d20\,cp\,tn-all-0d35s\] button{line-height: 26px} 
-._button\[p-8px-22px\,b0\,fs16px\,lh-26px\,ls-0d46px\,wwbw\,br-4px\,fw5\,dib\,aic\,jcc\,bxs-0px-3px-1px--2px-rgb-0p-0p-0p-0d20\,cp\,tn-all-0d35s\] button{word-wrap: break-word} 
-._button\[p-8px-22px\,b0\,fs16px\,lh-26px\,ls-0d46px\,wwbw\,br-4px\,fw5\,dib\,aic\,jcc\,bxs-0px-3px-1px--2px-rgb-0p-0p-0p-0d20\,cp\,tn-all-0d35s\] button{border-radius: 4px} 
-._button\[p-8px-22px\,b0\,fs16px\,lh-26px\,ls-0d46px\,wwbw\,br-4px\,fw5\,dib\,aic\,jcc\,bxs-0px-3px-1px--2px-rgb-0p-0p-0p-0d20\,cp\,tn-all-0d35s\] button{font-weight: 500} 
-._button\[p-8px-22px\,b0\,fs16px\,lh-26px\,ls-0d46px\,wwbw\,br-4px\,fw5\,dib\,aic\,jcc\,bxs-0px-3px-1px--2px-rgb-0p-0p-0p-0d20\,cp\,tn-all-0d35s\] button{display: inline-block} 
-._button\[p-8px-22px\,b0\,fs16px\,lh-26px\,ls-0d46px\,wwbw\,br-4px\,fw5\,dib\,aic\,jcc\,bxs-0px-3px-1px--2px-rgb-0p-0p-0p-0d20\,cp\,tn-all-0d35s\] button{align-items: center} 
-._button\[p-8px-22px\,b0\,fs16px\,lh-26px\,ls-0d46px\,wwbw\,br-4px\,fw5\,dib\,aic\,jcc\,bxs-0px-3px-1px--2px-rgb-0p-0p-0p-0d20\,cp\,tn-all-0d35s\] button{justify-content: center} 
-._button\[p-8px-22px\,b0\,fs16px\,lh-26px\,ls-0d46px\,wwbw\,br-4px\,fw5\,dib\,aic\,jcc\,bxs-0px-3px-1px--2px-rgb-0p-0p-0p-0d20\,cp\,tn-all-0d35s\] button{box-shadow:0px 3px 1px -2px rgb(0%,0%,0%,0.20)} 
-._button\[p-8px-22px\,b0\,fs16px\,lh-26px\,ls-0d46px\,wwbw\,br-4px\,fw5\,dib\,aic\,jcc\,bxs-0px-3px-1px--2px-rgb-0p-0p-0p-0d20\,cp\,tn-all-0d35s\] button{cursor: pointer} 
-._button\[p-8px-22px\,b0\,fs16px\,lh-26px\,ls-0d46px\,wwbw\,br-4px\,fw5\,dib\,aic\,jcc\,bxs-0px-3px-1px--2px-rgb-0p-0p-0p-0d20\,cp\,tn-all-0d35s\] button{transition:all 0.35s} 
-
-.c-primary100{color:var(--primary100,#F4EBFF)}
-.--h-bxs-2px-2px-2px-primary50__2px-2px-1px-1px-primary700:hover{box-shadow:2px 2px 2px var(--primary50,#F9F5FF) , 2px 2px 1px 1px var(--primary700,#6941C6)}
-.--h-tf-t--2px:hover{transform:translate(-2px)}
-.--h-br-4px-0px-4px-0px:hover{border-radius: 4px 0px 4px 0px}
-.g32px{gap:32px}
-.p64px-32px{padding:64px 32px}
-.bgc-primary100{background-color:var(--primary100,#F4EBFF)}
-.c-primary700{color:var(--primary700,#6941C6)}
-.--hover-bgc-primary200:hover{background-color:var(--primary200,#E9D7FE)}
-.tfo-center{transform-origin:-center}
-.--hover--after-tf-s3:hover::after{transform:scale(3)}
-.--after-\[cont\,w100p\,bgc-primary800\,t0px\,l--100p\,br100p\,h100p\,pa\,o0d5\,tn-all-0d35s\,zi-1\]::after{content:""} 
-.--after-\[cont\,w100p\,bgc-primary800\,t0px\,l--100p\,br100p\,h100p\,pa\,o0d5\,tn-all-0d35s\,zi-1\]::after{width:100%} 
-.--after-\[cont\,w100p\,bgc-primary800\,t0px\,l--100p\,br100p\,h100p\,pa\,o0d5\,tn-all-0d35s\,zi-1\]::after{background-color:var(--primary800,#53389E)} 
-.--after-\[cont\,w100p\,bgc-primary800\,t0px\,l--100p\,br100p\,h100p\,pa\,o0d5\,tn-all-0d35s\,zi-1\]::after{top:0px} 
-.--after-\[cont\,w100p\,bgc-primary800\,t0px\,l--100p\,br100p\,h100p\,pa\,o0d5\,tn-all-0d35s\,zi-1\]::after{left: -100%} 
-.--after-\[cont\,w100p\,bgc-primary800\,t0px\,l--100p\,br100p\,h100p\,pa\,o0d5\,tn-all-0d35s\,zi-1\]::after{border-radius:100%} 
-.--after-\[cont\,w100p\,bgc-primary800\,t0px\,l--100p\,br100p\,h100p\,pa\,o0d5\,tn-all-0d35s\,zi-1\]::after{height:100%} 
-.--after-\[cont\,w100p\,bgc-primary800\,t0px\,l--100p\,br100p\,h100p\,pa\,o0d5\,tn-all-0d35s\,zi-1\]::after{position: absolute} 
-.--after-\[cont\,w100p\,bgc-primary800\,t0px\,l--100p\,br100p\,h100p\,pa\,o0d5\,tn-all-0d35s\,zi-1\]::after{opacity:0.5} 
-.--after-\[cont\,w100p\,bgc-primary800\,t0px\,l--100p\,br100p\,h100p\,pa\,o0d5\,tn-all-0d35s\,zi-1\]::after{transition:all 0.35s} 
-.--after-\[cont\,w100p\,bgc-primary800\,t0px\,l--100p\,br100p\,h100p\,pa\,o0d5\,tn-all-0d35s\,zi-1\]::after{z-index:1} 
-
-.bgc-success100{background-color:var(--success100,#DCFAE6)}
-.c-success700{color:var(--success700,#067647)}
-.--hover-bgc-success200:hover{background-color:var(--success200,#ABEFC6)}
-.--hover--after-tf-s20:hover::after{transform:scale(20)}
-.--after-\[cont\,w10px\,bgc-success700\,b-1px-s-success900\,t-10px\,l--15px\,br100p\,h10px\,pa\,o0d5\,tn-all-0d55s\,zi-1\]::after{content:""} 
-.--after-\[cont\,w10px\,bgc-success700\,b-1px-s-success900\,t-10px\,l--15px\,br100p\,h10px\,pa\,o0d5\,tn-all-0d55s\,zi-1\]::after{width:10px} 
-.--after-\[cont\,w10px\,bgc-success700\,b-1px-s-success900\,t-10px\,l--15px\,br100p\,h10px\,pa\,o0d5\,tn-all-0d55s\,zi-1\]::after{background-color:var(--success700,#067647)} 
-.--after-\[cont\,w10px\,bgc-success700\,b-1px-s-success900\,t-10px\,l--15px\,br100p\,h10px\,pa\,o0d5\,tn-all-0d55s\,zi-1\]::after{border:1px solid var(--success900,#074D31)} 
-.--after-\[cont\,w10px\,bgc-success700\,b-1px-s-success900\,t-10px\,l--15px\,br100p\,h10px\,pa\,o0d5\,tn-all-0d55s\,zi-1\]::after{top: 10px} 
-.--after-\[cont\,w10px\,bgc-success700\,b-1px-s-success900\,t-10px\,l--15px\,br100p\,h10px\,pa\,o0d5\,tn-all-0d55s\,zi-1\]::after{left: -15px} 
-.--after-\[cont\,w10px\,bgc-success700\,b-1px-s-success900\,t-10px\,l--15px\,br100p\,h10px\,pa\,o0d5\,tn-all-0d55s\,zi-1\]::after{border-radius:100%} 
-.--after-\[cont\,w10px\,bgc-success700\,b-1px-s-success900\,t-10px\,l--15px\,br100p\,h10px\,pa\,o0d5\,tn-all-0d55s\,zi-1\]::after{height:10px} 
-.--after-\[cont\,w10px\,bgc-success700\,b-1px-s-success900\,t-10px\,l--15px\,br100p\,h10px\,pa\,o0d5\,tn-all-0d55s\,zi-1\]::after{position: absolute} 
-.--after-\[cont\,w10px\,bgc-success700\,b-1px-s-success900\,t-10px\,l--15px\,br100p\,h10px\,pa\,o0d5\,tn-all-0d55s\,zi-1\]::after{opacity:0.5} 
-.--after-\[cont\,w10px\,bgc-success700\,b-1px-s-success900\,t-10px\,l--15px\,br100p\,h10px\,pa\,o0d5\,tn-all-0d55s\,zi-1\]::after{transition:all 0.55s} 
-.--after-\[cont\,w10px\,bgc-success700\,b-1px-s-success900\,t-10px\,l--15px\,br100p\,h10px\,pa\,o0d5\,tn-all-0d55s\,zi-1\]::after{z-index:1} 
-
-.bgc-error100{background-color:var(--error100,#FEE4E2)}
-.c-error700{color:var(--error700,#B42318)}
-.--hover-bgc-error200:hover{background-color:var(--error200,#FECDCA)}
-.bgc-warning100{background-color:var(--warning100,#FEF0C7)}
-.c-warning700{color:var(--warning700,#B54708)}
-.--hover-bgc-warning200:hover{background-color:var(--warning200,#FEDF89)}
-.____all--hover-filter-i-1 ~ *:hover{filter:invert(1)}
-.--hover-filter-i-1:hover{filter:invert(1)}
-.b-5px-s-gray600{border:5px solid var(--gray600,#475467)}
-.c-fff{color:#fff}
-.p-30px-18px{padding: 30px 18px}
-.br-500px{border-radius: 500px}
-.dif{display: inline-flex}
-.h100px{height:100px}
-.tf-s-0d5{transform:scale(0.5)}
-.g18px{gap:18px}
-.fww{flex-wrap: wrap}
-.xw-300px{max-width: 300px}
-._button-p12px-56px button{padding:12px 56px}
-._button--fc-br-25px-0px-40px-25px button:first-child{border-radius: 25px 0px 40px 25px}
-._button--fc-bgc-gray100 button:first-child{background-color:var(--gray100,#F2F4F7)}
-._button-b5px-s-gray700 button{border:5px solid var(--gray700,#344054)}
-.br-40px-25px-25px-0px{border-radius: 40px 25px 25px 0px}
-.adl-1s{animation-delay: 1s}
-.clip-path-ellipse-90p-60p-at-5p-5p{clip-path:ellipse(90% 60%  at 5% 5% )}
-.tf-sy--1__r-180deg{transform:scaleY(-1) rotate(180deg)}
-.dib{display: inline-block}
-.an-eye{animation-name:eye}
-.atfl{animation-timing-function: linear}
-.h64px{height:64px}
-.w64px{width:64px}
-.br100px{border-radius:100px}
-.bgc-gray600{background-color:var(--gray600,#475467)}
-.adl1s{animation-delay:1s}
-.an-mouth{animation-name:mouth}
-.adu1s{animation-duration:1s}
-.br50p{border-radius:50%}
-.bgc-gray100-i{background-color:var(--gray100,#F2F4F7) !important}
-.asc{align-self: center}
-.ml70px{margin-left:70px}
-@keyframes eye{ 0% {margin-left: 20px} 50% {margin:auto} 100% {margin-right: 20px}
-}
-
-@keyframes mouth{
- 100% {transform:scale(1.1)}
-}
-
-
-            
-/* End :-----------ACSS button.mdx----------------------------*/
-
-            
-/* Start :-----------ACSS inputs.mdx------------------------*/
-
-            
-/* End :-----------ACSS inputs.mdx----------------------------*/
-
-            
-/* Start :-----------ACSS typography.mdx------------------------*/
-.heading-2xl{font-size:72px ; line-height:90px ; letter-spacing:-0.02em}
-.font-weight-bold{font-weight:700}
-.fwb{font-weight: bold}
-.heading-xl{font-size: 60px; line-height: 72px; letter-spacing:-0.02em}
-.heading-lg{font-size:48px ; line-height: 60px; letter-spacing:-0.02em}
-.heading-md{font-size: 36px; line-height: 44px; letter-spacing:-0.02em}
-.fw7{font-weight: 700}
-.heading-sm{font-size: 30px; line-height: 38px}
-.fw6{font-weight: 600}
-.heading-xs{font-size: 24px; line-height: 32px}
-.fw5{font-weight: 500}
+/* Start :-----------ACSS color_ref.mdx------------------------*/
+.p0px32px{padding:0px32px}
+.bgc-2552552550d8{background-color:rgba(255,255,255,0.8)}
+.w150px{width:150px}
+.pf{position: fixed}
+@media (min-width : 768px){.md-dn{display: none}}
+.zi1234{z-index:1234}
+.btm0px{bottom:0px}
+.r32px{right:32px}
+.shadow-xl{box-shadow:var(--shadow-xl, 0px 20px 24px -4px rgba(16, 24, 40, 0.08), 0px 8px 8px -4px rgba(16, 24, 40, 0.03))}
+.mb32px{margin-bottom:32px}
+.br16px{border-radius:16px}
+.p-8px-16px{padding: 8px 16px}
+.b1px-s-blue400{border:1px solid var(--blue400,#53B1FD)}
 .text-xl{font-size:20px;line-height:30px}
-.text-lg{font-size:18px;line-height:28px}
-.text-md{font-size:16px;line-height:24px}
-.text-sm{font-size:14px;line-height:20px}
-.text-xs{font-size:12px;line-height:18px}
-.mt-24px{margin-top: 24px}
-.bl-2px-s-gray300{border-left:2px solid var(--gray300,#D0D5DD)}
-.c-gray700{color:var(--gray700,#344054)}
-.pl-24px{padding-left: 24px}
-.fsi{font-style: italic}
+.--fo-bn:focus{border:none}
+.--fo-oln:focus{outline:none}
+.c-gray600{color:var(--gray600,#475467)}
+.bgc-transparent{background-color:transparent}
+.g32px{gap:32px}
+.xw1280px{max-width:1280px}
+.mla{margin-left: auto}
+.mra{margin-right: auto}
+._all-bsbb *{box-sizing: border-box}
+.dn{display: none}
+@media (min-width : 768px){.md-df{display: flex}}
+.fb--var--aside-width{flex-basis: var(--aside-width)}
+.flex-shrink0{flex-shrink:0}
+.t--var--aside-top{top: var(--aside-top)}
+.--sb-w5px::-webkit-scrollbar{width:5px}
+.--st-bgc-blue50::-webkit-scrollbar-track{background-color:var(--blue50,#EFF8FF)}
+.--stm-bgc-blue100::-webkit-scrollbar-thumb{background-color:var(--blue100,#D1E9FF)}
+.g8px{gap:8px}
+.pst{position: sticky}
+.pr16px{padding-right:16px}
+.h--var--height{height: var(--height)}
+.oxh{overflow-x: hidden}
+.oya{overflow-y: auto}
+.dif{display: inline-flex}
+.fdc{flex-direction: column}
+.display-sm{font-size: 30px; line-height: 38px}
+.fwn{flex-wrap: nowrap}
+.pl10px{padding-left:10px}
+.fww{flex-wrap: wrap}
+.p0px{padding:0px}
 
             
-/* End :-----------ACSS typography.mdx----------------------------*/
+/* End :-----------ACSS color_ref.mdx----------------------------*/
+
+            
+/* Start :-----------ACSS index.mdx------------------------*/
+.d-f{display:flex}
+@media (min-width : 992px){.lg-fdr-i{flex-direction: row !important}}
+.pt32px{padding-top:32px}
+.fb100p{flex-basis:100%}
+@media (min-width : 992px){.lg-fb50p{flex-basis:50%}}
+@media (min-width : 992px){.lg-asc{align-self: center}}
+@media (min-width : 992px){.lg-db{display: block}}
+@media (min-width : 992px){.lg-mla{margin-left: auto}}
+@media (min-width : 992px){.lg-mra{margin-right: auto}}
+.color-red{color:red}
+.font-size-12px{font-size: 12px}
+.display-inline-block{display:inline-block}
+.c-red{color:red}
+.fs-12px{font-size: 12px}
+.dib{display: inline-block}
+
+            
+/* End :-----------ACSS index.mdx----------------------------*/
+
+            
+/* Start :-----------ACSS AttributeSelector.mdx------------------------*/
+.\[data-state\=close\]-display-none[data-state="close"]{display:none}
+.\[class\~\=code\]-font-mono[class~="code"]{font:mono}
+
+            
+/* End :-----------ACSS AttributeSelector.mdx----------------------------*/
+
+            
+/* Start :-----------ACSS StaticClassNames.mdx------------------------*/
+
+            
+/* End :-----------ACSS StaticClassNames.mdx----------------------------*/
+
+            
+/* Start :-----------ACSS advance-customization.mdx------------------------*/
+.text-sm{font-size:14px;line-height:20px}
+@media (min-width : 992px){.lg-text-xl{font-size:20px;line-height:30px}}
+.--hover-text-md:hover{font-size:16px;line-height:24px}
+
+            
+/* End :-----------ACSS advance-customization.mdx----------------------------*/
+
+            
+/* Start :-----------ACSS andIndentifier.mdx------------------------*/
+ div ._div\&-bgc-red{background-color:red}
+:is( html[class~="dark"]) .--is\(_html\[class\~\=dark\]\)\&-bgc--dark-bg-color{background-color: var(--dark-bg-color)}
+
+            
+/* End :-----------ACSS andIndentifier.mdx----------------------------*/
+
+            
+/* Start :-----------ACSS basic.mdx------------------------*/
+.color-blue{color:blue}
+.font-size-3rem{font-size: 3rem}
+.c-blue{color:blue}
+.fs-3rem{font-size: 3rem}
+
+            
+/* End :-----------ACSS basic.mdx----------------------------*/
+
+            
+/* Start :-----------ACSS class-group.mdx------------------------*/ 
+.container{background-color: var(--main-color)} 
+.container{overflow: hidden} 
+.container{width:100%} 
+.container{height:100%} 
+.container{position: absolute} 
+.container{top:0} 
+.container{left:0} 
+.container{display: flex} 
+.container{align-items: center} 
+.container{align-content: center} 
+.container{justify-content: center} 
+.container{z-index:100000} 
+
+.error{color:var(--error500,#F04438)} 
+.error::after{background-color:var(--error100,#FEE4E2)} 
+.error::after{color:var(--error700,#B42318)} 
+.error::after{border:1px solid var(--error700,#B42318)} 
+
+.b0{border:0}
+.color-fff{color:#fff}
+.bgc-blue{background-color:blue}
+.--hover-c-gray:hover{color:gray}
+.--hover-border-radius-4px:hover{border-radius: 4px}
+.--hover-bgc-skyBlue:hover{background-color:skyBlue}
+.--hover-\[c-gray\,border-radius-4px\,bgc-skyBlue\]:hover{color:gray} 
+.--hover-\[c-gray\,border-radius-4px\,bgc-skyBlue\]:hover{border-radius: 4px} 
+.--hover-\[c-gray\,border-radius-4px\,bgc-skyBlue\]:hover{background-color:skyBlue} 
+
+.\[data-state\=open\]\[display-flex\,left-0\][data-state="open"]{display:flex} 
+.\[data-state\=open\]\[display-flex\,left-0\][data-state="open"]{left: 0} 
+
+.btn{border:0} 
+.btn{color:#fff} 
+.btn{background-color:blue} 
+ 
+
+.btn:hover{color:gray} 
+.btn:hover{border-radius: 4px} 
+.btn:hover{background-color:skyBlue} 
+ 
+
+.active[data-state="open"]{display:flex} 
+.active[data-state="open"]{left: 0} 
+ 
+
+.container{container:  /* ***Warning:Might not be Valid value *** */}
+
+            
+/* End :-----------ACSS class-group.mdx----------------------------*/
+
+            
+/* Start :-----------ACSS getting_started.mdx------------------------*/
+.fs12px{font-size:12px}
+.color-gray500{color:var(--gray500,#667085)}
+
+            
+/* End :-----------ACSS getting_started.mdx----------------------------*/
+
+            
+/* Start :-----------ACSS npm-guide.mdx------------------------*/
+
+            
+/* End :-----------ACSS npm-guide.mdx----------------------------*/
+
+            
+/* Start :-----------ACSS screens.mdx------------------------*/
+@media (max-width : 576px){.xs-dn{display: none}}
+@media (max-width : 576px){.xs-display-none{display:none}}
+@media (max-width : 576px){.xs-flex-direction-column{flex-direction:column}}
+@media (max-width : 576px){.xs-fdc{flex-direction: column}}
+@media (max-width : 576px){.xs_p-flex-direction-column p{flex-direction:column}}
+@media (max-width : 576px){.xs_p-fdc p{flex-direction: column}}
+@media (min-width : 768px){.md-width500px{width:500px}}
+@media (min-width : 768px){.md-w500p{width:500%}}
+
+            
+/* End :-----------ACSS screens.mdx----------------------------*/
+
+            
+/* Start :-----------ACSS stateAndSelector.mdx------------------------*/
+.bgc-cccccc{background-color:#cccccc}
+.--hover-bgc-yellow:hover{background-color:yellow}
+.--h-bgc-yellow:hover{background-color:yellow}
+._h3-c-white h3{color:white}
+._p-fs-14px p{font-size: 14px}
+
+            
+/* End :-----------ACSS stateAndSelector.mdx----------------------------*/
+
+            
+/* Start :-----------ACSS variables.mdx------------------------*/
+.--header-color\:skyBlue{--header-color:skyBlue}
+.color--header-color{color: var(--header-color)}
+.--hover--header-color\:blue:hover{--header-color:blue}
+.color--header-color\:skyBlue{color: var(--header-color,skyBlue)}
+.color--grey-alt{color: var(--grey-alt)}
+.--grey\:--grey-default{--grey: var(--grey-default)}
+.color--grey{color: var(--grey)}
+.--hover-color--grey-hover:hover{color: var(--grey-hover)}
+.--grey-hover\:black{--grey-hover:black}
+
+            
+/* End :-----------ACSS variables.mdx----------------------------*/
+
+            
+/* Start :-----------ACSS index.mdx------------------------*/
+.p16px-32px{padding:16px 32px}
+.mh100vh{min-height:100vh}
+.bgc-0000000000d7{background-color:rgba(000,000,000,0.7)}
+.button-xs{display:inline-flex;justify-content:center;align-items:center;gap:8px;padding:8px 12px;border-radius:8px;box-sizing:border-box}
+.text-xs{font-size:12px;line-height:18px}
+.--h-c-gray100:hover{color:var(--gray100,#F2F4F7)}
+.--h-fwb:hover{font-weight: bold}
+.c-fff{color:#fff}
+.b-1px-s-fff{border:1px solid #fff}
+.bgc-primary600{background-color:var(--primary600,#7F56D9)}
+.p-30px-18px{padding: 30px 18px}
+.br-12px{border-radius: 12px}
+
+            
+/* End :-----------ACSS index.mdx----------------------------*/
+
+            
+/* Start :-----------ACSS codify.jsx------------------------*/
+.jcsb{justify-content: space-between}
+.cp{cursor: pointer}
+.w18px{width:18px}
+.h18px{height:18px}
+.stroke-gray700{stroke:var(--gray700,#344054)}
+.stroke-width1px{stroke-width:1px}
+.stroke-linecap-round{stroke-linecap:round}
+.stroke-linejoin-round{stroke-linejoin:round}
+
+            
+/* End :-----------ACSS codify.jsx----------------------------*/
+
+            
+/* Start :-----------ACSS color.jsx------------------------*/
+.fs10px{font-size:10px}
+.cc{cursor: copy}
+.br8px{border-radius:8px}
+.p10px{padding:10px}
+@media (min-width : 768px){.md-m10px{margin:10px}}
+@media (min-width : 768px){.md-g8px{gap:8px}}
+.w72px{width:72px}
+.h72px{height:72px}
+.br9px{border-radius:9px}
+@media (min-width : 768px){.md-w100px{width:100px}}
+@media (min-width : 768px){.md-h100px{height:100px}}
+.fw5{font-weight: 500}
+
+            
+/* End :-----------ACSS color.jsx----------------------------*/
+
+            
+/* Start :-----------ACSS custom-editor.jsx------------------------*/
+
+            
+/* End :-----------ACSS custom-editor.jsx----------------------------*/
+
+            
+/* Start :-----------ACSS editor.jsx------------------------*/
+.h100vh{height:100vh}
+._all-\[class\~\=sp-editor\]-height-50vh-i *[class~="sp-editor"]{height: 50vh !important}
+._all-\[class\~\=sp-preview\]-height-50vh-i *[class~="sp-preview"]{height: 50vh !important}
+.zi-2000000{z-index:2000000}
+.w100vw{width:100vw}
+.t32px{top:32px}
+.zi2{z-index:2}
+.b1px-s-gray600{border:1px solid var(--gray600,#475467)}
+.--hover-bgc-error200:hover{background-color:var(--error200,#FECDCA)}
+.br-8px{border-radius: 8px}
+.p12px-14px{padding:12px 14px}
+
+            
+/* End :-----------ACSS editor.jsx----------------------------*/
+
+            
+/* Start :-----------ACSS inputClassName.jsx------------------------*/
+.jc-sb{justify-content:space-between}
+.p8px-12px{padding:8px 12px}
+.b1px-s-gray300{border:1px solid var(--gray300,#D0D5DD)}
+.shadow-xs{box-shadow:var(--shadow-xs, 0px 1px 2px rgba(16, 24, 40, 0.05))}
+.ol-n{outline:none}
+.b-n{border:none}
+.--fv-bxsn:focus-visible{box-shadow: none}
+.--fv-bn:focus-visible{border:none}
+.fw-4{font-weight:400}
+.c-gray500{color:var(--gray500,#667085)}
+.button-sm{display:inline-flex;justify-content:center;align-items:center;gap:8px;padding:8px 14px;border-radius:8px;box-sizing:border-box}
+.b1px-s-blue200{border:1px solid var(--blue200,#B2DDFF)}
+.bgc-blue100{background-color:var(--blue100,#D1E9FF)}
+.c-gray700{color:var(--gray700,#344054)}
+:is( html[class~="dark"]) .--is\(_html\[class\~\=dark\]\)\&-bgc-gray700{background-color:var(--gray700,#344054)}
+:is( html[class~="dark"]) .--is\(_html\[class\~\=dark\]\)\&-c-gray100{color:var(--gray100,#F2F4F7)}
+.--h-bgc-blue300:hover{background-color:var(--blue300,#84CAFF)}
+:is( html[class~="dark"]) .--is\(_html\[class\~\=dark\]\)\&-stroke-gray100{stroke:var(--gray100,#F2F4F7)}
+.fill-none{fill:none}
+
+            
+/* End :-----------ACSS inputClassName.jsx----------------------------*/
+
+            
+/* Start :-----------ACSS logo.jsx------------------------*/
+
+            
+/* End :-----------ACSS logo.jsx----------------------------*/
+
+            
+/* Start :-----------ACSS modalSearch.jsx------------------------*/
+.p-0px-32px{padding: 0px 32px}
+.cursor-pointer{cursor:pointer}
+.stroke-blue500{stroke:var(--blue500,#2E90FA)}
+.stroke-width2px{stroke-width:2px}
+.bgc-red{background-color:red}
+.bgc-0000000000d6{background-color:rgba(000,000,000,0.6)}
+.w-100vw{width: 100vw}
+.zi-99{z-index:99}
+.t-0px{top: 0px}
+.l-0px{left: 0px}
+.m-32px{margin: 32px}
+:is( html[class~="dark"]) .--is\(_html\[class\~\=dark\]\)\&-border-1px-s-error500{border:1px solid var(--error500,#F04438)}
+:is( html[class~="dark"]) .--is\(_html\[class\~\=dark\]\)\&-filter-invert-100{filter:invert(100)}
+.bgc-gray100{background-color:var(--gray100,#F2F4F7)}
+.hxc{height:max-content}
+.p-32px{padding: 32px}
+.pr-62px{padding-right: 62px}
+.w-80p{width: 80%}
+.t-16px{top: 16px}
+.r-16px{right: 16px}
+.w-18px{width: 18px}
+.h-18px{height: 18px}
+.stroke-error500{stroke:var(--error500,#F04438)}
+
+            
+/* End :-----------ACSS modalSearch.jsx----------------------------*/
+
+            
+/* Start :-----------ACSS quickCompiler.jsx------------------------*/
+.g16px{gap:16px}
+.fd-c{flex-direction:column}
+.p4px-10px-4px-4px{padding:4px 10px 4px 4px}
+.bgc-blue50{background-color:var(--blue50,#EFF8FF)}
+:is( html[class~="dark"]) .--is\(_html\[class\~\=dark\]\)\&-c-blue100{color:var(--blue100,#D1E9FF)}
+.wxc{width:max-content}
+.g12px{gap:12px}
+.bgc-fff{background-color:#fff}
+.p2px-10px{padding:2px 10px}
+.g4px{gap:4px}
+:is( html[class~="dark"]) .--is\(_html\[class\~\=dark\]\)\&-bgc-blue700{background-color:var(--blue700,#175CD3)}
+.gap4px{gap:4px}
+.h-30rem{height: 30rem}
+.b-1px-s-ccc{border:1px solid #ccc}
+.oa{overflow: auto}
+.br-5px{border-radius: 5px}
+.p24px{padding:24px}
+.bl15px-s-blueLight600{border-left:15px solid var(--blueLight600,#0086C9)}
+.ff-courier{font-family:courier}
+.o-a{opacity:-a}
+.c-green700{color:var(--green700,#087443)}
+.fw6{font-weight: 600}
+:is( html[class~="dark"]) .--is\(_html\[class\~\=dark\]\)\&-c-gray400{color:var(--gray400,#98A2B3)}
+.c-blue700{color:var(--blue700,#175CD3)}
+.c-error400{color:var(--error400,#F97066)}
+.fwb{font-weight: bold}
+.c-error500{color:var(--error500,#F04438)}
+.c-warning{color:warning}
+
+            
+/* End :-----------ACSS quickCompiler.jsx----------------------------*/
+
+            
+/* Start :-----------ACSS staticClassNames.jsx------------------------*/
+.w100fr{width:100fr}
+:is( html.dark) .--is\(_html\.dark\)\&-bgc-gray900{background-color:var(--gray900,#101828)}
+:is( html.dark) .--is\(_html\.dark\)\&-b-1px-s-gray50{border:1px solid var(--gray50,#F9FAFB)}
+.text-lg{font-size:18px;line-height:28px}
+.stroke-gray400{stroke:var(--gray400,#98A2B3)}
+.oln{outline:none}
+.bn{border:none}
+.c-gray{color:gray}
+:is( html.dark) .--is\(_html\.dark\)\&-c-gray-25{color:var(--gray-25,#FCFCFD)}
+.text-md{font-size:16px;line-height:24px}
+.zi12345{z-index:12345}
+.l0px{left:0px}
+.t100p{top:100%}
+.bgc-gray200{background-color:var(--gray200,#EAECF0)}
+:is( html.dark) .--is\(_html\.dark\)\&-bgc-gray-900{background-color:var(--gray-900,#101828)}
+.xh60vh{max-height:60vh}
+.mw320px{min-width:320px}
+.shadow-md{box-shadow:var(--shadow-ms, 0px 4px 8px -2px rgba(16, 24, 40, 0.1), 0px 2px 4px -2px rgba(16, 24, 40, 0.06))}
+.mt2px{margin-top:2px}
+.m0px{margin:0px}
+.lsn{list-style: none}
+:is( html.dark) .--is\(_html\.dark\)\&-c-gray-50{color:var(--gray-50,#F9FAFB)}
+:is( html.dark) .--is\(_html\.dark\)\&-c-gray-50-i{color:var(--gray-50,#F9FAFB) !important}
+.asfe{align-self: flex-end}
+
+            
+/* End :-----------ACSS staticClassNames.jsx----------------------------*/
+
+            
+/* Start :-----------ACSS aside.jsx------------------------*/
+.is-active span{color:var(--blue600,#1570EF)} 
+.is-active span{background-color:var(--blue50,#EFF8FF)} 
+
+.ccc{color:currentColor}
+.br6px{border-radius:6px}
+.p-4px-8px{padding: 4px 8px}
+.tdn{text-decoration: none}
+.--h-bgc-blue50:hover{background-color:var(--blue50,#EFF8FF)}
+
+            
+/* End :-----------ACSS aside.jsx----------------------------*/
+
+            
+/* Start :-----------ACSS input-1.mdx------------------------*/
+.tal{text-align: left}
+.p8px12px{padding:8px12px}
+.b1px-s-primary300{border:1px solid var(--primary300,#D6BBFB)}
+.bxs0px0px0px5px-primary100{box-shadow:0px0px0px5px var(--primary100,#F4EBFF)}
+.xw400px{max-width:400px}
+
+            
+/* End :-----------ACSS input-1.mdx----------------------------*/
+
+            
+/* Start :-----------ACSS input.mdx------------------------*/
+.c-gray400{color:var(--gray400,#98A2B3)}
+.m-8px-12px{margin: 8px 12px}
+.br8px0px0px8px{border-radius:8px0px0px8px}
+.brt1px-s-gray300{border-right:1px solid var(--gray300,#D0D5DD)}
+.--fv-box-shadow-none:focus-visible{box-shadow:none}
+
+            
+/* End :-----------ACSS input.mdx----------------------------*/
 
             
