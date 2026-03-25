@@ -77,7 +77,7 @@ const config={
             },
 
     },
-    'Text':{
+    'text':{
             type:'group',
             compiler:(value)=>{
                 let result='';
@@ -115,7 +115,7 @@ const config={
             
             
     },
-    Box:{
+    box:{
         compiler:(value)=>{
                 let result='';
                 const match=/-([-]?[\w\.]+)/;
@@ -134,7 +134,7 @@ const config={
             },
         type:'group',
     },
-    Position:{
+    placement:{
         type:'group',
         compiler:(value)=>{
                 let result='';
@@ -151,7 +151,7 @@ const config={
             },
 
     }, 
-    Colorize:{
+    colorize:{
          type:'group',
         compiler:(value,custom)=>{
                 let result='';
@@ -172,7 +172,7 @@ const config={
             },
        
     },  
-    Container:{
+    container:{
         type:"group",
         compiler:(value)=>value,
         groups:{
@@ -186,7 +186,7 @@ const config={
             'lg':'display:block;margin:auto;width:var(--container-lg,1136px)',
         }
     },
-    Section:{
+    section:{
         type:"group",
         compiler:(value)=>value,
         groups:{
@@ -274,8 +274,8 @@ export default function Button() {
             onClick={()=>setActive(!isActive)}
              className={
                 isActive?
-                x('bgc-primary100 border1-s-primary700 c-primary700')
-                // or x`bgc-primary100 border1-s-primary700 c-primary700`
+                x('bgc-primary100 border-1px-s-primary700 c-primary700')
+                // or x`bgc-primary100 border-1px-s-primary700 c-primary700`
                 :
                 x('bgc-gray200 c-gray700 b1px-s-gray700')}>Button</button>
         </div>
@@ -313,9 +313,9 @@ export default function Button() {
             onClick={()=>SetActive(!isActive)}
              className={
                 isActive?
-                x['bgc-primary100 border1-s-primary700 c-primary700']
+                x['bgc-primary100 border-1-s-primary700 c-primary700']
                 :
-                x['bgc-gray200 c-gray700 b1px-s-gray700']}>Button</button>
+                x['bgc-gray200 c-gray700 b-1px-s-gray700']}>Button</button>
         </div>
     );
 }

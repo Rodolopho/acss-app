@@ -1,0 +1,59 @@
+
+### AliasCSS provides default prefix for base, components,utilities and theme layer .
+
+ We can use or target layer . For Example.
+
+```html
+<button class="@base-all-unset" >Label</button>
+```
+```css
+@layer base{
+     .\@base-all-unset{all:unset}
+}
+```
+|@layer prefix| CSS Selector|
+|--|--|
+|@base|@layer base|
+|@components|@layer components|
+|@comps|@layer components|
+|@utils|@layer utilities|
+|@utilities|@layer utilities|
+|@theme|@layer theme|
+
+
+### Grouping multiple aliasCSS with layer prefix
+
+ We can also group for specific layer. For Example.
+```html
+<button class="b-0 color-fff bgc-blue @theme-[c-gray,border-radius-4px,bgc-skyBlue]" >Label</button>
+```
+```html
+<div class="@base-[data-state=open][display-flex,left-0]" >...</div>
+```
+####  using multiple queries.
+
+we can use multiple queries in a single class name by using '@[query-prefix,query-prefix]-acss'.
+```html
+<button class="@[base,xs][b-0,color-fff,bgc-blue]--as-btn --hover-[c-gray,border-radius-4px,bgc-skyBlue]--as-btn btn" >Label</button>
+```
+```html
+<div class="@[xs,base][data-state=open][display-flex,left-0]--as-active active" >...</div>
+```
+aliascss will respect the order of query while generating css.
+
+## Creating Custom Layer
+
+we can also create custom layer by using media properties of  aliascss.config.js file.
+
+ ```js filename="aliascss.config.js"
+const config={
+    ...
+    media:{
+        prefix:{
+            '@customLayer':'@layer customLayer',
+        }
+    }
+    ...
+}
+export default config;
+```

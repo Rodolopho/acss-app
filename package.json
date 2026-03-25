@@ -33,7 +33,7 @@
     "typescript": "5.1.6"
   },
   "devDependencies": {
-    "aliascss": "^1.2.5"
+    "aliascss": "^1.3.2"
   },
   "engines": {
     "node": "22.x"
